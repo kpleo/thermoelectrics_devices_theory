@@ -1,0 +1,2 @@
+*.csv text eol=lf
+data/raw/nwae448_bts_bst/PMC11737397_fulltext.xml -diff

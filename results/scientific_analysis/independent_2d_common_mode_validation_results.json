@@ -1,0 +1,3362 @@
+{
+  "all_checks_passed": true,
+  "analysis_id": "SCI-INDEPENDENT-2D-COMMON-MODE-20260826",
+  "answer": "Yes within the stated 2-D thermal-advection/Joule model: the shared-isothermal constant shift remains null, the discrete 2-D adjoint predicts the finite-difference Gamma response with mesh convergence, and the split-pad heat/voltage law closes together with side heat and electrical power.",
+  "conservative_identities": {
+    "branch_energy": "Qh-Qc+Qside=P_electrical",
+    "oriented_measure_note": "the domain integral is evaluated directly and therefore does not require a single-valued inverse x(T); the equal-end-temperature Joule case supplies an interior maximum and opposite axial temperature-gradient orientations",
+    "pair_constant_shift": {
+      "delta_Qc": "C*I*(Tcp-Tcn) for isothermal branch pads",
+      "delta_Qh": "C*I*(Thp-Thn) for isothermal branch pads",
+      "delta_V": "C*((Thp-Thn)-(Tcp-Tcn))",
+      "interlock": "delta_Qh-delta_Qc+delta_Qside=I*delta_V"
+    },
+    "thermal_equation": "div(k grad T)+rho|J|^2-tau J.grad(T)=0",
+    "thomson_flux": "tau=epsilon*Gamma(T); choose G'(T)=Gamma(T), then tau J.grad(T)=div[J*epsilon*G(T)] because div(J)=0",
+    "two_dimensional_first_variation": "dQc/depsilon = integral_cold[Tc*m(Tc)*Jx]dy + integral_domain[psi*Gamma(T)*J.grad(T)]dA; the discrete adjoint uses the transpose of the full base-Thomson tangent operator"
+  },
+  "cross_family_matrix": {
+    "cases": [
+      {
+        "absolute_difference_w_per_epsilon": 2.8153313014200876e-12,
+        "adjoint_pair_dQc_w_per_epsilon": -0.0004215820644854762,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.008901129648131008,
+            "total_w_per_epsilon": -0.008901129648131008
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.008479547583645532,
+            "total_w_per_epsilon": 0.008479547583645532
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 0.0003,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "constant_gamma",
+          "name": "constant_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.0004215820616701449,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 384,
+          "nx": 24,
+          "ny": 16
+        },
+        "maximum_base_energy_residual_w": 5.273559366969494e-16,
+        "maximum_energy_residual_w": 6.245004513516506e-16,
+        "mismatch_family": "near_matched",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 2.2898349882893854e-16,
+              "iterations": 2,
+              "relative_residual": 2.942389653360977e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": -6.245004513516506e-16,
+              "iterations": 2,
+              "relative_residual": 3.099065609053487e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 4.163336342344337e-17,
+              "iterations": 2,
+              "relative_residual": 2.942988379102682e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": -3.3306690738754696e-16,
+              "iterations": 2,
+              "relative_residual": 3.100479907351222e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.05268345404358247,
+          "plus": 0.05268261087945913
+        },
+        "relative_difference": 6.678014883901869e-09,
+        "side_multiplier": 0.25
+      },
+      {
+        "absolute_difference_w_per_epsilon": 1.7245007505328758e-12,
+        "adjoint_pair_dQc_w_per_epsilon": -0.00035393260715295936,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.008069816692946439,
+            "total_w_per_epsilon": -0.008069816692946439
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.007715884085793479,
+            "total_w_per_epsilon": 0.007715884085793479
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 0.0003,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "constant_gamma",
+          "name": "constant_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.0003539326054284586,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 384,
+          "nx": 24,
+          "ny": 16
+        },
+        "maximum_base_energy_residual_w": 2.3037127760972e-15,
+        "maximum_energy_residual_w": 3.2890357104520263e-15,
+        "mismatch_family": "near_matched",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 2.9837243786801082e-15,
+              "iterations": 2,
+              "relative_residual": 2.625787051459369e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": -2.9351521213527576e-15,
+              "iterations": 2,
+              "relative_residual": 2.6154191981291154e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 2.6020852139652106e-15,
+              "iterations": 2,
+              "relative_residual": 2.623071461653082e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": -3.2890357104520263e-15,
+              "iterations": 2,
+              "relative_residual": 2.6100108088978345e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.05924945811008701,
+          "plus": 0.05924875024487615
+        },
+        "relative_difference": 4.872398630928053e-09,
+        "side_multiplier": 1.0
+      },
+      {
+        "absolute_difference_w_per_epsilon": 3.651436791818341e-13,
+        "adjoint_pair_dQc_w_per_epsilon": -0.00021225006367321143,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.006021150319411037,
+            "total_w_per_epsilon": -0.006021150319411037
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.0058089002557378255,
+            "total_w_per_epsilon": 0.0058089002557378255
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 0.0003,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "constant_gamma",
+          "name": "constant_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.0002122500640383551,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 384,
+          "nx": 24,
+          "ny": 16
+        },
+        "maximum_base_energy_residual_w": 1.824929096727601e-15,
+        "maximum_energy_residual_w": 1.824929096727601e-15,
+        "mismatch_family": "near_matched",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -3.0531133177191805e-16,
+              "iterations": 2,
+              "relative_residual": 2.038322580006775e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": -9.08995101411847e-16,
+              "iterations": 2,
+              "relative_residual": 1.6780282938935904e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 1.3183898417423734e-16,
+              "iterations": 2,
+              "relative_residual": 2.0175416731017996e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": -6.38378239159465e-16,
+              "iterations": 2,
+              "relative_residual": 1.67861047168099e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.07534665915862412,
+          "plus": 0.07534623465849605
+        },
+        "relative_difference": 1.7203466178649714e-09,
+        "side_multiplier": 4.0
+      },
+      {
+        "absolute_difference_w_per_epsilon": 2.8052334760664266e-12,
+        "adjoint_pair_dQc_w_per_epsilon": -0.0004607473169089323,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.009421083539162219,
+            "total_w_per_epsilon": -0.009421083539162219
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.008960336222253286,
+            "total_w_per_epsilon": 0.008960336222253286
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 1e-06,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "linear_gamma",
+          "name": "linear_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.00046074731410369885,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 384,
+          "nx": 24,
+          "ny": 16
+        },
+        "maximum_base_energy_residual_w": 5.273559366969494e-16,
+        "maximum_energy_residual_w": 8.257283745649602e-16,
+        "mismatch_family": "near_matched",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -4.85722573273506e-17,
+              "iterations": 2,
+              "relative_residual": 3.4500620888132184e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": -5.759281940243e-16,
+              "iterations": 2,
+              "relative_residual": 3.6368041525082643e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 8.326672684688674e-17,
+              "iterations": 2,
+              "relative_residual": 3.448379437656389e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": -8.257283745649602e-16,
+              "iterations": 2,
+              "relative_residual": 3.6111714223912694e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.0526834929275086,
+          "plus": 0.052682571432880396
+        },
+        "relative_difference": 6.088442348153461e-09,
+        "side_multiplier": 0.25
+      },
+      {
+        "absolute_difference_w_per_epsilon": 1.3921901825808547e-12,
+        "adjoint_pair_dQc_w_per_epsilon": -0.00038402023047012616,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.008516133603360922,
+            "total_w_per_epsilon": -0.008516133603360922
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.008132113372890796,
+            "total_w_per_epsilon": 0.008132113372890796
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 1e-06,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "linear_gamma",
+          "name": "linear_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.000384020229077936,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 384,
+          "nx": 24,
+          "ny": 16
+        },
+        "maximum_base_energy_residual_w": 2.3037127760972e-15,
+        "maximum_energy_residual_w": 3.0531133177191805e-15,
+        "mismatch_family": "near_matched",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 2.400857290751901e-15,
+              "iterations": 2,
+              "relative_residual": 3.1321185328346035e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": -3.0531133177191805e-15,
+              "iterations": 2,
+              "relative_residual": 3.054879488636555e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 2.5326962749261384e-15,
+              "iterations": 2,
+              "relative_residual": 3.157750531591297e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": -2.7755575615628914e-15,
+              "iterations": 2,
+              "relative_residual": 3.0495152651439365e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.059249487952892095,
+          "plus": 0.05924871991243394
+        },
+        "relative_difference": 3.6253042733621203e-09,
+        "side_multiplier": 1.0
+      },
+      {
+        "absolute_difference_w_per_epsilon": 5.004321609880513e-13,
+        "adjoint_pair_dQc_w_per_epsilon": -0.00022483989025379267,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.006308095903520646,
+            "total_w_per_epsilon": -0.006308095903520646
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.006083256013266853,
+            "total_w_per_epsilon": 0.006083256013266853
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 1e-06,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "linear_gamma",
+          "name": "linear_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.00022483989075422484,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 384,
+          "nx": 24,
+          "ny": 16
+        },
+        "maximum_base_energy_residual_w": 1.824929096727601e-15,
+        "maximum_energy_residual_w": 1.824929096727601e-15,
+        "mismatch_family": "near_matched",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -3.3306690738754696e-16,
+              "iterations": 2,
+              "relative_residual": 2.4034021910241492e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": -7.077671781985373e-16,
+              "iterations": 2,
+              "relative_residual": 1.9554425306786792e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 1.1102230246251565e-16,
+              "iterations": 2,
+              "relative_residual": 2.3989003807571935e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": -7.563394355258879e-16,
+              "iterations": 2,
+              "relative_residual": 1.9301537694570026e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.07534667158624038,
+          "plus": 0.07534622190645887
+        },
+        "relative_difference": 2.2257267623782336e-09,
+        "side_multiplier": 4.0
+      },
+      {
+        "absolute_difference_w_per_epsilon": 4.9219560718793964e-12,
+        "adjoint_pair_dQc_w_per_epsilon": -0.000457302714281853,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.006679836428586069,
+            "total_w_per_epsilon": -0.006679836428586069
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.006222533714304216,
+            "total_w_per_epsilon": 0.006222533714304216
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 1.4e-06,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "localized_gamma",
+          "name": "localized_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.0004573027093598969,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 384,
+          "nx": 24,
+          "ny": 16
+        },
+        "maximum_base_energy_residual_w": 5.273559366969494e-16,
+        "maximum_energy_residual_w": 6.661338147750939e-16,
+        "mismatch_family": "near_matched",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 1.6653345369377348e-16,
+              "iterations": 2,
+              "relative_residual": 4.1556521882888427e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": -5.204170427930421e-16,
+              "iterations": 2,
+              "relative_residual": 4.2905881215798455e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 3.8163916471489756e-16,
+              "iterations": 2,
+              "relative_residual": 3.981458342896667e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": -6.661338147750939e-16,
+              "iterations": 2,
+              "relative_residual": 3.775830450167326e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.05268348950623553,
+          "plus": 0.05268257490081681
+        },
+        "relative_difference": 1.076301521544394e-08,
+        "side_multiplier": 0.25
+      },
+      {
+        "absolute_difference_w_per_epsilon": 1.4786461985383248e-12,
+        "adjoint_pair_dQc_w_per_epsilon": -0.0003729292984637157,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.005801502541574681,
+            "total_w_per_epsilon": -0.005801502541574681
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.005428573243110965,
+            "total_w_per_epsilon": 0.005428573243110965
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 1.4e-06,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "localized_gamma",
+          "name": "localized_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.0003729292969850695,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 384,
+          "nx": 24,
+          "ny": 16
+        },
+        "maximum_base_energy_residual_w": 2.3037127760972e-15,
+        "maximum_energy_residual_w": 3.1780134079895106e-15,
+        "mismatch_family": "near_matched",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 2.4841240175987878e-15,
+              "iterations": 2,
+              "relative_residual": 3.816964467914265e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": -2.9976021664879227e-15,
+              "iterations": 2,
+              "relative_residual": 3.5753256349617675e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 2.5396351688300456e-15,
+              "iterations": 2,
+              "relative_residual": 3.6011133115103913e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": -3.1780134079895106e-15,
+              "iterations": 2,
+              "relative_residual": 3.408577312228149e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.05924947692382695,
+          "plus": 0.05924873106523298
+        },
+        "relative_difference": 3.964950473533767e-09,
+        "side_multiplier": 1.0
+      },
+      {
+        "absolute_difference_w_per_epsilon": 2.707957122427551e-12,
+        "adjoint_pair_dQc_w_per_epsilon": -0.0001714522115999085,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.003776554900498612,
+            "total_w_per_epsilon": -0.003776554900498612
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.0036051026888987035,
+            "total_w_per_epsilon": 0.0036051026888987035
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 1.4e-06,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "localized_gamma",
+          "name": "localized_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.00017145221430786561,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 384,
+          "nx": 24,
+          "ny": 16
+        },
+        "maximum_base_energy_residual_w": 1.824929096727601e-15,
+        "maximum_energy_residual_w": 1.824929096727601e-15,
+        "mismatch_family": "near_matched",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -2.1510571102112408e-16,
+              "iterations": 2,
+              "relative_residual": 2.9092718835034e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": -7.008282842946301e-16,
+              "iterations": 2,
+              "relative_residual": 2.297916355466076e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 6.938893903907228e-18,
+              "iterations": 2,
+              "relative_residual": 2.794550069562306e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": -7.979727989493313e-16,
+              "iterations": 2,
+              "relative_residual": 2.4200098451028965e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.07534661841271711,
+          "plus": 0.0753462755082885
+        },
+        "relative_difference": 1.5794238506218235e-08,
+        "side_multiplier": 4.0
+      },
+      {
+        "absolute_difference_w_per_epsilon": 5.588860971239562e-12,
+        "adjoint_pair_dQc_w_per_epsilon": -0.001274774401378435,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.00945259912929671,
+            "total_w_per_epsilon": -0.00945259912929671
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.008177824727918274,
+            "total_w_per_epsilon": 0.008177824727918274
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 0.0003,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "constant_gamma",
+          "name": "constant_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.001274774395789574,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 384,
+          "nx": 24,
+          "ny": 16
+        },
+        "maximum_base_energy_residual_w": 3.6290415117434804e-15,
+        "maximum_energy_residual_w": 3.6290415117434804e-15,
+        "mismatch_family": "property_contrast",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 4.0245584642661925e-16,
+              "iterations": 2,
+              "relative_residual": 2.073548078796096e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 2.8380076066980564e-15,
+              "iterations": 2,
+              "relative_residual": 6.800545162057058e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 9.71445146547012e-17,
+              "iterations": 2,
+              "relative_residual": 2.063604435134623e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 2.5951463200613034e-15,
+              "iterations": 2,
+              "relative_residual": 6.81310668920449e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.049300583067500146,
+          "plus": 0.04929803351870857
+        },
+        "relative_difference": 4.3841961096773144e-09,
+        "side_multiplier": 0.25
+      },
+      {
+        "absolute_difference_w_per_epsilon": 8.706542431458075e-13,
+        "adjoint_pair_dQc_w_per_epsilon": -0.0010266251530137056,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.00847784726679707,
+            "total_w_per_epsilon": -0.00847784726679707
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.007451222113783365,
+            "total_w_per_epsilon": 0.007451222113783365
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 0.0003,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "constant_gamma",
+          "name": "constant_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.0010266251521430514,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 384,
+          "nx": 24,
+          "ny": 16
+        },
+        "maximum_base_energy_residual_w": 1.5404344466674047e-15,
+        "maximum_energy_residual_w": 2.525757381022231e-15,
+        "mismatch_family": "property_contrast",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 1.8457457784393227e-15,
+              "iterations": 2,
+              "relative_residual": 1.9076245508622878e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 2.3869795029440866e-15,
+              "iterations": 2,
+              "relative_residual": 5.546328521518078e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 2.463307335887066e-15,
+              "iterations": 2,
+              "relative_residual": 1.9244579256745054e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 2.525757381022231e-15,
+              "iterations": 2,
+              "relative_residual": 5.5423954369087646e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.05638256113548749,
+          "plus": 0.0563805078851832
+        },
+        "relative_difference": 8.480741394168667e-10,
+        "side_multiplier": 1.0
+      },
+      {
+        "absolute_difference_w_per_epsilon": 5.046532636221457e-12,
+        "adjoint_pair_dQc_w_per_epsilon": -0.0005345728427608026,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.0061659074745858185,
+            "total_w_per_epsilon": -0.0061659074745858185
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.005631334631825016,
+            "total_w_per_epsilon": 0.005631334631825016
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 0.0003,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "constant_gamma",
+          "name": "constant_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.0005345728478073353,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 384,
+          "nx": 24,
+          "ny": 16
+        },
+        "maximum_base_energy_residual_w": 2.345346139520643e-15,
+        "maximum_energy_residual_w": 3.622102617839573e-15,
+        "mismatch_family": "property_contrast",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 1.3877787807814457e-17,
+              "iterations": 2,
+              "relative_residual": 1.5310737524856483e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 3.622102617839573e-15,
+              "iterations": 2,
+              "relative_residual": 3.147971179182506e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 4.163336342344337e-16,
+              "iterations": 2,
+              "relative_residual": 1.526794379765703e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 3.5110803153770576e-15,
+              "iterations": 2,
+              "relative_residual": 3.152741420655902e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.07357515052340591,
+          "plus": 0.0735740813777103
+        },
+        "relative_difference": 9.440308658701456e-09,
+        "side_multiplier": 4.0
+      },
+      {
+        "absolute_difference_w_per_epsilon": 3.718319055434627e-12,
+        "adjoint_pair_dQc_w_per_epsilon": -0.0013976014676111027,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.01002944418268106,
+            "total_w_per_epsilon": -0.01002944418268106
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.008631842715069957,
+            "total_w_per_epsilon": 0.008631842715069957
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 1e-06,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "linear_gamma",
+          "name": "linear_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.0013976014638927836,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 384,
+          "nx": 24,
+          "ny": 16
+        },
+        "maximum_base_energy_residual_w": 3.6290415117434804e-15,
+        "maximum_energy_residual_w": 3.6290415117434804e-15,
+        "mismatch_family": "property_contrast",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 5.342948306008566e-16,
+              "iterations": 2,
+              "relative_residual": 2.4644202451699357e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 2.8935187579293142e-15,
+              "iterations": 2,
+              "relative_residual": 8.045317071992299e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 1.3183898417423734e-16,
+              "iterations": 2,
+              "relative_residual": 2.4840214215764363e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 2.2898349882893854e-15,
+              "iterations": 2,
+              "relative_residual": 8.015008904325312e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.04930070560134133,
+          "plus": 0.049297910398413546
+        },
+        "relative_difference": 2.660500251041013e-09,
+        "side_multiplier": 0.25
+      },
+      {
+        "absolute_difference_w_per_epsilon": 1.9598923178820726e-12,
+        "adjoint_pair_dQc_w_per_epsilon": -0.0011160956123610465,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.00896204443759806,
+            "total_w_per_epsilon": -0.00896204443759806
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.007845948825237014,
+            "total_w_per_epsilon": 0.007845948825237014
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 1e-06,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "linear_gamma",
+          "name": "linear_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.0011160956143209388,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 384,
+          "nx": 24,
+          "ny": 16
+        },
+        "maximum_base_energy_residual_w": 1.5404344466674047e-15,
+        "maximum_energy_residual_w": 2.581268532253489e-15,
+        "mismatch_family": "property_contrast",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 2.0122792321330962e-15,
+              "iterations": 2,
+              "relative_residual": 2.2873171299728453e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 2.3037127760972e-15,
+              "iterations": 2,
+              "relative_residual": 6.484521880564771e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 2.581268532253489e-15,
+              "iterations": 2,
+              "relative_residual": 2.2871924411654522e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 2.5118795932144167e-15,
+              "iterations": 2,
+              "relative_residual": 6.465702442821661e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.05638265035450554,
+          "plus": 0.0563804181632769
+        },
+        "relative_difference": 1.756025466076347e-09,
+        "side_multiplier": 1.0
+      },
+      {
+        "absolute_difference_w_per_epsilon": 7.865432263831629e-12,
+        "adjoint_pair_dQc_w_per_epsilon": -0.0005636786021520051,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.0064592257953194,
+            "total_w_per_epsilon": -0.0064592257953194
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.0058955471931673945,
+            "total_w_per_epsilon": 0.0058955471931673945
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 1e-06,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "linear_gamma",
+          "name": "linear_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.0005636786100174374,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 384,
+          "nx": 24,
+          "ny": 16
+        },
+        "maximum_base_energy_residual_w": 2.345346139520643e-15,
+        "maximum_energy_residual_w": 3.760880495917718e-15,
+        "mismatch_family": "property_contrast",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -6.938893903907228e-18,
+              "iterations": 2,
+              "relative_residual": 1.8150918131353752e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 3.760880495917718e-15,
+              "iterations": 2,
+              "relative_residual": 3.634549246535091e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 1.249000902703301e-16,
+              "iterations": 2,
+              "relative_residual": 1.8264687886084517e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 3.2612801348363973e-15,
+              "iterations": 2,
+              "relative_residual": 3.644310942755421e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.07357517946872359,
+          "plus": 0.07357405211150356
+        },
+        "relative_difference": 1.3953753493219506e-08,
+        "side_multiplier": 4.0
+      },
+      {
+        "absolute_difference_w_per_epsilon": 1.0871692435188152e-11,
+        "adjoint_pair_dQc_w_per_epsilon": -0.001378376535401793,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.007279336286483601,
+            "total_w_per_epsilon": -0.007279336286483601
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.005900959751081808,
+            "total_w_per_epsilon": 0.005900959751081808
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 1.4e-06,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "localized_gamma",
+          "name": "localized_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.0013783765245301005,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 384,
+          "nx": 24,
+          "ny": 16
+        },
+        "maximum_base_energy_residual_w": 3.6290415117434804e-15,
+        "maximum_energy_residual_w": 3.6290415117434804e-15,
+        "mismatch_family": "property_contrast",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -1.3877787807814457e-17,
+              "iterations": 2,
+              "relative_residual": 2.938951153194078e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 2.761679773755077e-15,
+              "iterations": 2,
+              "relative_residual": 9.331137805727586e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -2.0816681711721685e-17,
+              "iterations": 2,
+              "relative_residual": 2.8096629377163962e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 2.615963001773025e-15,
+              "iterations": 2,
+              "relative_residual": 8.341379910766637e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.04930068643044809,
+          "plus": 0.04929792967739903
+        },
+        "relative_difference": 7.887316822336274e-09,
+        "side_multiplier": 0.25
+      },
+      {
+        "absolute_difference_w_per_epsilon": 2.4205706883329015e-12,
+        "adjoint_pair_dQc_w_per_epsilon": -0.0010848295753211543,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.006243363071145629,
+            "total_w_per_epsilon": -0.006243363071145629
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.005158533495824475,
+            "total_w_per_epsilon": 0.005158533495824475
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 1.4e-06,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "localized_gamma",
+          "name": "localized_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.001084829577741725,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 384,
+          "nx": 24,
+          "ny": 16
+        },
+        "maximum_base_energy_residual_w": 1.5404344466674047e-15,
+        "maximum_energy_residual_w": 3.0531133177191805e-15,
+        "mismatch_family": "property_contrast",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 3.0531133177191805e-15,
+              "iterations": 2,
+              "relative_residual": 2.7362043757759797e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 2.3592239273284576e-15,
+              "iterations": 2,
+              "relative_residual": 7.539882955973761e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 2.643718577388654e-15,
+              "iterations": 2,
+              "relative_residual": 2.6127432675790947e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 2.55351295663786e-15,
+              "iterations": 2,
+              "relative_residual": 6.840117187035979e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.05638261915115618,
+          "plus": 0.056380449492000696
+        },
+        "relative_difference": 2.231291203151714e-09,
+        "side_multiplier": 1.0
+      },
+      {
+        "absolute_difference_w_per_epsilon": 1.594164990986746e-11,
+        "adjoint_pair_dQc_w_per_epsilon": -0.0004029988247595132,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.0038721058341986575,
+            "total_w_per_epsilon": -0.0038721058341986575
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.0034691070094391443,
+            "total_w_per_epsilon": 0.0034691070094391443
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 1.4e-06,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "localized_gamma",
+          "name": "localized_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.0004029988407011631,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 384,
+          "nx": 24,
+          "ny": 16
+        },
+        "maximum_base_energy_residual_w": 2.345346139520643e-15,
+        "maximum_energy_residual_w": 3.670674875166924e-15,
+        "mismatch_family": "property_contrast",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 1.5265566588595902e-16,
+              "iterations": 2,
+              "relative_residual": 2.1768277404174954e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 3.670674875166924e-15,
+              "iterations": 2,
+              "relative_residual": 4.1519840021543684e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 1.249000902703301e-16,
+              "iterations": 2,
+              "relative_residual": 2.0778645737942583e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 3.2959746043559335e-15,
+              "iterations": 2,
+              "relative_residual": 3.7328871845088707e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.07357501898725685,
+          "plus": 0.07357421298957545
+        },
+        "relative_difference": 3.955755930400178e-08,
+        "side_multiplier": 4.0
+      },
+      {
+        "absolute_difference_w_per_epsilon": 7.283049163753219e-12,
+        "adjoint_pair_dQc_w_per_epsilon": -0.0004899748537533083,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.009030256623465223,
+            "total_w_per_epsilon": -0.009030256623465223
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.008540281769711914,
+            "total_w_per_epsilon": 0.008540281769711914
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 0.0003,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "constant_gamma",
+          "name": "constant_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.0004899748464702591,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 384,
+          "nx": 24,
+          "ny": 16
+        },
+        "maximum_base_energy_residual_w": 4.0245584642661925e-15,
+        "maximum_energy_residual_w": 4.0245584642661925e-15,
+        "mismatch_family": "geometry_property_contrast",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 4.510281037539698e-16,
+              "iterations": 2,
+              "relative_residual": 9.599991609639244e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 1.1310397063368782e-15,
+              "iterations": 2,
+              "relative_residual": 5.916172825839426e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 3.608224830031759e-16,
+              "iterations": 2,
+              "relative_residual": 9.617865945208877e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 1.1310397063368782e-15,
+              "iterations": 2,
+              "relative_residual": 5.91739532844172e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.058500793426720245,
+          "plus": 0.058499813477027304
+        },
+        "relative_difference": 1.4864128450600194e-08,
+        "side_multiplier": 0.25
+      },
+      {
+        "absolute_difference_w_per_epsilon": 1.0857462498514714e-11,
+        "adjoint_pair_dQc_w_per_epsilon": -0.001375191226225295,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.008556274757101353,
+            "total_w_per_epsilon": -0.008556274757101353
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.007181083530876058,
+            "total_w_per_epsilon": 0.007181083530876058
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 0.0003,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "constant_gamma",
+          "name": "constant_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.0013751912153678325,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 384,
+          "nx": 24,
+          "ny": 16
+        },
+        "maximum_base_energy_residual_w": 1.0685896612017132e-15,
+        "maximum_energy_residual_w": 1.9290125052862095e-15,
+        "mismatch_family": "geometry_property_contrast",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -1.8735013540549517e-15,
+              "iterations": 2,
+              "relative_residual": 7.164927688028526e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 2.220446049250313e-16,
+              "iterations": 2,
+              "relative_residual": 5.447750139745122e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -1.9290125052862095e-15,
+              "iterations": 2,
+              "relative_residual": 7.153816572386157e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 6.938893903907228e-18,
+              "iterations": 2,
+              "relative_residual": 5.451761902583739e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.06509137733373328,
+          "plus": 0.06508862695130255
+        },
+        "relative_difference": 7.895238343191666e-09,
+        "side_multiplier": 1.0
+      },
+      {
+        "absolute_difference_w_per_epsilon": 1.1037422711912548e-11,
+        "adjoint_pair_dQc_w_per_epsilon": -0.002921915447628017,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.007256109232052594,
+            "total_w_per_epsilon": -0.007256109232052594
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.0043341937844245775,
+            "total_w_per_epsilon": 0.0043341937844245775
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 0.0003,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "constant_gamma",
+          "name": "constant_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.002921915436590594,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 384,
+          "nx": 24,
+          "ny": 16
+        },
+        "maximum_base_energy_residual_w": 6.522560269672795e-16,
+        "maximum_energy_residual_w": 5.447031714567174e-15,
+        "mismatch_family": "geometry_property_contrast",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -5.447031714567174e-15,
+              "iterations": 2,
+              "relative_residual": 4.8466940891566584e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 1.1726730697603216e-15,
+              "iterations": 2,
+              "relative_residual": 4.3990104584941873e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -5.2735593669694936e-15,
+              "iterations": 2,
+              "relative_residual": 4.853628455465084e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 6.245004513516506e-16,
+              "iterations": 2,
+              "relative_residual": 4.3958013445230136e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.08034636567760789,
+          "plus": 0.08034052184673471
+        },
+        "relative_difference": 3.777461363870957e-09,
+        "side_multiplier": 4.0
+      },
+      {
+        "absolute_difference_w_per_epsilon": 1.0269136235807608e-11,
+        "adjoint_pair_dQc_w_per_epsilon": -0.0005346335151183608,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.009564271188476137,
+            "total_w_per_epsilon": -0.009564271188476137
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.009029637673357776,
+            "total_w_per_epsilon": 0.009029637673357776
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 1e-06,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "linear_gamma",
+          "name": "linear_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.0005346335048492246,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 384,
+          "nx": 24,
+          "ny": 16
+        },
+        "maximum_base_energy_residual_w": 4.0245584642661925e-15,
+        "maximum_energy_residual_w": 4.0245584642661925e-15,
+        "mismatch_family": "geometry_property_contrast",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 9.71445146547012e-17,
+              "iterations": 2,
+              "relative_residual": 1.1284014086654321e-13
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 1.1379786002407855e-15,
+              "iterations": 2,
+              "relative_residual": 6.986592286038137e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 3.8163916471489756e-16,
+              "iterations": 2,
+              "relative_residual": 1.1298627883855589e-13
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 9.08995101411847e-16,
+              "iterations": 2,
+              "relative_residual": 6.958294812094236e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.05850083775166137,
+          "plus": 0.058499768484651674
+        },
+        "relative_difference": 1.9207804870845323e-08,
+        "side_multiplier": 0.25
+      },
+      {
+        "absolute_difference_w_per_epsilon": 1.3750490329700327e-11,
+        "adjoint_pair_dQc_w_per_epsilon": -0.0014929010174306485,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.009046322198271974,
+            "total_w_per_epsilon": -0.009046322198271974
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.007553421180841326,
+            "total_w_per_epsilon": 0.007553421180841326
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 1e-06,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "linear_gamma",
+          "name": "linear_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.0014929010036801582,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 384,
+          "nx": 24,
+          "ny": 16
+        },
+        "maximum_base_energy_residual_w": 1.0685896612017132e-15,
+        "maximum_energy_residual_w": 1.970645868709653e-15,
+        "mismatch_family": "geometry_property_contrast",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -1.6930901125533637e-15,
+              "iterations": 2,
+              "relative_residual": 8.589501341258672e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": -1.8041124150158794e-16,
+              "iterations": 2,
+              "relative_residual": 6.393268903311926e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -1.970645868709653e-15,
+              "iterations": 2,
+              "relative_residual": 8.598180237303853e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 1.457167719820518e-16,
+              "iterations": 2,
+              "relative_residual": 6.35187955957393e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.06509149476175571,
+          "plus": 0.06508850895974835
+        },
+        "relative_difference": 9.210584070312682e-09,
+        "side_multiplier": 1.0
+      },
+      {
+        "absolute_difference_w_per_epsilon": 1.1254209369981893e-11,
+        "adjoint_pair_dQc_w_per_epsilon": -0.003125500286845651,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.007634833343375308,
+            "total_w_per_epsilon": -0.007634833343375308
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.004509333056529657,
+            "total_w_per_epsilon": 0.004509333056529657
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 1e-06,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "linear_gamma",
+          "name": "linear_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.003125500275591442,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 384,
+          "nx": 24,
+          "ny": 16
+        },
+        "maximum_base_energy_residual_w": 6.522560269672795e-16,
+        "maximum_energy_residual_w": 5.336009412104659e-15,
+        "mismatch_family": "geometry_property_contrast",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -5.169475958410885e-15,
+              "iterations": 2,
+              "relative_residual": 5.770036198940218e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 9.645062526431047e-16,
+              "iterations": 2,
+              "relative_residual": 5.1140083515799165e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -5.336009412104659e-15,
+              "iterations": 2,
+              "relative_residual": 5.765551844422126e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 9.298117831235686e-16,
+              "iterations": 2,
+              "relative_residual": 5.086146264179914e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.08034656908238966,
+          "plus": 0.08034031808183847
+        },
+        "relative_difference": 3.6007705445901527e-09,
+        "side_multiplier": 4.0
+      },
+      {
+        "absolute_difference_w_per_epsilon": 1.4233702758104094e-11,
+        "adjoint_pair_dQc_w_per_epsilon": -0.0005299713697635485,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.006826961849404217,
+            "total_w_per_epsilon": -0.006826961849404217
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.006296990479640669,
+            "total_w_per_epsilon": 0.006296990479640669
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 1.4e-06,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "localized_gamma",
+          "name": "localized_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.0005299713555298458,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 384,
+          "nx": 24,
+          "ny": 16
+        },
+        "maximum_base_energy_residual_w": 4.0245584642661925e-15,
+        "maximum_energy_residual_w": 4.0245584642661925e-15,
+        "mismatch_family": "geometry_property_contrast",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 1.457167719820518e-16,
+              "iterations": 2,
+              "relative_residual": 1.257796306861339e-13
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 1.1032841307212493e-15,
+              "iterations": 2,
+              "relative_residual": 8.202458478080109e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 3.469446951953614e-16,
+              "iterations": 2,
+              "relative_residual": 1.2901454901621603e-13
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 1.1449174941446927e-15,
+              "iterations": 2,
+              "relative_residual": 7.375104926982271e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.058500833129173375,
+          "plus": 0.058499773186462316
+        },
+        "relative_difference": 2.685749376320949e-08,
+        "side_multiplier": 0.25
+      },
+      {
+        "absolute_difference_w_per_epsilon": 2.008982129958481e-11,
+        "adjoint_pair_dQc_w_per_epsilon": -0.0014408706308591838,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.0063201018687913954,
+            "total_w_per_epsilon": -0.0063201018687913954
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.004879231237932212,
+            "total_w_per_epsilon": 0.004879231237932212
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 1.4e-06,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "localized_gamma",
+          "name": "localized_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.0014408706107693625,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 384,
+          "nx": 24,
+          "ny": 16
+        },
+        "maximum_base_energy_residual_w": 1.0685896612017132e-15,
+        "maximum_energy_residual_w": 1.8110513089197866e-15,
+        "mismatch_family": "geometry_property_contrast",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -1.457167719820518e-15,
+              "iterations": 2,
+              "relative_residual": 1.0402866049938298e-13
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 4.163336342344337e-17,
+              "iterations": 2,
+              "relative_residual": 7.360686205826196e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -1.8110513089197866e-15,
+              "iterations": 2,
+              "relative_residual": 9.903529576018655e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 6.245004513516506e-17,
+              "iterations": 2,
+              "relative_residual": 6.610167832801354e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.0650914428079161,
+          "plus": 0.06508856106669456
+        },
+        "relative_difference": 1.3942834886991451e-08,
+        "side_multiplier": 1.0
+      },
+      {
+        "absolute_difference_w_per_epsilon": 1.199864860246258e-12,
+        "adjoint_pair_dQc_w_per_epsilon": -0.002656668359670442,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.004956984551976915,
+            "total_w_per_epsilon": -0.004956984551976915
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.002300316192306473,
+            "total_w_per_epsilon": 0.002300316192306473
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 1.4e-06,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "localized_gamma",
+          "name": "localized_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.0026566683608703068,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 384,
+          "nx": 24,
+          "ny": 16
+        },
+        "maximum_base_energy_residual_w": 6.522560269672795e-16,
+        "maximum_energy_residual_w": 5.412337245047638e-15,
+        "mismatch_family": "geometry_property_contrast",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -5.412337245047638e-15,
+              "iterations": 2,
+              "relative_residual": 6.822644356688751e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 9.71445146547012e-16,
+              "iterations": 2,
+              "relative_residual": 5.715633173216691e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -5.10702591327572e-15,
+              "iterations": 2,
+              "relative_residual": 6.622577839340858e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 1.0061396160665481e-15,
+              "iterations": 2,
+              "relative_residual": 5.173469488683099e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.08034610049054847,
+          "plus": 0.08034078715382673
+        },
+        "relative_difference": 4.5164269596491923e-10,
+        "side_multiplier": 4.0
+      }
+    ],
+    "design": {
+      "gamma_bases": [
+        "constant_Gamma",
+        "linear_Gamma",
+        "localized_Gamma"
+      ],
+      "gamma_basis_definitions": {
+        "constant_Gamma": "Gamma(T)=gamma0; m(T)=gamma0*ln(T/T0)",
+        "linear_Gamma": "Gamma(T)=b*T; m(T)=b*(T-T0)",
+        "localized_Gamma": "Gamma(T)=b*T*exp[-(T-Tstar)^2/(2*w^2)]; m(T) is its anchored Gaussian integral"
+      },
+      "mismatch_families": [
+        "near_matched",
+        "property_contrast",
+        "geometry_property_contrast"
+      ],
+      "mismatch_family_definitions_at_side_multiplier_1": {
+        "geometry_property_contrast": {
+          "n": {
+            "depth_m": 0.00066,
+            "k0_w_per_mk": 0.71,
+            "length_m": 0.00084,
+            "rho0_ohm_m": 2.25e-05,
+            "seebeck_base_slope_v_per_k2": -4.6e-07,
+            "side_h_bottom_w_per_m2k": 190.0,
+            "side_h_top_w_per_m2k": 340.0,
+            "width_m": 0.00098
+          },
+          "p": {
+            "depth_m": 0.00072,
+            "k0_w_per_mk": 1.62,
+            "length_m": 0.00148,
+            "rho0_ohm_m": 1.02e-05,
+            "seebeck_base_slope_v_per_k2": 6.5e-07,
+            "side_h_bottom_w_per_m2k": 75.0,
+            "side_h_top_w_per_m2k": 650.0,
+            "width_m": 0.00062
+          }
+        },
+        "near_matched": {
+          "n": {
+            "depth_m": 0.0008,
+            "k0_w_per_mk": 1.08,
+            "length_m": 0.0012,
+            "rho0_ohm_m": 1.45e-05,
+            "seebeck_base_slope_v_per_k2": -3.2e-07,
+            "side_h_bottom_w_per_m2k": 115.0,
+            "side_h_top_w_per_m2k": 450.0,
+            "width_m": 0.0008
+          },
+          "p": {
+            "depth_m": 0.0008,
+            "k0_w_per_mk": 1.18,
+            "length_m": 0.0012,
+            "rho0_ohm_m": 1.3e-05,
+            "seebeck_base_slope_v_per_k2": 4.5e-07,
+            "side_h_bottom_w_per_m2k": 100.0,
+            "side_h_top_w_per_m2k": 480.0,
+            "width_m": 0.0008
+          }
+        },
+        "property_contrast": {
+          "n": {
+            "depth_m": 0.0008,
+            "k0_w_per_mk": 0.92,
+            "length_m": 0.0012,
+            "rho0_ohm_m": 1.88e-05,
+            "seebeck_base_slope_v_per_k2": -3.8e-07,
+            "side_h_bottom_w_per_m2k": 145.0,
+            "side_h_top_w_per_m2k": 410.0,
+            "width_m": 0.0008
+          },
+          "p": {
+            "depth_m": 0.0008,
+            "k0_w_per_mk": 1.42,
+            "length_m": 0.0012,
+            "rho0_ohm_m": 1.18e-05,
+            "seebeck_base_slope_v_per_k2": 5.5e-07,
+            "side_h_bottom_w_per_m2k": 95.0,
+            "side_h_top_w_per_m2k": 570.0,
+            "width_m": 0.0008
+          }
+        }
+      },
+      "sidewall_coupling_multipliers": [
+        0.25,
+        1.0,
+        4.0
+      ],
+      "total_cases": 27
+    },
+    "worst_adjoint_finite_difference_relative_error": 3.955755930400178e-08,
+    "worst_energy_residual_w": 5.447031714567174e-15
+  },
+  "figure_metadata": {
+    "backend": "Python/matplotlib only",
+    "core_conclusion": "A conservative heterogeneous 2-D model preserves the exact null and split-pad law while independently converging to the adjoint Gamma response.",
+    "evidence_chain": {
+      "a": "non-1-D temperature and current field",
+      "b": "2-D adjoint collection field",
+      "c": "three-Gamma-basis adjoint/finite-difference grid convergence",
+      "d": "27-case matrix, null, topology, and energy closure errors"
+    },
+    "export": "183-mm double-column SVG/PDF plus 600-dpi TIFF and 300-dpi PNG preview",
+    "layout": "quantitative grid with an emphasized field map",
+    "limitations": [
+      "deterministic numerical evidence has no replicate statistics",
+      "model limitations accompany the supported interpretation",
+      "log-scale closure errors must not be interpreted as experimental accuracy"
+    ]
+  },
+  "grid_convergence": [
+    {
+      "absolute_difference_w_per_epsilon": 1.5441987966102744e-12,
+      "adjoint_pair_dQc_w_per_epsilon": -0.001112730506728759,
+      "branch_adjoint": {
+        "n": {
+          "direct_w_per_epsilon": 0.0,
+          "field_w_per_epsilon": -0.008959885256958885,
+          "total_w_per_epsilon": -0.008959885256958885
+        },
+        "p": {
+          "direct_w_per_epsilon": 0.0,
+          "field_w_per_epsilon": 0.007847154750230127,
+          "total_w_per_epsilon": 0.007847154750230127
+        }
+      },
+      "common_mode_basis": {
+        "amplitude": 1e-06,
+        "anchor_k": 300.0,
+        "centre_k": 330.0,
+        "kind": "linear_gamma",
+        "name": "linear_Gamma",
+        "width_k": 12.0
+      },
+      "current_a": 1.1,
+      "endpoint_temperatures_k": {
+        "cold": 300.0,
+        "hot": 350.0
+      },
+      "finite_difference_pair_dQc_w_per_epsilon": -0.0011127305082729577,
+      "finite_difference_step": 0.001,
+      "grid": {
+        "cells_per_branch": 160,
+        "nx": 16,
+        "ny": 10
+      },
+      "maximum_base_energy_residual_w": 2.491062911502695e-15,
+      "maximum_energy_residual_w": 2.491062911502695e-15,
+      "mismatch_family": "property_contrast",
+      "nonlinear_solve_records": {
+        "minus": [
+          {
+            "branch": "p",
+            "energy_residual_w": -1.6167622796103842e-15,
+            "iterations": 2,
+            "relative_residual": 5.0805983451091155e-14
+          },
+          {
+            "branch": "n",
+            "energy_residual_w": -2.2898349882893854e-16,
+            "iterations": 2,
+            "relative_residual": 1.3882736842162451e-13
+          }
+        ],
+        "plus": [
+          {
+            "branch": "p",
+            "energy_residual_w": -1.4710455076283324e-15,
+            "iterations": 2,
+            "relative_residual": 5.1058784389841084e-14
+          },
+          {
+            "branch": "n",
+            "energy_residual_w": -2.7755575615628914e-17,
+            "iterations": 2,
+            "relative_residual": 1.3824185986810901e-13
+          }
+        ]
+      },
+      "pair_qc_w": {
+        "minus": 0.05639564117614942,
+        "plus": 0.05639341571513287
+      },
+      "relative_difference": 1.3877563230920664e-09,
+      "side_multiplier": 1.0
+    },
+    {
+      "absolute_difference_w_per_epsilon": 1.759781556587292e-12,
+      "adjoint_pair_dQc_w_per_epsilon": -0.0011172248809101278,
+      "branch_adjoint": {
+        "n": {
+          "direct_w_per_epsilon": 0.0,
+          "field_w_per_epsilon": -0.008962767099139178,
+          "total_w_per_epsilon": -0.008962767099139178
+        },
+        "p": {
+          "direct_w_per_epsilon": 0.0,
+          "field_w_per_epsilon": 0.00784554221822905,
+          "total_w_per_epsilon": 0.00784554221822905
+        }
+      },
+      "common_mode_basis": {
+        "amplitude": 1e-06,
+        "anchor_k": 300.0,
+        "centre_k": 330.0,
+        "kind": "linear_gamma",
+        "name": "linear_Gamma",
+        "width_k": 12.0
+      },
+      "current_a": 1.1,
+      "endpoint_temperatures_k": {
+        "cold": 300.0,
+        "hot": 350.0
+      },
+      "finite_difference_pair_dQc_w_per_epsilon": -0.0011172248826699094,
+      "finite_difference_step": 0.001,
+      "grid": {
+        "cells_per_branch": 640,
+        "nx": 32,
+        "ny": 20
+      },
+      "maximum_base_energy_residual_w": 2.9698465908722937e-15,
+      "maximum_energy_residual_w": 2.9698465908722937e-15,
+      "mismatch_family": "property_contrast",
+      "nonlinear_solve_records": {
+        "minus": [
+          {
+            "branch": "p",
+            "energy_residual_w": 1.5543122344752192e-15,
+            "iterations": 2,
+            "relative_residual": 1.2940571636779997e-14
+          },
+          {
+            "branch": "n",
+            "energy_residual_w": 2.4494295480792516e-15,
+            "iterations": 2,
+            "relative_residual": 3.688371725576914e-14
+          }
+        ],
+        "plus": [
+          {
+            "branch": "p",
+            "energy_residual_w": 1.6583956430338276e-15,
+            "iterations": 2,
+            "relative_residual": 1.28919453388754e-14
+          },
+          {
+            "branch": "n",
+            "energy_residual_w": 2.609024107869118e-15,
+            "iterations": 2,
+            "relative_residual": 3.668161000435877e-14
+          }
+        ]
+      },
+      "pair_qc_w": {
+        "minus": 0.05637751846105693,
+        "plus": 0.05637528401129159
+      },
+      "relative_difference": 1.5751363818121528e-09,
+      "side_multiplier": 1.0
+    },
+    {
+      "absolute_difference_w_per_epsilon": 1.8391642375714667e-12,
+      "adjoint_pair_dQc_w_per_epsilon": -0.0011182514075936435,
+      "branch_adjoint": {
+        "n": {
+          "direct_w_per_epsilon": 0.0,
+          "field_w_per_epsilon": -0.008963323785809923,
+          "total_w_per_epsilon": -0.008963323785809923
+        },
+        "p": {
+          "direct_w_per_epsilon": 0.0,
+          "field_w_per_epsilon": 0.00784507237821628,
+          "total_w_per_epsilon": 0.00784507237821628
+        }
+      },
+      "common_mode_basis": {
+        "amplitude": 1e-06,
+        "anchor_k": 300.0,
+        "centre_k": 330.0,
+        "kind": "linear_gamma",
+        "name": "linear_Gamma",
+        "width_k": 12.0
+      },
+      "current_a": 1.1,
+      "endpoint_temperatures_k": {
+        "cold": 300.0,
+        "hot": 350.0
+      },
+      "finite_difference_pair_dQc_w_per_epsilon": -0.0011182514094328078,
+      "finite_difference_step": 0.001,
+      "grid": {
+        "cells_per_branch": 2560,
+        "nx": 64,
+        "ny": 40
+      },
+      "maximum_base_energy_residual_w": 1.9290125052862095e-15,
+      "maximum_energy_residual_w": 6.342149028171207e-15,
+      "mismatch_family": "property_contrast",
+      "nonlinear_solve_records": {
+        "minus": [
+          {
+            "branch": "p",
+            "energy_residual_w": -6.342149028171207e-15,
+            "iterations": 2,
+            "relative_residual": 3.367954735302123e-15
+          },
+          {
+            "branch": "n",
+            "energy_residual_w": 9.08995101411847e-16,
+            "iterations": 2,
+            "relative_residual": 9.433452332414475e-15
+          }
+        ],
+        "plus": [
+          {
+            "branch": "p",
+            "energy_residual_w": -5.523359547510154e-15,
+            "iterations": 2,
+            "relative_residual": 3.393688030592814e-15
+          },
+          {
+            "branch": "n",
+            "energy_residual_w": 9.228728892196614e-16,
+            "iterations": 2,
+            "relative_residual": 9.371353838431736e-15
+          }
+        ]
+      },
+      "pair_qc_w": {
+        "minus": 0.05637305605916191,
+        "plus": 0.056370819556343044
+      },
+      "relative_difference": 1.644678669825375e-09,
+      "side_multiplier": 1.0
+    }
+  ],
+  "grid_convergence_by_gamma_basis": {
+    "constant_Gamma": [
+      {
+        "absolute_difference_w_per_epsilon": 1.0658991050904731e-12,
+        "adjoint_pair_dQc_w_per_epsilon": -0.0010231668031755198,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.008474518534535371,
+            "total_w_per_epsilon": -0.008474518534535371
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.007451351731359851,
+            "total_w_per_epsilon": 0.007451351731359851
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 0.0003,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "constant_gamma",
+          "name": "constant_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.0010231668021096207,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 160,
+          "nx": 16,
+          "ny": 10
+        },
+        "maximum_base_energy_residual_w": 2.491062911502695e-15,
+        "maximum_energy_residual_w": 2.491062911502695e-15,
+        "mismatch_family": "property_contrast",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -1.5543122344752192e-15,
+              "iterations": 2,
+              "relative_residual": 4.264296791441914e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": -1.3877787807814457e-17,
+              "iterations": 2,
+              "relative_residual": 1.1734780344672327e-13
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -1.609823385706477e-15,
+              "iterations": 2,
+              "relative_residual": 4.2501832425876266e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": -4.163336342344337e-17,
+              "iterations": 2,
+              "relative_residual": 1.1729755530642514e-13
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.056395551863427235,
+          "plus": 0.056393505529823015
+        },
+        "relative_difference": 1.0417647462587024e-09,
+        "side_multiplier": 1.0
+      },
+      {
+        "absolute_difference_w_per_epsilon": 1.2747875671736963e-12,
+        "adjoint_pair_dQc_w_per_epsilon": -0.0010277910646465122,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.008478987107208241,
+            "total_w_per_epsilon": -0.008478987107208241
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.007451196042561729,
+            "total_w_per_epsilon": 0.007451196042561729
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 0.0003,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "constant_gamma",
+          "name": "constant_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.0010277910633717247,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 640,
+          "nx": 32,
+          "ny": 20
+        },
+        "maximum_base_energy_residual_w": 2.9698465908722937e-15,
+        "maximum_energy_residual_w": 2.9698465908722937e-15,
+        "mismatch_family": "property_contrast",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 1.9012569296705806e-15,
+              "iterations": 2,
+              "relative_residual": 1.0852732573435634e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 2.366162821232365e-15,
+              "iterations": 2,
+              "relative_residual": 3.1337016012988124e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 1.5334955527634975e-15,
+              "iterations": 2,
+              "relative_residual": 1.0835121528393269e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 2.4147350785597155e-15,
+              "iterations": 2,
+              "relative_residual": 3.137518401043386e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.056377429278843545,
+          "plus": 0.0563753736967168
+        },
+        "relative_difference": 1.2403178146057668e-09,
+        "side_multiplier": 1.0
+      },
+      {
+        "absolute_difference_w_per_epsilon": 1.2762794293630364e-12,
+        "adjoint_pair_dQc_w_per_epsilon": -0.001028859080719419,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.008479959882301779,
+            "total_w_per_epsilon": -0.008479959882301779
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.00745110080158236,
+            "total_w_per_epsilon": 0.00745110080158236
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 0.0003,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "constant_gamma",
+          "name": "constant_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.0010288590794431396,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 2560,
+          "nx": 64,
+          "ny": 40
+        },
+        "maximum_base_energy_residual_w": 1.9290125052862095e-15,
+        "maximum_energy_residual_w": 5.537237335317968e-15,
+        "mismatch_family": "property_contrast",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -5.134781488891349e-15,
+              "iterations": 2,
+              "relative_residual": 2.9101597488597146e-15
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 9.992007221626409e-16,
+              "iterations": 2,
+              "relative_residual": 8.02573516471492e-15
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -5.537237335317968e-15,
+              "iterations": 2,
+              "relative_residual": 2.8151327104439338e-15
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 1.0269562977782698e-15,
+              "iterations": 2,
+              "relative_residual": 8.052478289325547e-15
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.056372966918589715,
+          "plus": 0.05637090920043083
+        },
+        "relative_difference": 1.2404803080229523e-09,
+        "side_multiplier": 1.0
+      }
+    ],
+    "linear_Gamma": [
+      {
+        "absolute_difference_w_per_epsilon": 1.5441987966102744e-12,
+        "adjoint_pair_dQc_w_per_epsilon": -0.001112730506728759,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.008959885256958885,
+            "total_w_per_epsilon": -0.008959885256958885
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.007847154750230127,
+            "total_w_per_epsilon": 0.007847154750230127
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 1e-06,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "linear_gamma",
+          "name": "linear_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.0011127305082729577,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 160,
+          "nx": 16,
+          "ny": 10
+        },
+        "maximum_base_energy_residual_w": 2.491062911502695e-15,
+        "maximum_energy_residual_w": 2.491062911502695e-15,
+        "mismatch_family": "property_contrast",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -1.6167622796103842e-15,
+              "iterations": 2,
+              "relative_residual": 5.0805983451091155e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": -2.2898349882893854e-16,
+              "iterations": 2,
+              "relative_residual": 1.3882736842162451e-13
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -1.4710455076283324e-15,
+              "iterations": 2,
+              "relative_residual": 5.1058784389841084e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": -2.7755575615628914e-17,
+              "iterations": 2,
+              "relative_residual": 1.3824185986810901e-13
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.05639564117614942,
+          "plus": 0.05639341571513287
+        },
+        "relative_difference": 1.3877563230920664e-09,
+        "side_multiplier": 1.0
+      },
+      {
+        "absolute_difference_w_per_epsilon": 1.759781556587292e-12,
+        "adjoint_pair_dQc_w_per_epsilon": -0.0011172248809101278,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.008962767099139178,
+            "total_w_per_epsilon": -0.008962767099139178
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.00784554221822905,
+            "total_w_per_epsilon": 0.00784554221822905
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 1e-06,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "linear_gamma",
+          "name": "linear_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.0011172248826699094,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 640,
+          "nx": 32,
+          "ny": 20
+        },
+        "maximum_base_energy_residual_w": 2.9698465908722937e-15,
+        "maximum_energy_residual_w": 2.9698465908722937e-15,
+        "mismatch_family": "property_contrast",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 1.5543122344752192e-15,
+              "iterations": 2,
+              "relative_residual": 1.2940571636779997e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 2.4494295480792516e-15,
+              "iterations": 2,
+              "relative_residual": 3.688371725576914e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 1.6583956430338276e-15,
+              "iterations": 2,
+              "relative_residual": 1.28919453388754e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 2.609024107869118e-15,
+              "iterations": 2,
+              "relative_residual": 3.668161000435877e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.05637751846105693,
+          "plus": 0.05637528401129159
+        },
+        "relative_difference": 1.5751363818121528e-09,
+        "side_multiplier": 1.0
+      },
+      {
+        "absolute_difference_w_per_epsilon": 1.8391642375714667e-12,
+        "adjoint_pair_dQc_w_per_epsilon": -0.0011182514075936435,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.008963323785809923,
+            "total_w_per_epsilon": -0.008963323785809923
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.00784507237821628,
+            "total_w_per_epsilon": 0.00784507237821628
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 1e-06,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "linear_gamma",
+          "name": "linear_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.0011182514094328078,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 2560,
+          "nx": 64,
+          "ny": 40
+        },
+        "maximum_base_energy_residual_w": 1.9290125052862095e-15,
+        "maximum_energy_residual_w": 6.342149028171207e-15,
+        "mismatch_family": "property_contrast",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -6.342149028171207e-15,
+              "iterations": 2,
+              "relative_residual": 3.367954735302123e-15
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 9.08995101411847e-16,
+              "iterations": 2,
+              "relative_residual": 9.433452332414475e-15
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -5.523359547510154e-15,
+              "iterations": 2,
+              "relative_residual": 3.393688030592814e-15
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 9.228728892196614e-16,
+              "iterations": 2,
+              "relative_residual": 9.371353838431736e-15
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.05637305605916191,
+          "plus": 0.056370819556343044
+        },
+        "relative_difference": 1.644678669825375e-09,
+        "side_multiplier": 1.0
+      }
+    ],
+    "localized_Gamma": [
+      {
+        "absolute_difference_w_per_epsilon": 2.118128589190249e-12,
+        "adjoint_pair_dQc_w_per_epsilon": -0.0010883471559304907,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.006253332142726997,
+            "total_w_per_epsilon": -0.006253332142726997
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.0051649849867965066,
+            "total_w_per_epsilon": 0.0051649849867965066
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 1.4e-06,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "localized_gamma",
+          "name": "localized_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.0010883471580486193,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 160,
+          "nx": 16,
+          "ny": 10
+        },
+        "maximum_base_energy_residual_w": 2.491062911502695e-15,
+        "maximum_energy_residual_w": 2.491062911502695e-15,
+        "mismatch_family": "property_contrast",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -1.4710455076283324e-15,
+              "iterations": 2,
+              "relative_residual": 6.015462366743118e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": -1.3877787807814457e-16,
+              "iterations": 2,
+              "relative_residual": 1.5968298295385634e-13
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -1.3600232051658168e-15,
+              "iterations": 2,
+              "relative_residual": 5.740160550841956e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": -9.71445146547012e-17,
+              "iterations": 2,
+              "relative_residual": 1.4739920021665503e-13
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.05639561685448856,
+          "plus": 0.05639344016017246
+        },
+        "relative_difference": 1.9461883808382252e-09,
+        "side_multiplier": 1.0
+      },
+      {
+        "absolute_difference_w_per_epsilon": 2.608030978679121e-12,
+        "adjoint_pair_dQc_w_per_epsilon": -0.0010835641266515811,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.006239883676914399,
+            "total_w_per_epsilon": -0.006239883676914399
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.005156319550262818,
+            "total_w_per_epsilon": 0.005156319550262818
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 1.4e-06,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "localized_gamma",
+          "name": "localized_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.001083564129259612,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 640,
+          "nx": 32,
+          "ny": 20
+        },
+        "maximum_base_energy_residual_w": 2.9698465908722937e-15,
+        "maximum_energy_residual_w": 2.9698465908722937e-15,
+        "mismatch_family": "property_contrast",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 1.6237011735142914e-15,
+              "iterations": 2,
+              "relative_residual": 1.549274554174287e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 2.42861286636753e-15,
+              "iterations": 2,
+              "relative_residual": 4.32215709281903e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": 2.067790383364354e-15,
+              "iterations": 2,
+              "relative_residual": 1.4830630287202803e-14
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 2.4980018054066022e-15,
+              "iterations": 2,
+              "relative_residual": 3.887798649562707e-14
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.05637748486335733,
+          "plus": 0.05637531773509881
+        },
+        "relative_difference": 2.406900445051122e-09,
+        "side_multiplier": 1.0
+      },
+      {
+        "absolute_difference_w_per_epsilon": 2.2977574704041714e-12,
+        "adjoint_pair_dQc_w_per_epsilon": -0.001082284174796765,
+        "branch_adjoint": {
+          "n": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": -0.006236428780272817,
+            "total_w_per_epsilon": -0.006236428780272817
+          },
+          "p": {
+            "direct_w_per_epsilon": 0.0,
+            "field_w_per_epsilon": 0.005154144605476052,
+            "total_w_per_epsilon": 0.005154144605476052
+          }
+        },
+        "common_mode_basis": {
+          "amplitude": 1.4e-06,
+          "anchor_k": 300.0,
+          "centre_k": 330.0,
+          "kind": "localized_gamma",
+          "name": "localized_Gamma",
+          "width_k": 12.0
+        },
+        "current_a": 1.1,
+        "endpoint_temperatures_k": {
+          "cold": 300.0,
+          "hot": 350.0
+        },
+        "finite_difference_pair_dQc_w_per_epsilon": -0.0010822841770945224,
+        "finite_difference_step": 0.001,
+        "grid": {
+          "cells_per_branch": 2560,
+          "nx": 64,
+          "ny": 40
+        },
+        "maximum_base_energy_residual_w": 1.9290125052862095e-15,
+        "maximum_energy_residual_w": 6.217248937900877e-15,
+        "mismatch_family": "property_contrast",
+        "nonlinear_solve_records": {
+          "minus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -6.161737786669619e-15,
+              "iterations": 2,
+              "relative_residual": 4.120202689751257e-15
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 1.0894063429134349e-15,
+              "iterations": 2,
+              "relative_residual": 1.1083290262611006e-14
+            }
+          ],
+          "plus": [
+            {
+              "branch": "p",
+              "energy_residual_w": -6.217248937900877e-15,
+              "iterations": 2,
+              "relative_residual": 3.877477112846838e-15
+            },
+            {
+              "branch": "n",
+              "energy_residual_w": 7.632783294297951e-16,
+              "iterations": 2,
+              "relative_residual": 9.976846079574023e-15
+            }
+          ]
+        },
+        "pair_qc_w": {
+          "minus": 0.05637302015536242,
+          "plus": 0.05637085558700823
+        },
+        "relative_difference": 2.1230629846691165e-09,
+        "side_multiplier": 1.0
+      }
+    ]
+  },
+  "medium_to_fine_adjoint_relative_change": 0.0009179748637425612,
+  "medium_to_fine_adjoint_relative_change_by_gamma_basis": {
+    "constant_Gamma": 0.0010380586544077519,
+    "linear_Gamma": 0.0009179748637425612,
+    "localized_Gamma": 0.0011826393516809375
+  },
+  "model_definition": {
+    "common_mode": "S_i -> S_i + C + epsilon*m(T), with constant, linear, and localized Gamma(T)=T*dm/dT bases shared by p/n",
+    "electrical": "heterogeneous temperature-independent sigma; electrochemical potential solve; insulated sidewalls; total signed current fixed by linear scaling",
+    "geometry": "independent rectangular 2-D finite volumes, one domain per p/n branch",
+    "independence": "does not import or call scripts/tec_1d_solver or any existing 1-D production solve",
+    "not_included": [
+      "temperature-dependent electrical resistivity or thermal conductivity",
+      "fully coupled 3-D current/heat spreading",
+      "finite pad/contact thermal conductance; end faces are Dirichlet",
+      "contact mechanics or contact-property calibration",
+      "radiation",
+      "experimental or COMSOL validation"
+    ],
+    "thermal": "heterogeneous temperature-independent k; exact resistor-edge Joule power; Dirichlet end temperatures; asymmetric Robin side losses; branch-specific linear base Seebeck/Thomson transport; conservative perturbation Thomson flux"
+  },
+  "non_1d_diagnostics_finest_p_leg": {
+    "electrical_divergence_max_a_per_cell": 5.76334769838982e-15,
+    "k_max_to_min_ratio": 2.0451102852409853,
+    "maximum_lateral_temperature_span_k": 3.9722332038592185,
+    "maximum_transverse_to_axial_current_density_ratio": 0.18701654582869262,
+    "rho_max_to_min_ratio": 2.4490512388415713,
+    "terminal_current_mismatch_a": 1.0658141036401503e-14
+  },
+  "nonmonotone_oriented_measure_case": {
+    "absolute_difference_w_per_epsilon": 5.228469740492514e-11,
+    "adjoint_pair_dQc_w_per_epsilon": 0.004823653522272174,
+    "branch_adjoint": {
+      "n": {
+        "direct_w_per_epsilon": 0.0,
+        "field_w_per_epsilon": -0.03734450926191805,
+        "total_w_per_epsilon": -0.03734450926191805
+      },
+      "p": {
+        "direct_w_per_epsilon": 0.0,
+        "field_w_per_epsilon": 0.04216816278419022,
+        "total_w_per_epsilon": 0.04216816278419022
+      }
+    },
+    "common_mode_basis": {
+      "amplitude": 1e-06,
+      "anchor_k": 300.0,
+      "centre_k": 330.0,
+      "kind": "linear_gamma",
+      "name": "linear_Gamma",
+      "width_k": 12.0
+    },
+    "current_a": 3.0,
+    "endpoint_temperatures_k": {
+      "cold": 300.0,
+      "hot": 300.0
+    },
+    "finite_difference_pair_dQc_w_per_epsilon": 0.004823653469987477,
+    "finite_difference_step": 0.00075,
+    "grid": {
+      "cells_per_branch": 640,
+      "nx": 32,
+      "ny": 20
+    },
+    "maximum_base_energy_residual_w": 1.9984014443252818e-15,
+    "maximum_energy_residual_w": 1.9984014443252818e-15,
+    "mismatch_family": "geometry_property_contrast",
+    "nonlinear_solve_records": {
+      "minus": [
+        {
+          "branch": "p",
+          "energy_residual_w": -1.3322676295501878e-15,
+          "iterations": 2,
+          "relative_residual": 1.3886072881183003e-12
+        },
+        {
+          "branch": "n",
+          "energy_residual_w": -1.3322676295501878e-15,
+          "iterations": 2,
+          "relative_residual": 5.86513630401179e-13
+        }
+      ],
+      "plus": [
+        {
+          "branch": "p",
+          "energy_residual_w": -1.3877787807814457e-15,
+          "iterations": 2,
+          "relative_residual": 1.391690419206088e-12
+        },
+        {
+          "branch": "n",
+          "energy_residual_w": -1.1102230246251565e-15,
+          "iterations": 2,
+          "relative_residual": 5.845286538282019e-13
+        }
+      ]
+    },
+    "pair_qc_w": {
+      "minus": 0.14038097519969564,
+      "plus": 0.14038821067990062
+    },
+    "relative_difference": 1.0839231541716645e-08,
+    "side_multiplier": 0.25,
+    "temperature_topology": {
+      "n": {
+        "axial_gradient_sign_changes": 1,
+        "has_positive_and_negative_axial_gradient": true,
+        "maximum_temperature_k": 361.69510588036997,
+        "mean_profile_left_cell_temperature_k": 303.173641055387,
+        "mean_profile_peak_cell_index": 16,
+        "mean_profile_peak_temperature_k": 360.22724604119105,
+        "mean_profile_right_cell_temperature_k": 304.5018922900717,
+        "minimum_temperature_k": 302.86252330617793,
+        "peak_is_interior": true
+      },
+      "p": {
+        "axial_gradient_sign_changes": 1,
+        "has_positive_and_negative_axial_gradient": true,
+        "maximum_temperature_k": 371.1878799731242,
+        "mean_profile_left_cell_temperature_k": 303.2007350912618,
+        "mean_profile_peak_cell_index": 17,
+        "mean_profile_peak_temperature_k": 369.3107030063526,
+        "mean_profile_right_cell_temperature_k": 305.0754566777615,
+        "minimum_temperature_k": 303.0960259454953,
+        "peak_is_interior": true
+      }
+    }
+  },
+  "provenance": {
+    "figures": [
+      {
+        "locator": "results/scientific_analysis/independent_2d_common_mode_validation.svg",
+        "sha256": "17411ab09c96ac4c617e6ded0b4c5857e3e15da7e23408074d596a8603df8321",
+        "size_bytes": 1074106
+      },
+      {
+        "locator": "results/scientific_analysis/independent_2d_common_mode_validation.pdf",
+        "sha256": "04d0ed2a63058c41b347604b34772a2b2644429fdc350c355d80485e8353dae2",
+        "size_bytes": 158734
+      },
+      {
+        "locator": "results/scientific_analysis/independent_2d_common_mode_validation.tiff",
+        "sha256": "85a0f73401f98cdb7e9a13c034248c18aa8d89a6ceb296b39e24fb0511c2d6f0",
+        "size_bytes": 4877910
+      },
+      {
+        "locator": "results/scientific_analysis/independent_2d_common_mode_validation.png",
+        "sha256": "3f60e032b79b9b2a565b4f4ffd08a6bca1ae7659370328d0dd4fd11b8db4a8e6",
+        "size_bytes": 313770
+      }
+    ],
+    "script": {
+      "locator": "scripts/analysis/validate_independent_2d_common_mode.py",
+      "sha256": "ebebc31056c59254c9b23b0cf99b3929b0e696fbaea5d6ddcb385d00cad68e59",
+      "size_bytes": 68369
+    }
+  },
+  "runtime": {
+    "matplotlib": "3.9.2",
+    "numpy": "2.1.1",
+    "python": "3.10.5",
+    "scipy": "1.14.1"
+  },
+  "schema_version": "independent_2d_common_mode_validation/v1",
+  "scientific_question": "Do the common-mode null, first-order Gamma transfer kernel, and split-pad topology law survive a conservative heterogeneous two-dimensional current/heat model?",
+  "scope": {
+    "does_not_support": [
+      "as-built PbSe/Cr device validation",
+      "quantitative prediction for any specific experimental device",
+      "equivalence to commercial multiphysics software",
+      "neglect of all 3-D/contact effects"
+    ],
+    "parameter_coverage": "Finite thermal-contact-strength sweeps are evaluated in the one-dimensional model. This independent two-dimensional calculation spans three sidewall couplings while retaining Dirichlet pad temperatures.",
+    "supported_interpretation": "The calculation provides numerical evidence for the analytic kernel and topology result.",
+    "supports": [
+      "the exact constant-shift null is not an artifact of a 1-D temperature profile",
+      "the first-order common-mode transfer mechanism extends to a conservative 2-D adjoint",
+      "the split-pad direct term and heat-voltage-energy interlock survive 2-D heterogeneity and side loss"
+    ]
+  },
+  "shared_isothermal_constant_shift_null": {
+    "base_pair": {
+      "P_electrical_w": 0.09289166231573351,
+      "Qc_w": 0.05637193946354273,
+      "Qh_w": 0.11703445954698463,
+      "Qside_w": 0.03222914223229116,
+      "V_power_conjugate_v": 0.08444696574157591,
+      "energy_residual_w": -4.440892098500626e-16
+    },
+    "constant_shift_v_per_k": 8e-05,
+    "current_a": 1.1,
+    "errors": {
+      "P_w": -8.326672684688674e-17,
+      "Qc_w": 5.551115123125783e-17,
+      "Qh_w": -2.7755575615628914e-17,
+      "Qside_w": 0.0,
+      "V_v": -6.938893903907228e-17,
+      "incremental_energy_interlock_w": -6.938893903907228e-18
+    },
+    "increment": {
+      "P_electrical_w": -8.326672684688674e-17,
+      "Qc_w": 5.551115123125783e-17,
+      "Qh_w": -2.7755575615628914e-17,
+      "Qside_w": 0.0,
+      "V_power_conjugate_v": -6.938893903907228e-17,
+      "energy_residual_w": 0.0
+    },
+    "maximum_branch_energy_residual_w": 1.9567680809018384e-15,
+    "prediction": {
+      "delta_P_w": 0.0,
+      "delta_Qc_w": 0.0,
+      "delta_Qh_w": 0.0,
+      "delta_Qside_w": 0.0,
+      "delta_V_v": 0.0
+    },
+    "shifted_pair": {
+      "P_electrical_w": 0.09289166231573343,
+      "Qc_w": 0.05637193946354278,
+      "Qh_w": 0.1170344595469846,
+      "Qside_w": 0.03222914223229116,
+      "V_power_conjugate_v": 0.08444696574157584,
+      "energy_residual_w": -4.440892098500626e-16
+    },
+    "temperatures_k": {
+      "cold_n": 300.0,
+      "cold_p": 300.0,
+      "hot_n": 350.0,
+      "hot_p": 350.0
+    }
+  },
+  "split_pad_topology_breaking": {
+    "base_pair": {
+      "P_electrical_w": 0.09282361631573352,
+      "Qc_w": 0.05710626913075509,
+      "Qh_w": 0.11758601606452337,
+      "Qside_w": 0.03234386938196268,
+      "V_power_conjugate_v": 0.08438510574157593,
+      "energy_residual_w": -2.55351295663786e-15
+    },
+    "constant_shift_v_per_k": 8e-05,
+    "current_a": 1.1,
+    "errors": {
+      "P_w": -1.0218605475675879e-16,
+      "Qc_w": 6.749158523722265e-17,
+      "Qh_w": -2.7755575615628914e-17,
+      "Qside_w": 0.0,
+      "V_v": -9.795766628406533e-17,
+      "incremental_energy_interlock_w": 1.2522535092207576e-17
+    },
+    "increment": {
+      "P_electrical_w": -0.00035200000000010223,
+      "Qc_w": 0.00035200000000006754,
+      "Qh_w": -2.7755575615628914e-17,
+      "Qside_w": 0.0,
+      "V_power_conjugate_v": -0.000320000000000098,
+      "energy_residual_w": 0.0
+    },
+    "maximum_branch_energy_residual_w": 2.4077961846558082e-15,
+    "prediction": {
+      "delta_P_w": -0.00035200000000000005,
+      "delta_Qc_w": 0.00035200000000000005,
+      "delta_Qh_w": 0.0,
+      "delta_Qside_w": 0.0,
+      "delta_V_v": -0.00032
+    },
+    "shifted_pair": {
+      "P_electrical_w": 0.09247161631573342,
+      "Qc_w": 0.057458269130755156,
+      "Qh_w": 0.11758601606452335,
+      "Qside_w": 0.03234386938196268,
+      "V_power_conjugate_v": 0.08406510574157583,
+      "energy_residual_w": -2.55351295663786e-15
+    },
+    "temperatures_k": {
+      "cold_n": 298.0,
+      "cold_p": 302.0,
+      "hot_n": 350.0,
+      "hot_p": 350.0
+    }
+  },
+  "timestamp_utc": "2026-08-26T00:00:00+00:00",
+  "validation_checks": {
+    "adjoint_finite_difference": true,
+    "base_energy_conservation": true,
+    "cross_family_matrix_adjoint_fd": true,
+    "cross_family_matrix_energy": true,
+    "current_conservation": true,
+    "genuine_2d_current": true,
+    "genuine_2d_temperature": true,
+    "grid_convergence_all_gamma_bases": true,
+    "nonmonotone_oriented_measure": true,
+    "shared_isothermal_null": true,
+    "split_pad_direct_law": true,
+    "split_pad_energy_voltage_interlock": true
+  }
+}

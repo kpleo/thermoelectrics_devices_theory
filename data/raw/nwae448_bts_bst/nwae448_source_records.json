@@ -1,0 +1,72 @@
+{
+  "schema_version": "nwae448_source_records/v1",
+  "article": {
+    "doi": "10.1093/nsr/nwae448",
+    "pmcid": "PMC11737397",
+    "pmid": "39830400",
+    "journal": "National Science Review",
+    "volume": "12",
+    "article_number": "nwae448",
+    "publication_date": "2024-12-06",
+    "collection_year": 2025,
+    "title": "Lattice plainification and band engineering lead to high thermoelectric cooling and power generation in n-type Bi2Te3 with mass production",
+    "corresponding_author_of_interest": "Li-Dong Zhao",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "acquisition": {
+    "date": "2026-08-26",
+    "fulltext_xml_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11737397/fullTextXML",
+    "supplementary_bundle_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11737397/supplementaryFiles",
+    "note": "Europe PMC mirrors the PMC11737397 open-access record; used because the PMC binary endpoint served a proof-of-work page on the acquisition date."
+  },
+  "files": [
+    {
+      "path": "data/raw/nwae448_bts_bst/PMC11737397_fulltext.xml",
+      "sha256": "ae0eb05433da7842a7951c4df38bb9493e58f795d32e4da9a6cccabf8fb22cc8",
+      "role": "primary_article_fulltext_xml"
+    },
+    {
+      "path": "data/raw/nwae448_bts_bst/PMC11737397_SupplementaryFiles.zip",
+      "sha256": "248b98e28d56f3d8dea8388f34ae906f26fe38291073010a24ea4f38a0092eb3",
+      "role": "primary_article_europepmc_bundle"
+    },
+    {
+      "path": "data/raw/nwae448_bts_bst/nwae448_supplement.pdf",
+      "sha256": "147ec2c7f52d2328e552290aed28e0c9cd01ad6de5b7fc3708adfb2d76755d66",
+      "role": "primary_supporting_information"
+    },
+    {
+      "path": "data/raw/nwae448_bts_bst/europepmc_bundle/nwae448fig2.jpg",
+      "sha256": "02ca88b9dc185a240c32bf64cae0db27204cd96242c36abf7ea22def6f091f9e",
+      "role": "primary_article_figure_2"
+    },
+    {
+      "path": "data/raw/nwae448_bts_bst/europepmc_bundle/nwae448fig5.jpg",
+      "sha256": "ae130541f8fc8210203235357de6cbf76ddd46527547f28b905a0804fe8d6107",
+      "role": "primary_article_figure_5"
+    },
+    {
+      "path": "data/raw/nwae448_bts_bst/europepmc_bundle/nwae448fig6.jpg",
+      "sha256": "78e9e7416c3e1dfa3d82727981224d01d3cc56e1533850256e7fd56ecfefc215",
+      "role": "primary_article_figure_6"
+    }
+  ],
+  "evidence_locations": {
+    "n_material": "Article Fig. 2(a,c) and Fig. 5(a): n-type BTS+0.2%Cu",
+    "p_material": "Supplementary Fig. S9, PDF page 17 / printed S17: p-type commercial BST",
+    "transport_measurement_uncertainty": "Supplementary PDF page 3 / printed S3: S and sigma within 5%; page 4 / printed S4: kappa within about 8%",
+    "geometry_and_assembly": "Supplementary PDF pages 4-5 / printed S4-S5: 1.95 x 1.95 x 4.8 mm3 legs, 7 pairs, Ni electroplating, Sn-Ag-Cu solder, copper aluminium nitride ceramics, 10 x 10 x 6 mm3 device",
+    "cooling_test": "Supplementary PDF page 5 / printed S5: Z-Meters with reference temperatures 303 K and 343 K",
+    "device_resistance": "Article Fig. 6(d) and Supplementary Fig. S11: 0.131 ohm at about 303 K and 0.164 ohm at about 343 K for BTS+0.2%Cu/BST",
+    "n_contact_resistivity": "Article Fig. 6(c): approximately 3.5 micro-ohm cm2 across the displayed Cu-to-BTS+0.2%Cu contact stack"
+  },
+  "explicit_absences": [
+    "No author-supplied numerical transport table is attached.",
+    "No p/n measurement covariance or repeat-level data are reported.",
+    "No complete p-leg contact-resistance inventory is reported.",
+    "No numerical thermal-contact resistance or parasitic thermal conductance is reported.",
+    "The cooling maximum reaches below the 300 K lower limit of the published transport curves; no sub-300-K extrapolation is allowed here.",
+    "The numerical fields visible in the Z-Meter screenshots are not assigned physical labels unless the article or caption names them."
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "calibration_qc": {
+    "Fig.1C": {
+      "A": {
+        "max_abs_residual_px": {
+          "x_axis": 5.086262788722707e-05,
+          "y_axis": 0.0025431179679458182
+        }
+      },
+      "B": {
+        "max_abs_residual_px": {
+          "x": 0.0,
+          "y": 0.01302333332297375
+        }
+      }
+    },
+    "Fig.1D": {
+      "A": {
+        "max_abs_residual_px": {
+          "x_axis": 0.003337870268182997,
+          "y_axis": 0.05981445312481053
+        }
+      },
+      "B": {
+        "max_abs_residual_px": {
+          "x": 0.013020153617162267,
+          "y": 0.06184430302489912
+        }
+      }
+    }
+  },
+  "candidate_output": {
+    "path": "data/raw/device_transport_vector/vector_reconciled_candidate.json",
+    "point_count": 28,
+    "projected_integrity_sha256": "638ccc370a2167ff380a1f90f8bb50430411f0dea7a6be0f096d677bb63e7d66",
+    "sha256": "e58023ae70d2c4c630429ab094ff1834151970c7f77603cea51c85b4e475e420"
+  },
+  "input_bindings": {
+    "extractor_A": {
+      "points_file_sha256": "f6ba6aceb336faaf891210272cd1bb7d36af0088f17d44211aa0698957dd0c4e",
+      "points_path": "data/raw/device_transport_vector/extractor_A_points.json",
+      "points_projected_integrity_sha256": "ee0dceab7e3f396d7fe0c663394c5b97953d674c4ea4aa6c8d1193e037fe421f",
+      "qc_file_sha256": "0c3dc04699967093649c984e1845dd650487c867fbe733b065692cacd57d992a",
+      "qc_path": "data/raw/device_transport_vector/extractor_A_qc.json",
+      "qc_projected_integrity_sha256": "b2c3e09c379bcddd3ae55bc1db784529dc4d7ddd829cf6901fd9ee4836052a18",
+      "route": "PyMuPDF complete drawing/glyph objects",
+      "script_sha256": "6d3fc63e55457800588b2685cb9e7d2628993aa7ef8635c7ee01d1ff1235ff81"
+    },
+    "extractor_B": {
+      "points_file_sha256": "d402a0e46f791ad82836f7d7cf3cfbc30fb83518b4707e9c2a0e9336dd1e08ba",
+      "points_path": "data/raw/device_transport_vector/extractor_B_points.json",
+      "points_payload_sha256": "232e41fcb0eec1fd85f4593fcdad1b152da1c27a83dd9fa75219c8a1a6fd2d84",
+      "qc_file_sha256": "7d5d832dde4d20f113638fac90812727e65056c7c74379d4fd1517586392c2a2",
+      "qc_path": "data/raw/device_transport_vector/extractor_B_qc.json",
+      "qc_payload_sha256": "3d60499ccfe26224ac2a76605a12fde5f6e65dd2186b2aa1ef3b94208b3b28e1",
+      "route": "Poppler pdftocairo SVG direct path parsing",
+      "script_sha256": "a729dab2909660ce39bba280d8f4a21af02d8b7bd04a90b516da956e7d109cf1",
+      "svg_sha256": "db93bce80c7ed453bbed2237338fbb5a27842e4fa9c2e23ccb021e2d1016ac2e"
+    },
+    "reconciler": {
+      "path": "scripts/data/reconcile_device_transport_vector.py",
+      "sha256": "5bb6a5f8774d400c07df46a7546295f7109c23f79083ae206c7d933a88d4d401",
+      "size_bytes": 66999
+    }
+  },
+  "integrity": {
+    "algorithm": "sha256",
+    "canonical_projection_sha256": "89c92dccc520bc64a650db20f39c1e0b45adaa47c7e50c8c8b4a39ebdd004ece",
+    "canonicalization": "UTF-8 JSON sorted keys compact separators allow_nan=false",
+    "scope": "entire document with integrity.canonical_projection_sha256 set to null"
+  },
+  "validation_status": {
+    "material_property_curves_csv_written": false,
+    "processed_output_written": false,
+    "vector_candidate_accepted": false,
+    "independent_device_validation_passed": false,
+    "reason": "Only high-temperature sigma/S source objects reconcile; kappa and full material-property evidence remain missing."
+  },
+  "schema_version": "device_transport_vector_reconciliation_qc/v1",
+  "source_binding": {
+    "source_record_path": "data/raw/source_records.csv",
+    "source_record_sha256": "80ead0fb33ca377c03ac5c14f2119ef2921eaee08c77d26bfa66223ff0d81f67",
+    "path": "external://doi/10.1126/science.aeg8963/main",
+    "path_origin": "data/raw/source_records.csv:science_main",
+    "pdf_pages": 6,
+    "sha256": "504b335e302fd211364ae7c1373b23150d805ec99ff84181370e5efb14e90e5c",
+    "size_bytes": 1092986,
+    "source_id": "science_main",
+    "target_pdf_page_one_based": 2,
+    "title": "Ultralow chromium doping enables all-PbSe thermoelectric cooling"
+  },
+  "status": "pass",
+  "tolerance_definition": {
+    "boundary_rule": "difference < tolerance; exactly 2 px blocks the entire candidate",
+    "calibration_residual_tolerance_px_exclusive_per_axis_per_extractor": 1.0,
+    "comparison_dpi": 600.0,
+    "fixed_before_point_comparison": true,
+    "observed_maxima": {
+      "display_value_abs_difference_by_panel": {
+        "Fig.1C": 0.0005264203885353425,
+        "Fig.1D": 0.01582874473072593
+      },
+      "page_x_abs_difference_600dpi_px": 0.011669740804028569,
+      "page_x_abs_difference_pdf_pt": 0.0014003688964834282,
+      "page_y_abs_difference_600dpi_px": 0.01237726779474239,
+      "page_y_abs_difference_pdf_pt": 0.0014852721353690868,
+      "si_value_abs_difference_by_panel": {
+        "Fig.1C": 5.26420018535282,
+        "Fig.1D": 1.582874473071076e-08
+      },
+      "temperature_abs_difference_K": 0.009233837990677785
+    },
+    "page_coordinate_tolerance_pdf_pt_exclusive": 0.24,
+    "page_coordinate_tolerance_px_exclusive": 2.0,
+    "physical_tolerance_formula": "coordinate_tolerance_pdf_pt * max(abs(A_axis_slope), abs(B_axis_slope)) + abs(A_axis_position_residual_pdf_pt * A_axis_slope) + abs(B_axis_value_residual)",
+    "propagated_by_panel": {
+      "Fig.1C": {
+        "display_value_exclusive": 0.05488350430827374,
+        "si_value_exclusive": 548.8350430827373,
+        "temperature_K_exclusive": 0.9666702713110006
+      },
+      "Fig.1D": {
+        "display_value_exclusive": 2.8875951137415266,
+        "si_value_exclusive": 2.8875951137415266e-06,
+        "temperature_K_exclusive": 0.9745059008561745
+      }
+    }
+  },
+  "verification": {
+    "A_self_hash_and_script_binding_pass": true,
+    "B_self_hash_and_script_binding_pass": true,
+    "all_checks_passed": true,
+    "axis_calibration_each_axis_each_route_strictly_below_1px": true,
+    "calibration_propagated_physical_differences_pass": true,
+    "source_record_pdf_hash_pass": true,
+    "exact_28_key_coverage_pass": true,
+    "no_unverified_output_used": true,
+    "independent_vector_routes_declared": true,
+    "legend_exclusion_each_route_pass": true,
+    "page_coordinate_each_axis_strictly_below_2px": true,
+    "extractor_A_selected_without_averaging": true,
+    "source_identity_all_equal": true,
+    "unique_source_objects_each_route_pass": true
+  }
+}

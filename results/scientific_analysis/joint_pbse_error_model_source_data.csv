@@ -1,0 +1,24 @@
+panel,series,x,y,x_unit,y_unit,note
+a,negative shared additive drift axis,0.0,3.0668783059080162,fraction of deterministic axis,mW,reoptimized original-minus-flattened Qc
+a,negative shared additive drift axis,0.25,2.3410163492706415,fraction of deterministic axis,mW,reoptimized original-minus-flattened Qc
+a,negative shared additive drift axis,0.5,1.5676532843831303,fraction of deterministic axis,mW,reoptimized original-minus-flattened Qc
+a,negative shared additive drift axis,0.75,0.7471916076340346,fraction of deterministic axis,mW,reoptimized original-minus-flattened Qc
+a,negative shared additive drift axis,0.9,0.23248036400824734,fraction of deterministic axis,mW,reoptimized original-minus-flattened Qc
+a,negative shared additive drift axis,0.95,0.05719135134707454,fraction of deterministic axis,mW,reoptimized original-minus-flattened Qc
+a,negative shared additive drift axis,1.0,-0.11995119268914944,fraction of deterministic axis,mW,reoptimized original-minus-flattened Qc
+b,independent,0.0,-8.418158773306871,shared Seebeck budget fraction,mW,minimum deterministic direction-library case
+b,independent,0.5,-6.4996377525631255,shared Seebeck budget fraction,mW,minimum deterministic direction-library case
+b,independent,1.0,-0.11995119268914944,shared Seebeck budget fraction,mW,minimum deterministic direction-library case
+b,same-run,0.0,0.3336714555247644,shared Seebeck budget fraction,mW,minimum deterministic direction-library case
+b,same-run,0.5,0.33960915760777866,shared Seebeck budget fraction,mW,minimum deterministic direction-library case
+b,same-run,1.0,-0.11995119268914944,shared Seebeck budget fraction,mW,minimum deterministic direction-library case
+b,moderate band,0.0,-0.1981684234233505,shared Seebeck budget fraction,mW,minimum deterministic direction-library case
+b,moderate band,0.5,-0.05624201134846185,shared Seebeck budget fraction,mW,minimum deterministic direction-library case
+b,moderate band,1.0,-0.11995119268914944,shared Seebeck budget fraction,mW,minimum deterministic direction-library case
+b,strong lock,0.0,0.6477349796187859,shared Seebeck budget fraction,mW,minimum deterministic direction-library case
+b,strong lock,0.5,0.5991260855717773,shared Seebeck budget fraction,mW,minimum deterministic direction-library case
+b,strong lock,1.0,-0.11995119268914944,shared Seebeck budget fraction,mW,minimum deterministic direction-library case
+c,"p, 323 K",323,-0.4495729480117345,K,mW per (uV/K),branch contribution for equal positive additive deltaS
+c,"n, 323 K",323,-0.4343635755163041,K,mW per (uV/K),branch contribution for equal positive additive deltaS
+c,"p, 373 K",373,0.40835576267380846,K,mW per (uV/K),branch contribution for equal positive additive deltaS
+c,"n, 373 K",373,0.34359860774741297,K,mW per (uV/K),branch contribution for equal positive additive deltaS

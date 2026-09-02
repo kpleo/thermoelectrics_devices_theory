@@ -1,0 +1,3 @@
+source_id,kind,title,path,sha256,pdf_pages,data_role,mutation_policy,first_inspected
+science_main,pdf,Ultralow chromium doping enables all-PbSe thermoelectric cooling,external://doi/10.1126/science.aeg8963/main,504b335e302fd211364ae7c1373b23150d805ec99ff84181370e5efb14e90e5c,6,primary_article,read_only_external,2026-08-16
+science_si,pdf,Supporting Information for Ultralow chromium doping enables all-PbSe thermoelectric cooling,external://doi/10.1126/science.aeg8963/supplement,d633afd285f385a95f5c20655654f6bd014fa32d370630b4e22ca0af32d974a5,35,primary_supporting_information,read_only_external,2026-08-16

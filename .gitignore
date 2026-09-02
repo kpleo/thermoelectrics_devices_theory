@@ -1,0 +1,16 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mplconfig/
+tmp/
+paper/
+submission/
+results/**/*.pdf
+results/**/*.png
+results/**/*.svg
+results/**/*.tiff
+results/**/*.jpg
+results/**/*.jpeg
+external_sources/

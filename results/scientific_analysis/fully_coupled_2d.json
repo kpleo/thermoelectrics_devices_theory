@@ -1,0 +1,709 @@
+{
+  "analysis_id": "FULLY-COUPLED-2D-20260826",
+  "grid_records": [
+    {
+      "branches": [
+        {
+          "adjoint": {
+            "adjoint_to_nonlinear_relative_error": 6.269499584041535e-09,
+            "adjoint_to_tangent_relative_error": 1.1174834787362878e-16,
+            "direct_Qc_derivative_w": 0.0,
+            "epsilon_step": 0.002,
+            "field_Qc_derivative_w": 0.0077617410413016955,
+            "nonlinear_central_Qc_derivative_w": 0.007761741089963928,
+            "tangent_Qc_derivative_w": 0.007761741041301696,
+            "total_Qc_derivative_w": 0.0077617410413016955
+          },
+          "baseline": {
+            "Joule_power_w": 0.026870826247369216,
+            "P_electrical_w": 0.039452076247369294,
+            "Qc_w": 0.0313424556751122,
+            "Qh_w": 0.05359958307708074,
+            "Qside_w": 0.017194948845401334,
+            "Seebeck_power_w": 0.01258125000000008,
+            "current_divergence_max_a": 8.894794623071078e-16,
+            "electrical_resistance_ohm": 0.02220729441931339,
+            "energy_residual_relative": 4.067603657969847e-15,
+            "energy_residual_w": 5.759281940243e-16,
+            "k_maximum_w_per_mk": 1.7934538156592783,
+            "k_minimum_w_per_mk": 0.9230549081486417,
+            "nonlinear_function_evaluations": 80,
+            "residual_max_w": 4.793528855101536e-16,
+            "residual_relative": 5.063586818769229e-13,
+            "rho_maximum_ohm_m": 1.959565176064315e-05,
+            "rho_minimum_ohm_m": 8.503516789688295e-06,
+            "temperature_maximum_k": 347.50654607766467,
+            "temperature_minimum_k": 302.6104677587847,
+            "terminal_current_mismatch_a": 1.1102230246251565e-15
+          },
+          "branch": "p",
+          "complete_jacobian_diagnostics": {
+            "condition_number": 46.325568207256154,
+            "current_field_derivative_l2_a_per_epsilon": 0.0004591845470146753,
+            "joule_power_derivative_w_per_epsilon": -0.00015800414590767808,
+            "kappa_T_conduction_jacobian_fraction": 0.0025965842791611494,
+            "largest_singular_value_w_per_k": 0.009632355621977793,
+            "relative_current_field_derivative_per_epsilon": 0.0003086225610139201,
+            "sigma_T_current_redistribution_jacobian_fraction": 0.00017791136946399756,
+            "smallest_singular_value_w_per_k": 0.00020792741448704
+          },
+          "constitutive_temperature_dependence": {
+            "k_fractional_change_per_50_k": -0.11307956328284252,
+            "k_log_slope_per_k": -0.0024,
+            "rho_fractional_change_per_50_k": 0.17351087099181028,
+            "rho_log_slope_per_k": 0.0032
+          },
+          "grid": {
+            "cells": 40,
+            "nx": 8,
+            "ny": 5
+          },
+          "perturbed_states": {
+            "minus": {
+              "Joule_power_w": 0.026871142264060094,
+              "P_electrical_w": 0.0394496422640602,
+              "Qc_w": 0.031326929632241665,
+              "Qh_w": 0.053579513868904555,
+              "Qside_w": 0.017197058027397336,
+              "Seebeck_power_w": 0.012578500000000102,
+              "current_divergence_max_a": 1.2971394791616575e-15,
+              "electrical_resistance_ohm": 0.02220755559013229,
+              "energy_residual_relative": 1.9607883563712954e-16,
+              "energy_residual_w": 2.7755575615628914e-17,
+              "k_maximum_w_per_mk": 1.7934491154359193,
+              "k_minimum_w_per_mk": 0.9230423456359377,
+              "nonlinear_function_evaluations": 56,
+              "residual_relative": 4.872610714267161e-13,
+              "rho_maximum_ohm_m": 1.959591790513982e-05,
+              "rho_minimum_ohm_m": 8.503631005329715e-06,
+              "temperature_maximum_k": 347.50800292290484,
+              "temperature_minimum_k": 302.61154982526443,
+              "terminal_current_mismatch_a": 1.7763568394002505e-15
+            },
+            "plus": {
+              "Joule_power_w": 0.026870510247476463,
+              "P_electrical_w": 0.03945451024747664,
+              "Qc_w": 0.03135797659660152,
+              "Qh_w": 0.053619647065942855,
+              "Qside_w": 0.017192839778135464,
+              "Seebeck_power_w": 0.012584000000000177,
+              "current_divergence_max_a": 1.0690233420707074e-15,
+              "electrical_resistance_ohm": 0.022207033262377232,
+              "energy_residual_relative": 1.126881478836331e-15,
+              "energy_residual_w": 1.5959455978986625e-16,
+              "k_maximum_w_per_mk": 1.7934585143612085,
+              "k_minimum_w_per_mk": 0.9230674694746176,
+              "nonlinear_function_evaluations": 56,
+              "residual_relative": 7.463815730374683e-13,
+              "rho_maximum_ohm_m": 1.959538560451541e-05,
+              "rho_minimum_ohm_m": 8.503402596634453e-06,
+              "temperature_maximum_k": 347.5050887812982,
+              "temperature_minimum_k": 302.6093860613651,
+              "terminal_current_mismatch_a": 2.6645352591003757e-15
+            }
+          },
+          "signed_current_a": 1.1
+        },
+        {
+          "adjoint": {
+            "adjoint_to_nonlinear_relative_error": 9.550644260525867e-09,
+            "adjoint_to_tangent_relative_error": 0.0,
+            "direct_Qc_derivative_w": 0.0,
+            "epsilon_step": 0.002,
+            "field_Qc_derivative_w": -0.008987787248294726,
+            "nonlinear_central_Qc_derivative_w": -0.008987787334133884,
+            "tangent_Qc_derivative_w": -0.008987787248294726,
+            "total_Qc_derivative_w": -0.008987787248294726
+          },
+          "baseline": {
+            "Joule_power_w": 0.04363887542441583,
+            "P_electrical_w": 0.054336375424415814,
+            "Qc_w": 0.02531910258846102,
+            "Qh_w": 0.06513390161946289,
+            "Qside_w": 0.014521576393413832,
+            "Seebeck_power_w": 0.010697499999999983,
+            "current_divergence_max_a": 1.156193196738542e-15,
+            "electrical_resistance_ohm": 0.03606518630117011,
+            "energy_residual_relative": 6.96890566927288e-16,
+            "energy_residual_w": -1.1102230246251565e-16,
+            "k_maximum_w_per_mk": 1.0711653737778337,
+            "k_minimum_w_per_mk": 0.6806420499369314,
+            "nonlinear_function_evaluations": 70,
+            "residual_max_w": 1.7390602846667491e-15,
+            "residual_relative": 2.835424377174047e-12,
+            "rho_maximum_ohm_m": 3.112177303651754e-05,
+            "rho_minimum_ohm_m": 1.3105225787376613e-05,
+            "temperature_maximum_k": 348.87353085309314,
+            "temperature_minimum_k": 304.123741113667,
+            "terminal_current_mismatch_a": 2.220446049250313e-16
+          },
+          "branch": "n",
+          "complete_jacobian_diagnostics": {
+            "condition_number": 46.740078459508375,
+            "current_field_derivative_l2_a_per_epsilon": 0.00045352126040029114,
+            "joule_power_derivative_w_per_epsilon": 0.00041443150443874754,
+            "kappa_T_conduction_jacobian_fraction": 0.002708589593350112,
+            "largest_singular_value_w_per_k": 0.005990201297213226,
+            "relative_current_field_derivative_per_epsilon": 0.0003052327394726361,
+            "sigma_T_current_redistribution_jacobian_fraction": 0.0005213019561633774,
+            "smallest_singular_value_w_per_k": 0.00012815984685183245
+          },
+          "constitutive_temperature_dependence": {
+            "k_fractional_change_per_50_k": -0.11307956328284252,
+            "k_log_slope_per_k": -0.0024,
+            "rho_fractional_change_per_50_k": 0.17351087099181028,
+            "rho_log_slope_per_k": 0.0032
+          },
+          "grid": {
+            "cells": 40,
+            "nx": 8,
+            "ny": 5
+          },
+          "perturbed_states": {
+            "minus": {
+              "Joule_power_w": 0.04363804657582347,
+              "P_electrical_w": 0.05433829657582327,
+              "Qc_w": 0.02533707406046464,
+              "Qh_w": 0.06515671155669148,
+              "Qside_w": 0.014518659079596376,
+              "Seebeck_power_w": 0.010700249999999802,
+              "current_divergence_max_a": 1.7147741560030738e-15,
+              "electrical_resistance_ohm": 0.03606450130233349,
+              "energy_residual_relative": 3.9190307265870684e-16,
+              "energy_residual_w": -6.245004513516506e-17,
+              "k_maximum_w_per_mk": 1.0711768341778716,
+              "k_minimum_w_per_mk": 0.6806552051728969,
+              "nonlinear_function_evaluations": 55,
+              "residual_relative": 4.0763644724210425e-13,
+              "rho_maximum_ohm_m": 3.1121008785975876e-05,
+              "rho_minimum_ohm_m": 1.3104852582218187e-05,
+              "temperature_maximum_k": 348.8715392309749,
+              "temperature_minimum_k": 304.12155181282714,
+              "terminal_current_mismatch_a": 3.552713678800501e-15
+            },
+            "plus": {
+              "Joule_power_w": 0.04363970430184123,
+              "P_electrical_w": 0.05433445430184122,
+              "Qc_w": 0.025301122911128106,
+              "Qh_w": 0.0651110834313129,
+              "Qside_w": 0.014524493781657169,
+              "Seebeck_power_w": 0.010694749999999994,
+              "current_divergence_max_a": 2.237793284010081e-15,
+              "electrical_resistance_ohm": 0.03606587132383572,
+              "energy_residual_relative": 4.661620306540289e-15,
+              "energy_residual_w": 7.424616477180734e-16,
+              "k_maximum_w_per_mk": 1.0711539170015545,
+              "k_minimum_w_per_mk": 0.6806288920619246,
+              "nonlinear_function_evaluations": 55,
+              "residual_relative": 6.446878244110816e-13,
+              "rho_maximum_ohm_m": 3.1122537269199356e-05,
+              "rho_minimum_ohm_m": 1.310559898042344e-05,
+              "temperature_maximum_k": 348.87552139908394,
+              "temperature_minimum_k": 304.1259314648414,
+              "terminal_current_mismatch_a": 2.220446049250313e-16
+            }
+          },
+          "signed_current_a": -1.1
+        }
+      ],
+      "grid": {
+        "cells_per_branch": 40,
+        "nx": 8,
+        "ny": 5
+      },
+      "maximum_all_state_energy_residual_relative": 4.661620306540289e-15,
+      "maximum_energy_residual_relative": 4.067603657969847e-15,
+      "minimum_relative_current_field_derivative": 0.0003052327394726361,
+      "minimum_sigma_T_jacobian_fraction": 0.00017791136946399756,
+      "pair_adjoint_Qc_derivative_w": -0.00122604620699303,
+      "pair_adjoint_to_nonlinear_relative_error": 3.032261447882434e-08,
+      "pair_nonlinear_central_Qc_derivative_w": -0.0012260462441699566
+    },
+    {
+      "branches": [
+        {
+          "adjoint": {
+            "adjoint_to_nonlinear_relative_error": 6.61289012791277e-09,
+            "adjoint_to_tangent_relative_error": 1.1181102732915841e-16,
+            "direct_Qc_derivative_w": 0.0,
+            "epsilon_step": 0.002,
+            "field_Qc_derivative_w": 0.007757389934670695,
+            "nonlinear_central_Qc_derivative_w": 0.007757389985969462,
+            "tangent_Qc_derivative_w": 0.007757389934670694,
+            "total_Qc_derivative_w": 0.007757389934670695
+          },
+          "baseline": {
+            "Joule_power_w": 0.026846268337661898,
+            "P_electrical_w": 0.03942751833766141,
+            "Qc_w": 0.03132417882207588,
+            "Qh_w": 0.05352709916347799,
+            "Qside_w": 0.01722459799625247,
+            "Seebeck_power_w": 0.012581249999999513,
+            "current_divergence_max_a": 1.9116652705264414e-15,
+            "electrical_resistance_ohm": 0.022186998626166875,
+            "energy_residual_relative": 4.825235206746803e-14,
+            "energy_residual_w": -6.827871601444713e-15,
+            "k_maximum_w_per_mk": 1.8506553923874265,
+            "k_minimum_w_per_mk": 0.9238858098420548,
+            "nonlinear_function_evaluations": 92,
+            "residual_max_w": 2.5303923453096067e-15,
+            "residual_relative": 5.613194287130465e-12,
+            "rho_maximum_ohm_m": 2.0044500357040282e-05,
+            "rho_minimum_ohm_m": 8.411606224667408e-06,
+            "temperature_maximum_k": 348.33974192542235,
+            "temperature_minimum_k": 301.69590571456683,
+            "terminal_current_mismatch_a": 6.661338147750939e-15
+          },
+          "branch": "p",
+          "complete_jacobian_diagnostics": {
+            "condition_number": 103.77222376169368,
+            "current_field_derivative_l2_a_per_epsilon": 0.00046617096509576455,
+            "joule_power_derivative_w_per_epsilon": -0.00015539406906725506,
+            "kappa_T_conduction_jacobian_fraction": 0.001799448319464934,
+            "largest_singular_value_w_per_k": 0.010380468065045067,
+            "relative_current_field_derivative_per_epsilon": 0.0003084514780916722,
+            "sigma_T_current_redistribution_jacobian_fraction": 7.660233946409382e-05,
+            "smallest_singular_value_w_per_k": 0.00010003127704850145
+          },
+          "constitutive_temperature_dependence": {
+            "k_fractional_change_per_50_k": -0.11307956328284252,
+            "k_log_slope_per_k": -0.0024,
+            "rho_fractional_change_per_50_k": 0.17351087099181028,
+            "rho_log_slope_per_k": 0.0032
+          },
+          "grid": {
+            "cells": 84,
+            "nx": 12,
+            "ny": 7
+          },
+          "perturbed_states": {
+            "minus": {
+              "Joule_power_w": 0.026846579134423693,
+              "P_electrical_w": 0.03942507913442349,
+              "Qc_w": 0.031308661456897965,
+              "Qh_w": 0.053507062294787855,
+              "Qside_w": 0.017226678296535677,
+              "Seebeck_power_w": 0.012578499999999795,
+              "current_divergence_max_a": 1.663382973027261e-15,
+              "electrical_resistance_ohm": 0.02218725548299481,
+              "energy_residual_relative": 1.4714817523926793e-14,
+              "energy_residual_w": 2.0816681711721685e-15,
+              "k_maximum_w_per_mk": 1.850652255499883,
+              "k_minimum_w_per_mk": 0.9238731382787593,
+              "nonlinear_function_evaluations": 64,
+              "residual_relative": 1.35692530742667e-12,
+              "rho_maximum_ohm_m": 2.004475731016642e-05,
+              "rho_minimum_ohm_m": 8.411759711740665e-06,
+              "temperature_maximum_k": 348.34069523679005,
+              "temperature_minimum_k": 301.69661598182546,
+              "terminal_current_mismatch_a": 2.6645352591003757e-15
+            },
+            "plus": {
+              "Joule_power_w": 0.026845957558147424,
+              "P_electrical_w": 0.03942995755814688,
+              "Qc_w": 0.03133969101684184,
+              "Qh_w": 0.05354713076227378,
+              "Qside_w": 0.01722251781271463,
+              "Seebeck_power_w": 0.01258399999999945,
+              "current_divergence_max_a": 1.9220736113823023e-15,
+              "electrical_resistance_ohm": 0.022186741783592936,
+              "energy_residual_relative": 2.206102700545138e-15,
+              "energy_residual_w": -3.122502256758253e-16,
+              "k_maximum_w_per_mk": 1.8506585282378036,
+              "k_minimum_w_per_mk": 0.9238984803938673,
+              "nonlinear_function_evaluations": 64,
+              "residual_relative": 1.316639943253595e-12,
+              "rho_maximum_ohm_m": 2.004424339020323e-05,
+              "rho_minimum_ohm_m": 8.411452735023719e-06,
+              "temperature_maximum_k": 348.33878832156944,
+              "temperature_minimum_k": 301.69519569072213,
+              "terminal_current_mismatch_a": 7.993605777301127e-15
+            }
+          },
+          "signed_current_a": 1.1
+        },
+        {
+          "adjoint": {
+            "adjoint_to_nonlinear_relative_error": 9.766816713033215e-09,
+            "adjoint_to_tangent_relative_error": 3.856069043461053e-16,
+            "direct_Qc_derivative_w": 0.0,
+            "epsilon_step": 0.002,
+            "field_Qc_derivative_w": -0.008997367300352013,
+            "nonlinear_central_Qc_derivative_w": -0.00899736738822765,
+            "tangent_Qc_derivative_w": -0.008997367300352017,
+            "total_Qc_derivative_w": -0.008997367300352013
+          },
+          "baseline": {
+            "Joule_power_w": 0.04356429716951685,
+            "P_electrical_w": 0.05426179716951651,
+            "Qc_w": 0.0253058410421795,
+            "Qh_w": 0.06506153325335616,
+            "Qside_w": 0.01450610495834112,
+            "Seebeck_power_w": 0.010697499999999667,
+            "current_divergence_max_a": 1.9975340825872934e-15,
+            "electrical_resistance_ohm": 0.03600355137976598,
+            "energy_residual_relative": 7.979485208776477e-15,
+            "energy_residual_w": 1.2698175844150228e-15,
+            "k_maximum_w_per_mk": 1.076345929877603,
+            "k_minimum_w_per_mk": 0.6681148070373346,
+            "nonlinear_function_evaluations": 86,
+            "residual_max_w": 6.70363558500503e-15,
+            "residual_relative": 2.2952665318223738e-11,
+            "rho_maximum_ohm_m": 3.185252072449705e-05,
+            "rho_minimum_ohm_m": 1.2960762200718127e-05,
+            "temperature_maximum_k": 349.2463711816754,
+            "temperature_minimum_k": 302.66770914768995,
+            "terminal_current_mismatch_a": 5.551115123125783e-15
+          },
+          "branch": "n",
+          "complete_jacobian_diagnostics": {
+            "condition_number": 102.24915092337781,
+            "current_field_derivative_l2_a_per_epsilon": 0.0004511033138007277,
+            "joule_power_derivative_w_per_epsilon": 0.00040749598148592803,
+            "kappa_T_conduction_jacobian_fraction": 0.0018670003323168105,
+            "largest_singular_value_w_per_k": 0.006290661794595836,
+            "relative_current_field_derivative_per_epsilon": 0.00029885822355132566,
+            "sigma_T_current_redistribution_jacobian_fraction": 0.00022515836535796268,
+            "smallest_singular_value_w_per_k": 6.152287562084357e-05
+          },
+          "constitutive_temperature_dependence": {
+            "k_fractional_change_per_50_k": -0.11307956328284252,
+            "k_log_slope_per_k": -0.0024,
+            "rho_fractional_change_per_50_k": 0.17351087099181028,
+            "rho_log_slope_per_k": 0.0032
+          },
+          "grid": {
+            "cells": 84,
+            "nx": 12,
+            "ny": 7
+          },
+          "perturbed_states": {
+            "minus": {
+              "Joule_power_w": 0.04356348219161105,
+              "P_electrical_w": 0.054263732191611125,
+              "Qc_w": 0.025323831628990705,
+              "Qh_w": 0.06508433319159664,
+              "Qside_w": 0.014503230629006632,
+              "Seebeck_power_w": 0.010700250000000076,
+              "current_divergence_max_a": 2.16233281280509e-15,
+              "electrical_resistance_ohm": 0.03600287784430664,
+              "energy_residual_relative": 9.023715321569959e-15,
+              "energy_residual_w": 1.4363510381087963e-15,
+              "k_maximum_w_per_mk": 1.0763587124419172,
+              "k_minimum_w_per_mk": 0.6681273039740449,
+              "nonlinear_function_evaluations": 64,
+              "residual_relative": 1.1853795214846414e-12,
+              "rho_maximum_ohm_m": 3.185180744725129e-05,
+              "rho_minimum_ohm_m": 1.2960377706559005e-05,
+              "temperature_maximum_k": 349.2450061081862,
+              "temperature_minimum_k": 302.6662913317782,
+              "terminal_current_mismatch_a": 1.1102230246251565e-15
+            },
+            "plus": {
+              "Joule_power_w": 0.04356511217553699,
+              "P_electrical_w": 0.05425986217553774,
+              "Qc_w": 0.025287842159437794,
+              "Qh_w": 0.06503872497579502,
+              "Qside_w": 0.01450897935918244,
+              "Seebeck_power_w": 0.010694750000000756,
+              "current_divergence_max_a": 1.8301332671555315e-15,
+              "electrical_resistance_ohm": 0.03600422493846019,
+              "energy_residual_relative": 1.2081263862049515e-14,
+              "energy_residual_w": 1.9220736113823023e-15,
+              "k_maximum_w_per_mk": 1.0763331510949243,
+              "k_minimum_w_per_mk": 0.6681023073225837,
+              "nonlinear_function_evaluations": 64,
+              "residual_relative": 1.244566132811633e-12,
+              "rho_maximum_ohm_m": 3.1853233940385755e-05,
+              "rho_minimum_ohm_m": 1.2961146727150624e-05,
+              "temperature_maximum_k": 349.24773549194936,
+              "temperature_minimum_k": 302.66912764212327,
+              "terminal_current_mismatch_a": 1.2656542480726785e-14
+            }
+          },
+          "signed_current_a": -1.1
+        }
+      ],
+      "grid": {
+        "cells_per_branch": 84,
+        "nx": 12,
+        "ny": 7
+      },
+      "maximum_all_state_energy_residual_relative": 4.825235206746803e-14,
+      "maximum_energy_residual_relative": 4.825235206746803e-14,
+      "minimum_relative_current_field_derivative": 0.00029885822355132566,
+      "minimum_sigma_T_jacobian_fraction": 7.660233946409382e-05,
+      "pair_adjoint_Qc_derivative_w": -0.0012399773656813183,
+      "pair_adjoint_to_nonlinear_relative_error": 2.9498014251998315e-08,
+      "pair_nonlinear_central_Qc_derivative_w": -0.0012399774022581883
+    },
+    {
+      "branches": [
+        {
+          "adjoint": {
+            "adjoint_to_nonlinear_relative_error": 6.4704085484435965e-09,
+            "adjoint_to_tangent_relative_error": 1.1184115349110852e-16,
+            "direct_Qc_derivative_w": 0.0,
+            "epsilon_step": 0.002,
+            "field_Qc_derivative_w": 0.007755300360500659,
+            "nonlinear_central_Qc_derivative_w": 0.007755300410680621,
+            "tangent_Qc_derivative_w": 0.0077553003605006585,
+            "total_Qc_derivative_w": 0.007755300360500659
+          },
+          "baseline": {
+            "Joule_power_w": 0.026836368343097737,
+            "P_electrical_w": 0.039417618343097205,
+            "Qc_w": 0.031318407808743176,
+            "Qh_w": 0.053496872344005963,
+            "Qside_w": 0.017239153807832985,
+            "Seebeck_power_w": 0.012581249999999464,
+            "current_divergence_max_a": 3.2127078775090467e-15,
+            "electrical_resistance_ohm": 0.022178816812477468,
+            "energy_residual_relative": 1.0103848222520724e-14,
+            "energy_residual_w": -1.429412144204889e-15,
+            "k_maximum_w_per_mk": 1.8728500024307246,
+            "k_minimum_w_per_mk": 0.9269071210679973,
+            "nonlinear_function_evaluations": 131,
+            "residual_max_w": 1.0946850522407237e-15,
+            "residual_relative": 4.162886818380217e-12,
+            "rho_maximum_ohm_m": 2.0219457416637103e-05,
+            "rho_minimum_ohm_m": 8.311473084807054e-06,
+            "temperature_maximum_k": 348.74937435950466,
+            "temperature_minimum_k": 301.25170318985647,
+            "terminal_current_mismatch_a": 7.549516567451064e-15
+          },
+          "branch": "p",
+          "complete_jacobian_diagnostics": {
+            "condition_number": 185.2238497532847,
+            "current_field_derivative_l2_a_per_epsilon": 0.000470912217569144,
+            "joule_power_derivative_w_per_epsilon": -0.00015447795925771501,
+            "kappa_T_conduction_jacobian_fraction": 0.001379459991930087,
+            "largest_singular_value_w_per_k": 0.01084690851172715,
+            "relative_current_field_derivative_per_epsilon": 0.00030896244215231495,
+            "sigma_T_current_redistribution_jacobian_fraction": 4.230373528423963e-05,
+            "smallest_singular_value_w_per_k": 5.8561079073645564e-05
+          },
+          "constitutive_temperature_dependence": {
+            "k_fractional_change_per_50_k": -0.11307956328284252,
+            "k_log_slope_per_k": -0.0024,
+            "rho_fractional_change_per_50_k": 0.17351087099181028,
+            "rho_log_slope_per_k": 0.0032
+          },
+          "grid": {
+            "cells": 144,
+            "nx": 16,
+            "ny": 9
+          },
+          "perturbed_states": {
+            "minus": {
+              "Joule_power_w": 0.02683667730773323,
+              "P_electrical_w": 0.03941517730773255,
+              "Qc_w": 0.0313028946142671,
+              "Qh_w": 0.05347684765406382,
+              "Qside_w": 0.017241224267938483,
+              "Seebeck_power_w": 0.012578499999999321,
+              "current_divergence_max_a": 2.7590776885411117e-15,
+              "electrical_resistance_ohm": 0.022179072155151486,
+              "energy_residual_relative": 1.8741019086437506e-14,
+              "energy_residual_w": 2.6506574712925612e-15,
+              "k_maximum_w_per_mk": 1.872847657052662,
+              "k_minimum_w_per_mk": 0.9268943702965199,
+              "nonlinear_function_evaluations": 97,
+              "residual_relative": 1.9919351709458595e-12,
+              "rho_maximum_ohm_m": 2.0219708887912727e-05,
+              "rho_minimum_ohm_m": 8.311577634955493e-06,
+              "temperature_maximum_k": 348.75008175578785,
+              "temperature_minimum_k": 301.2522323981908,
+              "terminal_current_mismatch_a": 9.547918011776346e-15
+            },
+            "plus": {
+              "Joule_power_w": 0.0268360593958962,
+              "P_electrical_w": 0.03942005939589662,
+              "Qc_w": 0.03133391581590982,
+              "Qh_w": 0.053516891746411596,
+              "Qside_w": 0.017237083465397113,
+              "Seebeck_power_w": 0.012584000000000421,
+              "current_divergence_max_a": 2.0146644769125643e-15,
+              "electrical_resistance_ohm": 0.02217856148421166,
+              "energy_residual_relative": 1.6034564134277825e-14,
+              "energy_residual_w": 2.2690183065776637e-15,
+              "k_maximum_w_per_mk": 1.8728523470253768,
+              "k_minimum_w_per_mk": 0.9269198709181268,
+              "nonlinear_function_evaluations": 97,
+              "residual_relative": 2.4579397716106062e-12,
+              "rho_maximum_ohm_m": 2.021920593068125e-05,
+              "rho_minimum_ohm_m": 8.311368557589032e-06,
+              "temperature_maximum_k": 348.7486667484141,
+              "temperature_minimum_k": 301.2511741631619,
+              "terminal_current_mismatch_a": 5.995204332975845e-15
+            }
+          },
+          "signed_current_a": 1.1
+        },
+        {
+          "adjoint": {
+            "adjoint_to_nonlinear_relative_error": 7.657944407284249e-09,
+            "adjoint_to_tangent_relative_error": 0.0,
+            "direct_Qc_derivative_w": 0.0,
+            "epsilon_step": 0.002,
+            "field_Qc_derivative_w": -0.008999491325211762,
+            "nonlinear_central_Qc_derivative_w": -0.008999491394129366,
+            "tangent_Qc_derivative_w": -0.008999491325211762,
+            "total_Qc_derivative_w": -0.008999491325211762
+          },
+          "baseline": {
+            "Joule_power_w": 0.04353640291830043,
+            "P_electrical_w": 0.05423390291830089,
+            "Qc_w": 0.025301691353246523,
+            "Qh_w": 0.06503136457263732,
+            "Qside_w": 0.014504229698910805,
+            "Seebeck_power_w": 0.010697500000000458,
+            "current_divergence_max_a": 2.9891453895425357e-15,
+            "electrical_resistance_ohm": 0.035980498279587075,
+            "energy_residual_relative": 4.4929951089717075e-15,
+            "energy_residual_w": 7.147060721024445e-16,
+            "k_maximum_w_per_mk": 1.076873434587545,
+            "k_minimum_w_per_mk": 0.6655942837357348,
+            "nonlinear_function_evaluations": 131,
+            "residual_max_w": 4.128065890420668e-16,
+            "residual_relative": 2.4229951965512612e-12,
+            "rho_maximum_ohm_m": 3.18677910821086e-05,
+            "rho_minimum_ohm_m": 1.2851802459609186e-05,
+            "temperature_maximum_k": 349.43447287793333,
+            "temperature_minimum_k": 301.9706312627536,
+            "terminal_current_mismatch_a": 7.549516567451064e-15
+          },
+          "branch": "n",
+          "complete_jacobian_diagnostics": {
+            "condition_number": 179.76366040609864,
+            "current_field_derivative_l2_a_per_epsilon": 0.00045326454797346976,
+            "joule_power_derivative_w_per_epsilon": 0.0004050968222535367,
+            "kappa_T_conduction_jacobian_fraction": 0.0014264853462246465,
+            "largest_singular_value_w_per_k": 0.006469769261528806,
+            "relative_current_field_derivative_per_epsilon": 0.0002977524668675441,
+            "sigma_T_current_redistribution_jacobian_fraction": 0.00012451528179595813,
+            "smallest_singular_value_w_per_k": 3.599041790155556e-05
+          },
+          "constitutive_temperature_dependence": {
+            "k_fractional_change_per_50_k": -0.11307956328284252,
+            "k_log_slope_per_k": -0.0024,
+            "rho_fractional_change_per_50_k": 0.17351087099181028,
+            "rho_log_slope_per_k": 0.0032
+          },
+          "grid": {
+            "cells": 144,
+            "nx": 16,
+            "ny": 9
+          },
+          "perturbed_states": {
+            "minus": {
+              "Joule_power_w": 0.04353559273871019,
+              "P_electrical_w": 0.054235842738710495,
+              "Qc_w": 0.02531968617231623,
+              "Qh_w": 0.06505415901043378,
+              "Qside_w": 0.014501369900462255,
+              "Seebeck_power_w": 0.010700250000000307,
+              "current_divergence_max_a": 2.7417304537813436e-15,
+              "electrical_resistance_ohm": 0.035979828709677794,
+              "energy_residual_relative": 8.21401532169848e-13,
+              "energy_residual_w": -1.3069406668009265e-13,
+              "k_maximum_w_per_mk": 1.0768835017495446,
+              "k_minimum_w_per_mk": 0.6656078251293281,
+              "nonlinear_function_evaluations": 64,
+              "residual_relative": 6.586241827058227e-11,
+              "rho_maximum_ohm_m": 3.186705317553698e-05,
+              "rho_minimum_ohm_m": 1.2851429061062503e-05,
+              "temperature_maximum_k": 349.43343646549846,
+              "temperature_minimum_k": 301.9695817096661,
+              "terminal_current_mismatch_a": 4.884981308350689e-15
+            },
+            "plus": {
+              "Joule_power_w": 0.0435372131259992,
+              "P_electrical_w": 0.05423196312599922,
+              "Qc_w": 0.025283688206739714,
+              "Qh_w": 0.06500856176405369,
+              "Qside_w": 0.0145070895687734,
+              "Seebeck_power_w": 0.010694750000000013,
+              "current_divergence_max_a": 2.1822821327788233e-15,
+              "electrical_resistance_ohm": 0.03598116787272665,
+              "energy_residual_relative": 5.543041318136943e-13,
+              "energy_residual_w": 8.815170815523743e-14,
+              "k_maximum_w_per_mk": 1.0768633708482749,
+              "k_minimum_w_per_mk": 0.6655807401405737,
+              "nonlinear_function_evaluations": 64,
+              "residual_relative": 6.250372640061008e-11,
+              "rho_maximum_ohm_m": 3.186852894942466e-05,
+              "rho_minimum_ohm_m": 1.285217585950123e-05,
+              "temperature_maximum_k": 349.43550871390676,
+              "temperature_minimum_k": 301.9716813169988,
+              "terminal_current_mismatch_a": 2.220446049250313e-16
+            }
+          },
+          "signed_current_a": -1.1
+        }
+      ],
+      "grid": {
+        "cells_per_branch": 144,
+        "nx": 16,
+        "ny": 9
+      },
+      "maximum_all_state_energy_residual_relative": 8.21401532169848e-13,
+      "maximum_energy_residual_relative": 1.0103848222520724e-14,
+      "minimum_relative_current_field_derivative": 0.0002977524668675441,
+      "minimum_sigma_T_jacobian_fraction": 4.230373528423963e-05,
+      "pair_adjoint_Qc_derivative_w": -0.0012441909647111027,
+      "pair_adjoint_to_nonlinear_relative_error": 1.50601017411569e-08,
+      "pair_nonlinear_central_Qc_derivative_w": -0.0012441909834487452
+    }
+  ],
+  "input_bindings": {
+    "scripts/analysis/fully_coupled_2d.py": "d75a7924f45803cc112a23602dd5bdd27f38d68fc866f62b8e43ffa6d7f1bb2f",
+    "scripts/analysis/validate_independent_2d_common_mode.py": "ebebc31056c59254c9b23b0cf99b3929b0e696fbaea5d6ddcb385d00cad68e59"
+  },
+  "model": {
+    "electrical_equation": "div[sigma(T,x,y) grad(Psi)]=0 at fixed total current",
+    "geometry_and_data_role": "Synthetic heterogeneous two-dimensional branches; not fitted to PbSe, BTS/BST, or an as-built device.",
+    "jacobian": "Central derivative of the reduced residual after an exact electrical solve at every temperature state; this is the full electrothermal Schur complement and includes dJ/dT from sigma_T.",
+    "thermal_equation": "-div[kappa(T,x,y)grad(T)]-rho(T,x,y)|J|^2+div[J G_tau(T)]=0"
+  },
+  "runtime": {
+    "numpy": "2.1.1",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "python": "3.10.5"
+  },
+  "schema_version": "fully_coupled_2d/v1",
+  "scientific_question": "Does the common-mode cold-port adjoint remain valid when sigma(T) redistributes the two-dimensional current field and kappa(T) changes the conduction operator?",
+  "scope": {
+    "limitation": "The synthetic calculation validates a particular PbSe/BTS device, contact stack, radiation model, or three-dimensional package.",
+    "supported_result": "A conservative heterogeneous 2-D example with temperature-dependent sigma and kappa, including sigma_T-driven current redistribution in the complete electrothermal Jacobian, reproduces the common-mode cold-port adjoint response."
+  },
+  "sigma_T_zero_negative_control": {
+    "grid": {
+      "cells": 40,
+      "nx": 8,
+      "ny": 5
+    },
+    "interpretation": "With rho_T set exactly to zero, the fixed-current electrical field is independent of temperature and both current-redistribution diagnostics collapse to numerical zero.",
+    "relative_current_field_derivative_per_epsilon": 0.0,
+    "rho_log_slope_per_k": 0.0,
+    "sigma_T_current_redistribution_jacobian_fraction": 0.0
+  },
+  "summary": {
+    "fine_grid_pair_adjoint_Qc_derivative_w": -0.0012441909647111027,
+    "maximum_energy_residual_relative": 8.21401532169848e-13,
+    "maximum_pair_adjoint_to_nonlinear_relative_error": 3.032261447882434e-08,
+    "medium_to_fine_pair_adjoint_relative_change": 0.003386617608787089,
+    "minimum_reduced_jacobian_singular_value_w_per_k": 3.599041790155556e-05,
+    "minimum_relative_current_field_derivative_per_epsilon": 0.0002977524668675441,
+    "minimum_sigma_T_jacobian_fraction": 4.230373528423963e-05
+  },
+  "validation_checks": {
+    "adjoint_vs_independent_nonlinear_pass": true,
+    "all_nonlinear_states_converged": true,
+    "complete_reduced_jacobian_nonsingular": true,
+    "energy_closure_pass": true,
+    "medium_to_fine_grid_change_pass": true,
+    "sigma_T_current_redistribution_resolved": true,
+    "sigma_T_zero_negative_control_pass": true
+  }
+}

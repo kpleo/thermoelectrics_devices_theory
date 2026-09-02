@@ -1,0 +1,3011 @@
+{
+  "analysis_id": "SCI-PBSE-DEVICE-FORWARD-CONSTRAINT-363K-20260825",
+  "central_scientific_result": "At the Figure 4A 362.998-K hot-side point, the selected public PbSe/Cr candidates and nominal 7-pair 2x2x6-mm geometry predict 0.705 W maximum bulk cooling and 0.664 W after the reported-contact sensitivity, whereas the source-figure DeltaTmax endpoint is nominally zero load.  Closing the simple model requires an equivalent 0.01251 W/K unresolved thermal-loss budget, but public data do not identify a unique mechanism.",
+  "current_curves": {
+    "conservative_direction": [
+      {
+        "bulk_Qc_w": -0.8823379913259656,
+        "contact_corrected_Qc_w": -0.8823379913259656,
+        "current_a": 0.0
+      },
+      {
+        "bulk_Qc_w": -0.8602080461929861,
+        "contact_corrected_Qc_w": -0.8602112180679861,
+        "current_a": 0.025
+      },
+      {
+        "bulk_Qc_w": -0.8382649929070687,
+        "contact_corrected_Qc_w": -0.8382776804070687,
+        "current_a": 0.05
+      },
+      {
+        "bulk_Qc_w": -0.816508469747628,
+        "contact_corrected_Qc_w": -0.816537016622628,
+        "current_a": 0.07500000000000001
+      },
+      {
+        "bulk_Qc_w": -0.7949381328173282,
+        "contact_corrected_Qc_w": -0.7949888828173282,
+        "current_a": 0.1
+      },
+      {
+        "bulk_Qc_w": -0.7735536559373393,
+        "contact_corrected_Qc_w": -0.7736329528123392,
+        "current_a": 0.125
+      },
+      {
+        "bulk_Qc_w": -0.7523547305523383,
+        "contact_corrected_Qc_w": -0.7524689180523383,
+        "current_a": 0.15000000000000002
+      },
+      {
+        "bulk_Qc_w": -0.7313410656451815,
+        "contact_corrected_Qc_w": -0.7314964875201815,
+        "current_a": 0.17500000000000002
+      },
+      {
+        "bulk_Qc_w": -0.7105123876611792,
+        "contact_corrected_Qc_w": -0.7107153876611791,
+        "current_a": 0.2
+      },
+      {
+        "bulk_Qc_w": -0.6898684404419175,
+        "contact_corrected_Qc_w": -0.6901253623169176,
+        "current_a": 0.225
+      },
+      {
+        "bulk_Qc_w": -0.6694089851685865,
+        "contact_corrected_Qc_w": -0.6697261726685865,
+        "current_a": 0.25
+      },
+      {
+        "bulk_Qc_w": -0.649133800314772,
+        "contact_corrected_Qc_w": -0.649517597189772,
+        "current_a": 0.275
+      },
+      {
+        "bulk_Qc_w": -0.6290426816086969,
+        "contact_corrected_Qc_w": -0.6294994316086969,
+        "current_a": 0.30000000000000004
+      },
+      {
+        "bulk_Qc_w": -0.6091354420048867,
+        "contact_corrected_Qc_w": -0.6096714888798866,
+        "current_a": 0.325
+      },
+      {
+        "bulk_Qc_w": -0.5894119109718243,
+        "contact_corrected_Qc_w": -0.5900335984718243,
+        "current_a": 0.35000000000000003
+      },
+      {
+        "bulk_Qc_w": -0.5698719372210536,
+        "contact_corrected_Qc_w": -0.5705856090960536,
+        "current_a": 0.375
+      },
+      {
+        "bulk_Qc_w": -0.5505153846556228,
+        "contact_corrected_Qc_w": -0.5513273846556228,
+        "current_a": 0.4
+      },
+      {
+        "bulk_Qc_w": -0.5313421350436248,
+        "contact_corrected_Qc_w": -0.5322588069186248,
+        "current_a": 0.42500000000000004
+      },
+      {
+        "bulk_Qc_w": -0.51235208738022,
+        "contact_corrected_Qc_w": -0.51337977488022,
+        "current_a": 0.45
+      },
+      {
+        "bulk_Qc_w": -0.49354515791627956,
+        "contact_corrected_Qc_w": -0.49469020479127956,
+        "current_a": 0.47500000000000003
+      },
+      {
+        "bulk_Qc_w": -0.4749212801966582,
+        "contact_corrected_Qc_w": -0.4761900301966582,
+        "current_a": 0.5
+      },
+      {
+        "bulk_Qc_w": -0.45648040510816523,
+        "contact_corrected_Qc_w": -0.45787920198316523,
+        "current_a": 0.525
+      },
+      {
+        "bulk_Qc_w": -0.4382225009373163,
+        "contact_corrected_Qc_w": -0.4397576884373163,
+        "current_a": 0.55
+      },
+      {
+        "bulk_Qc_w": -0.4201475534379537,
+        "contact_corrected_Qc_w": -0.42182547531295367,
+        "current_a": 0.5750000000000001
+      },
+      {
+        "bulk_Qc_w": -0.40225556590884354,
+        "contact_corrected_Qc_w": -0.40408256590884356,
+        "current_a": 0.6000000000000001
+      },
+      {
+        "bulk_Qc_w": -0.3845465592818691,
+        "contact_corrected_Qc_w": -0.38652898115686907,
+        "current_a": 0.625
+      },
+      {
+        "bulk_Qc_w": -0.36702057223161155,
+        "contact_corrected_Qc_w": -0.36916475973161156,
+        "current_a": 0.65
+      },
+      {
+        "bulk_Qc_w": -0.34967766130533773,
+        "contact_corrected_Qc_w": -0.35198995818033774,
+        "current_a": 0.675
+      },
+      {
+        "bulk_Qc_w": -0.3325179009971343,
+        "contact_corrected_Qc_w": -0.3350046509971343,
+        "current_a": 0.7000000000000001
+      },
+      {
+        "bulk_Qc_w": -0.3155413838838423,
+        "contact_corrected_Qc_w": -0.31820893075884227,
+        "current_a": 0.7250000000000001
+      },
+      {
+        "bulk_Qc_w": -0.2987482206393653,
+        "contact_corrected_Qc_w": -0.3016029081393653,
+        "current_a": 0.75
+      },
+      {
+        "bulk_Qc_w": -0.2821385406640407,
+        "contact_corrected_Qc_w": -0.2851867125390407,
+        "current_a": 0.775
+      },
+      {
+        "bulk_Qc_w": -0.2657124917130447,
+        "contact_corrected_Qc_w": -0.2689604917130447,
+        "current_a": 0.8
+      },
+      {
+        "bulk_Qc_w": -0.24947024028020182,
+        "contact_corrected_Qc_w": -0.25292441215520184,
+        "current_a": 0.8250000000000001
+      },
+      {
+        "bulk_Qc_w": -0.23341197178798326,
+        "contact_corrected_Qc_w": -0.23707865928798325,
+        "current_a": 0.8500000000000001
+      },
+      {
+        "bulk_Qc_w": -0.21753789079530636,
+        "contact_corrected_Qc_w": -0.22142343767030637,
+        "current_a": 0.875
+      },
+      {
+        "bulk_Qc_w": -0.20184822143053524,
+        "contact_corrected_Qc_w": -0.20595897143053524,
+        "current_a": 0.9
+      },
+      {
+        "bulk_Qc_w": -0.1863432071628363,
+        "contact_corrected_Qc_w": -0.19068550403783632,
+        "current_a": 0.925
+      },
+      {
+        "bulk_Qc_w": -0.17102311123534703,
+        "contact_corrected_Qc_w": -0.17560329873534702,
+        "current_a": 0.9500000000000001
+      },
+      {
+        "bulk_Qc_w": -0.15588821687919469,
+        "contact_corrected_Qc_w": -0.1607126387541947,
+        "current_a": 0.9750000000000001
+      },
+      {
+        "bulk_Qc_w": -0.14093882812932618,
+        "contact_corrected_Qc_w": -0.14601382812932617,
+        "current_a": 1.0
+      },
+      {
+        "bulk_Qc_w": -0.12617527028595193,
+        "contact_corrected_Qc_w": -0.13150719216095194,
+        "current_a": 1.0250000000000001
+      },
+      {
+        "bulk_Qc_w": -0.11159788787746028,
+        "contact_corrected_Qc_w": -0.11719307537746028,
+        "current_a": 1.05
+      },
+      {
+        "bulk_Qc_w": -0.09720704784863049,
+        "contact_corrected_Qc_w": -0.10307184472363048,
+        "current_a": 1.075
+      },
+      {
+        "bulk_Qc_w": -0.08300313700142654,
+        "contact_corrected_Qc_w": -0.08914388700142654,
+        "current_a": 1.1
+      },
+      {
+        "bulk_Qc_w": -0.06898656750838944,
+        "contact_corrected_Qc_w": -0.07540961438338945,
+        "current_a": 1.125
+      },
+      {
+        "bulk_Qc_w": -0.055157770589149877,
+        "contact_corrected_Qc_w": -0.06186945808914988,
+        "current_a": 1.1500000000000001
+      },
+      {
+        "bulk_Qc_w": -0.04151720230552531,
+        "contact_corrected_Qc_w": -0.04852387418052531,
+        "current_a": 1.175
+      },
+      {
+        "bulk_Qc_w": -0.028065340768611655,
+        "contact_corrected_Qc_w": -0.03537334076861166,
+        "current_a": 1.2000000000000002
+      },
+      {
+        "bulk_Qc_w": -0.014802687665863486,
+        "contact_corrected_Qc_w": -0.022418359540863488,
+        "current_a": 1.225
+      },
+      {
+        "bulk_Qc_w": -0.0017297690314583894,
+        "contact_corrected_Qc_w": -0.00965945653145839,
+        "current_a": 1.25
+      },
+      {
+        "bulk_Qc_w": 0.01115286519023632,
+        "contact_corrected_Qc_w": 0.0029028183152363177,
+        "current_a": 1.2750000000000001
+      },
+      {
+        "bulk_Qc_w": 0.023844639021364168,
+        "contact_corrected_Qc_w": 0.015267889021364167,
+        "current_a": 1.3
+      },
+      {
+        "bulk_Qc_w": 0.03634495250171567,
+        "contact_corrected_Qc_w": 0.027435155626715668,
+        "current_a": 1.3250000000000002
+      },
+      {
+        "bulk_Qc_w": 0.04865317919650121,
+        "contact_corrected_Qc_w": 0.0394039916965012,
+        "current_a": 1.35
+      },
+      {
+        "bulk_Qc_w": 0.06076866497490216,
+        "contact_corrected_Qc_w": 0.05117374309990216,
+        "current_a": 1.375
+      },
+      {
+        "bulk_Qc_w": 0.0726907304139028,
+        "contact_corrected_Qc_w": 0.0627437304139028,
+        "current_a": 1.4000000000000001
+      },
+      {
+        "bulk_Qc_w": 0.08441866687775954,
+        "contact_corrected_Qc_w": 0.07411324500275954,
+        "current_a": 1.425
+      },
+      {
+        "bulk_Qc_w": 0.09595173883962829,
+        "contact_corrected_Qc_w": 0.08528155133962828,
+        "current_a": 1.4500000000000002
+      },
+      {
+        "bulk_Qc_w": 0.10728918079127985,
+        "contact_corrected_Qc_w": 0.09624788391627984,
+        "current_a": 1.475
+      },
+      {
+        "bulk_Qc_w": 0.11843019735275519,
+        "contact_corrected_Qc_w": 0.10701144735275518,
+        "current_a": 1.5
+      },
+      {
+        "bulk_Qc_w": 0.1293739636779146,
+        "contact_corrected_Qc_w": 0.1175714168029146,
+        "current_a": 1.5250000000000001
+      },
+      {
+        "bulk_Qc_w": 0.1401196219765143,
+        "contact_corrected_Qc_w": 0.12792693447651432,
+        "current_a": 1.55
+      },
+      {
+        "bulk_Qc_w": 0.1506662845673176,
+        "contact_corrected_Qc_w": 0.1380771126923176,
+        "current_a": 1.5750000000000002
+      },
+      {
+        "bulk_Qc_w": 0.16101303133841732,
+        "contact_corrected_Qc_w": 0.14802103133841732,
+        "current_a": 1.6
+      },
+      {
+        "bulk_Qc_w": 0.1711589061835781,
+        "contact_corrected_Qc_w": 0.1577577343085781,
+        "current_a": 1.625
+      },
+      {
+        "bulk_Qc_w": 0.18110291938908557,
+        "contact_corrected_Qc_w": 0.16728623188908556,
+        "current_a": 1.6500000000000001
+      },
+      {
+        "bulk_Qc_w": 0.1908440467148146,
+        "contact_corrected_Qc_w": 0.1766054998398146,
+        "current_a": 1.675
+      },
+      {
+        "bulk_Qc_w": 0.20038122668570324,
+        "contact_corrected_Qc_w": 0.18571447668570323,
+        "current_a": 1.7000000000000002
+      },
+      {
+        "bulk_Qc_w": 0.2097133628610313,
+        "contact_corrected_Qc_w": 0.19461206598603129,
+        "current_a": 1.725
+      },
+      {
+        "bulk_Qc_w": 0.21883931617393848,
+        "contact_corrected_Qc_w": 0.20329712867393848,
+        "current_a": 1.75
+      },
+      {
+        "bulk_Qc_w": 0.22775791068716786,
+        "contact_corrected_Qc_w": 0.21176848881216787,
+        "current_a": 1.7750000000000001
+      },
+      {
+        "bulk_Qc_w": 0.23646792876587797,
+        "contact_corrected_Qc_w": 0.22002492876587795,
+        "current_a": 1.8
+      },
+      {
+        "bulk_Qc_w": 0.24496811302934812,
+        "contact_corrected_Qc_w": 0.22806519115434812,
+        "current_a": 1.8250000000000002
+      },
+      {
+        "bulk_Qc_w": 0.2532571601715744,
+        "contact_corrected_Qc_w": 0.2358879726715744,
+        "current_a": 1.85
+      },
+      {
+        "bulk_Qc_w": 0.2613337247201595,
+        "contact_corrected_Qc_w": 0.24349192784515947,
+        "current_a": 1.875
+      },
+      {
+        "bulk_Qc_w": 0.26919641385292925,
+        "contact_corrected_Qc_w": 0.25087566385292925,
+        "current_a": 1.9000000000000001
+      },
+      {
+        "bulk_Qc_w": 0.2768437879195291,
+        "contact_corrected_Qc_w": 0.25803774104452915,
+        "current_a": 1.925
+      },
+      {
+        "bulk_Qc_w": 0.28427435980160526,
+        "contact_corrected_Qc_w": 0.26497667230160526,
+        "current_a": 1.9500000000000002
+      },
+      {
+        "bulk_Qc_w": 0.29148659161615464,
+        "contact_corrected_Qc_w": 0.27169091974115467,
+        "current_a": 1.975
+      },
+      {
+        "bulk_Qc_w": 0.2984788941867508,
+        "contact_corrected_Qc_w": 0.2781788941867508,
+        "current_a": 2.0
+      },
+      {
+        "bulk_Qc_w": 0.30524962208666223,
+        "contact_corrected_Qc_w": 0.2844389502116622,
+        "current_a": 2.025
+      },
+      {
+        "bulk_Qc_w": 0.3117970792480896,
+        "contact_corrected_Qc_w": 0.29046939174808956,
+        "current_a": 2.0500000000000003
+      },
+      {
+        "bulk_Qc_w": 0.3181195092150205,
+        "contact_corrected_Qc_w": 0.2962684623400205,
+        "current_a": 2.075
+      },
+      {
+        "bulk_Qc_w": 0.3242150982523046,
+        "contact_corrected_Qc_w": 0.3018343482523046,
+        "current_a": 2.1
+      },
+      {
+        "bulk_Qc_w": 0.33008197190215316,
+        "contact_corrected_Qc_w": 0.3071651750271532,
+        "current_a": 2.125
+      },
+      {
+        "bulk_Qc_w": 0.33571819121256785,
+        "contact_corrected_Qc_w": 0.3122590037125679,
+        "current_a": 2.15
+      },
+      {
+        "bulk_Qc_w": 0.34112175412974455,
+        "contact_corrected_Qc_w": 0.31711383225474454,
+        "current_a": 2.1750000000000003
+      },
+      {
+        "bulk_Qc_w": 0.3462905890431104,
+        "contact_corrected_Qc_w": 0.3217275890431104,
+        "current_a": 2.2
+      },
+      {
+        "bulk_Qc_w": 0.35122255714183537,
+        "contact_corrected_Qc_w": 0.32609813526683534,
+        "current_a": 2.225
+      },
+      {
+        "bulk_Qc_w": 0.3559154460360235,
+        "contact_corrected_Qc_w": 0.33022325853602347,
+        "current_a": 2.25
+      },
+      {
+        "bulk_Qc_w": 0.36036696813952823,
+        "contact_corrected_Qc_w": 0.33410067126452825,
+        "current_a": 2.275
+      },
+      {
+        "bulk_Qc_w": 0.36457475999535005,
+        "contact_corrected_Qc_w": 0.33772800999535,
+        "current_a": 2.3000000000000003
+      },
+      {
+        "bulk_Qc_w": 0.36853637570661785,
+        "contact_corrected_Qc_w": 0.34110282883161785,
+        "current_a": 2.325
+      },
+      {
+        "bulk_Qc_w": 0.3722492886005657,
+        "contact_corrected_Qc_w": 0.3442226011005657,
+        "current_a": 2.35
+      },
+      {
+        "bulk_Qc_w": 0.3757108846458608,
+        "contact_corrected_Qc_w": 0.3470847127708608,
+        "current_a": 2.375
+      },
+      {
+        "bulk_Qc_w": 0.378918459834038,
+        "contact_corrected_Qc_w": 0.34968645983403795,
+        "current_a": 2.4000000000000004
+      },
+      {
+        "bulk_Qc_w": 0.3818692197869888,
+        "contact_corrected_Qc_w": 0.3520250479119888,
+        "current_a": 2.4250000000000003
+      },
+      {
+        "bulk_Qc_w": 0.38456026828133716,
+        "contact_corrected_Qc_w": 0.35409758078133713,
+        "current_a": 2.45
+      },
+      {
+        "bulk_Qc_w": 0.3869886164906545,
+        "contact_corrected_Qc_w": 0.35590106961565454,
+        "current_a": 2.475
+      },
+      {
+        "bulk_Qc_w": 0.3891511682430142,
+        "contact_corrected_Qc_w": 0.3574324182430142,
+        "current_a": 2.5
+      },
+      {
+        "bulk_Qc_w": 0.391044718637512,
+        "contact_corrected_Qc_w": 0.358688421762512,
+        "current_a": 2.5250000000000004
+      },
+      {
+        "bulk_Qc_w": 0.3926659536081658,
+        "contact_corrected_Qc_w": 0.3596657661081658,
+        "current_a": 2.5500000000000003
+      },
+      {
+        "bulk_Qc_w": 0.39401144112544906,
+        "contact_corrected_Qc_w": 0.36036101925044906,
+        "current_a": 2.575
+      },
+      {
+        "bulk_Qc_w": 0.39507762954717734,
+        "contact_corrected_Qc_w": 0.3607706295471773,
+        "current_a": 2.6
+      },
+      {
+        "bulk_Qc_w": 0.39586084145280764,
+        "contact_corrected_Qc_w": 0.3608909195778076,
+        "current_a": 2.625
+      },
+      {
+        "bulk_Qc_w": 0.3963572711045743,
+        "contact_corrected_Qc_w": 0.3607180836045743,
+        "current_a": 2.6500000000000004
+      },
+      {
+        "bulk_Qc_w": 0.3965629759243945,
+        "contact_corrected_Qc_w": 0.3602481790493945,
+        "current_a": 2.6750000000000003
+      },
+      {
+        "bulk_Qc_w": 0.3964738726867891,
+        "contact_corrected_Qc_w": 0.35947712268678905,
+        "current_a": 2.7
+      },
+      {
+        "bulk_Qc_w": 0.3960857348086655,
+        "contact_corrected_Qc_w": 0.3584006879336655,
+        "current_a": 2.725
+      },
+      {
+        "bulk_Qc_w": 0.39539418222381406,
+        "contact_corrected_Qc_w": 0.3570144947238141,
+        "current_a": 2.75
+      },
+      {
+        "bulk_Qc_w": 0.3943946779906093,
+        "contact_corrected_Qc_w": 0.35531400611560926,
+        "current_a": 2.7750000000000004
+      },
+      {
+        "bulk_Qc_w": 0.39308252472172556,
+        "contact_corrected_Qc_w": 0.35329452472172557,
+        "current_a": 2.8000000000000003
+      },
+      {
+        "bulk_Qc_w": 0.3914528530223563,
+        "contact_corrected_Qc_w": 0.35095118114735624,
+        "current_a": 2.825
+      },
+      {
+        "bulk_Qc_w": 0.3895006188834284,
+        "contact_corrected_Qc_w": 0.3482789313834284,
+        "current_a": 2.85
+      },
+      {
+        "bulk_Qc_w": 0.3872205981045199,
+        "contact_corrected_Qc_w": 0.34527255122951994,
+        "current_a": 2.875
+      },
+      {
+        "bulk_Qc_w": 0.38460737613833273,
+        "contact_corrected_Qc_w": 0.3419266261383327,
+        "current_a": 2.9000000000000004
+      },
+      {
+        "bulk_Qc_w": 0.38165534354701797,
+        "contact_corrected_Qc_w": 0.33823554667201794,
+        "current_a": 2.9250000000000003
+      },
+      {
+        "bulk_Qc_w": 0.3783586936246893,
+        "contact_corrected_Qc_w": 0.33419350612468934,
+        "current_a": 2.95
+      },
+      {
+        "bulk_Qc_w": 0.3747114061980638,
+        "contact_corrected_Qc_w": 0.3297944843230638,
+        "current_a": 2.975
+      },
+      {
+        "bulk_Qc_w": 0.3707072492299824,
+        "contact_corrected_Qc_w": 0.32503224922998236,
+        "current_a": 3.0
+      },
+      {
+        "bulk_Qc_w": 0.3663397729422189,
+        "contact_corrected_Qc_w": 0.3199003510672189,
+        "current_a": 3.0250000000000004
+      },
+      {
+        "bulk_Qc_w": 0.36160229385320963,
+        "contact_corrected_Qc_w": 0.31439210635320963,
+        "current_a": 3.0500000000000003
+      },
+      {
+        "bulk_Qc_w": 0.3564878993936267,
+        "contact_corrected_Qc_w": 0.30850060251862665,
+        "current_a": 3.075
+      },
+      {
+        "bulk_Qc_w": 0.350989449740864,
+        "contact_corrected_Qc_w": 0.30221869974086396,
+        "current_a": 3.1
+      },
+      {
+        "bulk_Qc_w": 0.3450992162806488,
+        "contact_corrected_Qc_w": 0.2955386694056488,
+        "current_a": 3.125
+      },
+      {
+        "bulk_Qc_w": 0.33880808910501947,
+        "contact_corrected_Qc_w": 0.2884514016050195,
+        "current_a": 3.1500000000000004
+      },
+      {
+        "bulk_Qc_w": 0.3321067705340746,
+        "contact_corrected_Qc_w": 0.2809475986590746,
+        "current_a": 3.1750000000000003
+      },
+      {
+        "bulk_Qc_w": 0.3249856341389445,
+        "contact_corrected_Qc_w": 0.2730176341389445,
+        "current_a": 3.2
+      },
+      {
+        "bulk_Qc_w": 0.31743459073615055,
+        "contact_corrected_Qc_w": 0.2646514188611505,
+        "current_a": 3.225
+      },
+      {
+        "bulk_Qc_w": 0.3094430228731247,
+        "contact_corrected_Qc_w": 0.25583833537312467,
+        "current_a": 3.25
+      },
+      {
+        "bulk_Qc_w": 0.30099972820127135,
+        "contact_corrected_Qc_w": 0.24656718132627134,
+        "current_a": 3.2750000000000004
+      },
+      {
+        "bulk_Qc_w": 0.29209286264714596,
+        "contact_corrected_Qc_w": 0.23682611264714593,
+        "current_a": 3.3000000000000003
+      },
+      {
+        "bulk_Qc_w": 0.2827098967706032,
+        "contact_corrected_Qc_w": 0.2266025998956032,
+        "current_a": 3.325
+      },
+      {
+        "bulk_Qc_w": 0.2728375233515085,
+        "contact_corrected_Qc_w": 0.2158833358515085,
+        "current_a": 3.35
+      },
+      {
+        "bulk_Qc_w": 0.26246161515735167,
+        "contact_corrected_Qc_w": 0.20465419328235165,
+        "current_a": 3.375
+      },
+      {
+        "bulk_Qc_w": 0.2515671283049847,
+        "contact_corrected_Qc_w": 0.19290012830498465,
+        "current_a": 3.4000000000000004
+      },
+      {
+        "bulk_Qc_w": 0.24013802361098058,
+        "contact_corrected_Qc_w": 0.18060510173598057,
+        "current_a": 3.4250000000000003
+      },
+      {
+        "bulk_Qc_w": 0.22815715999260044,
+        "contact_corrected_Qc_w": 0.16775197249260043,
+        "current_a": 3.45
+      },
+      {
+        "bulk_Qc_w": 0.2156061802939299,
+        "contact_corrected_Qc_w": 0.15432238341892987,
+        "current_a": 3.475
+      },
+      {
+        "bulk_Qc_w": 0.20246538845817963,
+        "contact_corrected_Qc_w": 0.14029663845817963,
+        "current_a": 3.5
+      }
+    ],
+    "favorable_direction": [
+      {
+        "bulk_Qc_w": -0.6521628631539745,
+        "contact_corrected_Qc_w": -0.6521628631539745,
+        "current_a": 0.0
+      },
+      {
+        "bulk_Qc_w": -0.6276852401890674,
+        "contact_corrected_Qc_w": -0.6276884120640673,
+        "current_a": 0.025
+      },
+      {
+        "bulk_Qc_w": -0.6033776977831584,
+        "contact_corrected_Qc_w": -0.6033903852831585,
+        "current_a": 0.05
+      },
+      {
+        "bulk_Qc_w": -0.5792397399937255,
+        "contact_corrected_Qc_w": -0.5792682868687254,
+        "current_a": 0.07500000000000001
+      },
+      {
+        "bulk_Qc_w": -0.5552708908678855,
+        "contact_corrected_Qc_w": -0.5553216408678855,
+        "current_a": 0.1
+      },
+      {
+        "bulk_Qc_w": -0.5314706942605315,
+        "contact_corrected_Qc_w": -0.5315499911355315,
+        "current_a": 0.125
+      },
+      {
+        "bulk_Qc_w": -0.5078387136666672,
+        "contact_corrected_Qc_w": -0.5079529011666672,
+        "current_a": 0.15000000000000002
+      },
+      {
+        "bulk_Qc_w": -0.4843745320721623,
+        "contact_corrected_Qc_w": -0.4845299539471623,
+        "current_a": 0.17500000000000002
+      },
+      {
+        "bulk_Qc_w": -0.4610777518138207,
+        "contact_corrected_Qc_w": -0.4612807518138207,
+        "current_a": 0.2
+      },
+      {
+        "bulk_Qc_w": -0.43794799445279453,
+        "contact_corrected_Qc_w": -0.4382049163277945,
+        "current_a": 0.225
+      },
+      {
+        "bulk_Qc_w": -0.41498490066044125,
+        "contact_corrected_Qc_w": -0.41530208816044123,
+        "current_a": 0.25
+      },
+      {
+        "bulk_Qc_w": -0.39218813011669806,
+        "contact_corrected_Qc_w": -0.3925719269916981,
+        "current_a": 0.275
+      },
+      {
+        "bulk_Qc_w": -0.3695573614209128,
+        "contact_corrected_Qc_w": -0.3700141114209128,
+        "current_a": 0.30000000000000004
+      },
+      {
+        "bulk_Qc_w": -0.3470922920153824,
+        "contact_corrected_Qc_w": -0.34762833889038236,
+        "current_a": 0.325
+      },
+      {
+        "bulk_Qc_w": -0.32479263759354904,
+        "contact_corrected_Qc_w": -0.32541432509354906,
+        "current_a": 0.35000000000000003
+      },
+      {
+        "bulk_Qc_w": -0.3026581341175933,
+        "contact_corrected_Qc_w": -0.3033718059925933,
+        "current_a": 0.375
+      },
+      {
+        "bulk_Qc_w": -0.28068853473496536,
+        "contact_corrected_Qc_w": -0.28150053473496534,
+        "current_a": 0.4
+      },
+      {
+        "bulk_Qc_w": -0.25888361173913016,
+        "contact_corrected_Qc_w": -0.25980028361413016,
+        "current_a": 0.42500000000000004
+      },
+      {
+        "bulk_Qc_w": -0.2372431560724263,
+        "contact_corrected_Qc_w": -0.2382708435724263,
+        "current_a": 0.45
+      },
+      {
+        "bulk_Qc_w": -0.21576697733581446,
+        "contact_corrected_Qc_w": -0.21691202421081446,
+        "current_a": 0.47500000000000003
+      },
+      {
+        "bulk_Qc_w": -0.19445490374520383,
+        "contact_corrected_Qc_w": -0.19572365374520384,
+        "current_a": 0.5
+      },
+      {
+        "bulk_Qc_w": -0.17330678222732787,
+        "contact_corrected_Qc_w": -0.17470557910232787,
+        "current_a": 0.525
+      },
+      {
+        "bulk_Qc_w": -0.152322478397092,
+        "contact_corrected_Qc_w": -0.15385766589709202,
+        "current_a": 0.55
+      },
+      {
+        "bulk_Qc_w": -0.1315018766853201,
+        "contact_corrected_Qc_w": -0.13317979856032008,
+        "current_a": 0.5750000000000001
+      },
+      {
+        "bulk_Qc_w": -0.11084488028858881,
+        "contact_corrected_Qc_w": -0.11267188028858881,
+        "current_a": 0.6000000000000001
+      },
+      {
+        "bulk_Qc_w": -0.0903514113185555,
+        "contact_corrected_Qc_w": -0.0923338331935555,
+        "current_a": 0.625
+      },
+      {
+        "bulk_Qc_w": -0.07002141087238223,
+        "contact_corrected_Qc_w": -0.07216559837238223,
+        "current_a": 0.65
+      },
+      {
+        "bulk_Qc_w": -0.04985483914803924,
+        "contact_corrected_Qc_w": -0.05216713602303924,
+        "current_a": 0.675
+      },
+      {
+        "bulk_Qc_w": -0.02985167558238127,
+        "contact_corrected_Qc_w": -0.03233842558238127,
+        "current_a": 0.7000000000000001
+      },
+      {
+        "bulk_Qc_w": -0.01001191892606252,
+        "contact_corrected_Qc_w": -0.012679465801062521,
+        "current_a": 0.7250000000000001
+      },
+      {
+        "bulk_Qc_w": 0.009664412700249354,
+        "contact_corrected_Qc_w": 0.0068097252002493535,
+        "current_a": 0.75
+      },
+      {
+        "bulk_Qc_w": 0.02917728134242497,
+        "contact_corrected_Qc_w": 0.026129109467424968,
+        "current_a": 0.775
+      },
+      {
+        "bulk_Qc_w": 0.04852662931107496,
+        "contact_corrected_Qc_w": 0.04527862931107496,
+        "current_a": 0.8
+      },
+      {
+        "bulk_Qc_w": 0.06771237891318696,
+        "contact_corrected_Qc_w": 0.06425820703818697,
+        "current_a": 0.8250000000000001
+      },
+      {
+        "bulk_Qc_w": 0.08673443238266047,
+        "contact_corrected_Qc_w": 0.08306774488266047,
+        "current_a": 0.8500000000000001
+      },
+      {
+        "bulk_Qc_w": 0.1055926710069888,
+        "contact_corrected_Qc_w": 0.10170712413198879,
+        "current_a": 0.875
+      },
+      {
+        "bulk_Qc_w": 0.12428695588955753,
+        "contact_corrected_Qc_w": 0.12017620588955753,
+        "current_a": 0.9
+      },
+      {
+        "bulk_Qc_w": 0.14281712709578778,
+        "contact_corrected_Qc_w": 0.13847483022078777,
+        "current_a": 0.925
+      },
+      {
+        "bulk_Qc_w": 0.16118300371411812,
+        "contact_corrected_Qc_w": 0.15660281621411812,
+        "current_a": 0.9500000000000001
+      },
+      {
+        "bulk_Qc_w": 0.1793843827266336,
+        "contact_corrected_Qc_w": 0.17455996085163358,
+        "current_a": 0.9750000000000001
+      },
+      {
+        "bulk_Qc_w": 0.19742103872143224,
+        "contact_corrected_Qc_w": 0.19234603872143224,
+        "current_a": 1.0
+      },
+      {
+        "bulk_Qc_w": 0.21529272591628168,
+        "contact_corrected_Qc_w": 0.20996080404128167,
+        "current_a": 1.0250000000000001
+      },
+      {
+        "bulk_Qc_w": 0.23299917471209874,
+        "contact_corrected_Qc_w": 0.22740398721209876,
+        "current_a": 1.05
+      },
+      {
+        "bulk_Qc_w": 0.25054009428914403,
+        "contact_corrected_Qc_w": 0.24467529741414404,
+        "current_a": 1.075
+      },
+      {
+        "bulk_Qc_w": 0.2679151677334286,
+        "contact_corrected_Qc_w": 0.2617744177334286,
+        "current_a": 1.1
+      },
+      {
+        "bulk_Qc_w": 0.28512405656955736,
+        "contact_corrected_Qc_w": 0.27870100969455736,
+        "current_a": 1.125
+      },
+      {
+        "bulk_Qc_w": 0.3021663971880451,
+        "contact_corrected_Qc_w": 0.2954547096880451,
+        "current_a": 1.1500000000000001
+      },
+      {
+        "bulk_Qc_w": 0.31904180194001486,
+        "contact_corrected_Qc_w": 0.3120351300650149,
+        "current_a": 1.175
+      },
+      {
+        "bulk_Qc_w": 0.3357498577945354,
+        "contact_corrected_Qc_w": 0.32844185779453544,
+        "current_a": 1.2000000000000002
+      },
+      {
+        "bulk_Qc_w": 0.35229012627667317,
+        "contact_corrected_Qc_w": 0.34467445440167316,
+        "current_a": 1.225
+      },
+      {
+        "bulk_Qc_w": 0.3686621424323818,
+        "contact_corrected_Qc_w": 0.3607324549323818,
+        "current_a": 1.25
+      },
+      {
+        "bulk_Qc_w": 0.3848654150923981,
+        "contact_corrected_Qc_w": 0.37661536821739805,
+        "current_a": 1.2750000000000001
+      },
+      {
+        "bulk_Qc_w": 0.40089942501536824,
+        "contact_corrected_Qc_w": 0.3923226750153682,
+        "current_a": 1.3
+      },
+      {
+        "bulk_Qc_w": 0.41676362551121443,
+        "contact_corrected_Qc_w": 0.40785382863621444,
+        "current_a": 1.3250000000000002
+      },
+      {
+        "bulk_Qc_w": 0.43245744118442336,
+        "contact_corrected_Qc_w": 0.4232082536844234,
+        "current_a": 1.35
+      },
+      {
+        "bulk_Qc_w": 0.44798026723422457,
+        "contact_corrected_Qc_w": 0.4383853453592246,
+        "current_a": 1.375
+      },
+      {
+        "bulk_Qc_w": 0.4633314689086261,
+        "contact_corrected_Qc_w": 0.4533844689086261,
+        "current_a": 1.4000000000000001
+      },
+      {
+        "bulk_Qc_w": 0.4785103801166252,
+        "contact_corrected_Qc_w": 0.4682049582416252,
+        "current_a": 1.425
+      },
+      {
+        "bulk_Qc_w": 0.4935163036233903,
+        "contact_corrected_Qc_w": 0.4828461161233903,
+        "current_a": 1.4500000000000002
+      },
+      {
+        "bulk_Qc_w": 0.5083485095846473,
+        "contact_corrected_Qc_w": 0.4973072127096473,
+        "current_a": 1.475
+      },
+      {
+        "bulk_Qc_w": 0.5230062344007119,
+        "contact_corrected_Qc_w": 0.5115874844007119,
+        "current_a": 1.5
+      },
+      {
+        "bulk_Qc_w": 0.5374886818827106,
+        "contact_corrected_Qc_w": 0.5256861350077106,
+        "current_a": 1.5250000000000001
+      },
+      {
+        "bulk_Qc_w": 0.5517950176487575,
+        "contact_corrected_Qc_w": 0.5396023301487575,
+        "current_a": 1.55
+      },
+      {
+        "bulk_Qc_w": 0.5659243728425298,
+        "contact_corrected_Qc_w": 0.5533352009675299,
+        "current_a": 1.5750000000000002
+      },
+      {
+        "bulk_Qc_w": 0.5798758405869254,
+        "contact_corrected_Qc_w": 0.5668838405869254,
+        "current_a": 1.6
+      },
+      {
+        "bulk_Qc_w": 0.5936484776938635,
+        "contact_corrected_Qc_w": 0.5802473058188635,
+        "current_a": 1.625
+      },
+      {
+        "bulk_Qc_w": 0.6072412976514145,
+        "contact_corrected_Qc_w": 0.5934246101514146,
+        "current_a": 1.6500000000000001
+      },
+      {
+        "bulk_Qc_w": 0.6206532753041045,
+        "contact_corrected_Qc_w": 0.6064147284291045,
+        "current_a": 1.675
+      },
+      {
+        "bulk_Qc_w": 0.6338833421873714,
+        "contact_corrected_Qc_w": 0.6192165921873715,
+        "current_a": 1.7000000000000002
+      },
+      {
+        "bulk_Qc_w": 0.6469303880876756,
+        "contact_corrected_Qc_w": 0.6318290912126756,
+        "current_a": 1.725
+      },
+      {
+        "bulk_Qc_w": 0.6597932559146329,
+        "contact_corrected_Qc_w": 0.6442510684146329,
+        "current_a": 1.75
+      },
+      {
+        "bulk_Qc_w": 0.6724707432478444,
+        "contact_corrected_Qc_w": 0.6564813213728444,
+        "current_a": 1.7750000000000001
+      },
+      {
+        "bulk_Qc_w": 0.6849615982041188,
+        "contact_corrected_Qc_w": 0.6685185982041189,
+        "current_a": 1.8
+      },
+      {
+        "bulk_Qc_w": 0.697264521116613,
+        "contact_corrected_Qc_w": 0.680361599241613,
+        "current_a": 1.8250000000000002
+      },
+      {
+        "bulk_Qc_w": 0.709378159811395,
+        "contact_corrected_Qc_w": 0.6920089723113949,
+        "current_a": 1.85
+      },
+      {
+        "bulk_Qc_w": 0.7213011096624372,
+        "contact_corrected_Qc_w": 0.7034593127874372,
+        "current_a": 1.875
+      },
+      {
+        "bulk_Qc_w": 0.7330319096710802,
+        "contact_corrected_Qc_w": 0.7147111596710802,
+        "current_a": 1.9000000000000001
+      },
+      {
+        "bulk_Qc_w": 0.7445690428765904,
+        "contact_corrected_Qc_w": 0.7257629960015904,
+        "current_a": 1.925
+      },
+      {
+        "bulk_Qc_w": 0.7559109329630302,
+        "contact_corrected_Qc_w": 0.7366132454630302,
+        "current_a": 1.9500000000000002
+      },
+      {
+        "bulk_Qc_w": 0.7670559426311513,
+        "contact_corrected_Qc_w": 0.7472602707561513,
+        "current_a": 1.975
+      },
+      {
+        "bulk_Qc_w": 0.7780023702496668,
+        "contact_corrected_Qc_w": 0.7577023702496668,
+        "current_a": 2.0
+      },
+      {
+        "bulk_Qc_w": 0.7887484490736351,
+        "contact_corrected_Qc_w": 0.7679377771986351,
+        "current_a": 2.025
+      },
+      {
+        "bulk_Qc_w": 0.799292342461712,
+        "contact_corrected_Qc_w": 0.777964654961712,
+        "current_a": 2.0500000000000003
+      },
+      {
+        "bulk_Qc_w": 0.809632143769366,
+        "contact_corrected_Qc_w": 0.7877810968943659,
+        "current_a": 2.075
+      },
+      {
+        "bulk_Qc_w": 0.819765874674176,
+        "contact_corrected_Qc_w": 0.7973851246741761,
+        "current_a": 2.1
+      },
+      {
+        "bulk_Qc_w": 0.829691473570368,
+        "contact_corrected_Qc_w": 0.806774676695368,
+        "current_a": 2.125
+      },
+      {
+        "bulk_Qc_w": 0.8394068070216449,
+        "contact_corrected_Qc_w": 0.815947619521645,
+        "current_a": 2.15
+      },
+      {
+        "bulk_Qc_w": 0.8489096518156855,
+        "contact_corrected_Qc_w": 0.8249017299406854,
+        "current_a": 2.1750000000000003
+      },
+      {
+        "bulk_Qc_w": 0.8581977023724388,
+        "contact_corrected_Qc_w": 0.8336347023724388,
+        "current_a": 2.2
+      },
+      {
+        "bulk_Qc_w": 0.8672685622503884,
+        "contact_corrected_Qc_w": 0.8421441403753884,
+        "current_a": 2.225
+      },
+      {
+        "bulk_Qc_w": 0.8761197403801435,
+        "contact_corrected_Qc_w": 0.8504275528801435,
+        "current_a": 2.25
+      },
+      {
+        "bulk_Qc_w": 0.8847486499548953,
+        "contact_corrected_Qc_w": 0.8584823530798953,
+        "current_a": 2.275
+      },
+      {
+        "bulk_Qc_w": 0.8931526000084965,
+        "contact_corrected_Qc_w": 0.8663058500084965,
+        "current_a": 2.3000000000000003
+      },
+      {
+        "bulk_Qc_w": 0.9013287983567735,
+        "contact_corrected_Qc_w": 0.8738952514817735,
+        "current_a": 2.325
+      },
+      {
+        "bulk_Qc_w": 0.9092743351339198,
+        "contact_corrected_Qc_w": 0.8812476476339197,
+        "current_a": 2.35
+      },
+      {
+        "bulk_Qc_w": 0.9169861947420102,
+        "contact_corrected_Qc_w": 0.8883600228670101,
+        "current_a": 2.375
+      },
+      {
+        "bulk_Qc_w": 0.9244612349308982,
+        "contact_corrected_Qc_w": 0.8952292349308981,
+        "current_a": 2.4000000000000004
+      },
+      {
+        "bulk_Qc_w": 0.9316961907358694,
+        "contact_corrected_Qc_w": 0.9018520188608694,
+        "current_a": 2.4250000000000003
+      },
+      {
+        "bulk_Qc_w": 0.9386876685485228,
+        "contact_corrected_Qc_w": 0.9082249810485228,
+        "current_a": 2.45
+      },
+      {
+        "bulk_Qc_w": 0.9454321356167877,
+        "contact_corrected_Qc_w": 0.9143445887417877,
+        "current_a": 2.475
+      },
+      {
+        "bulk_Qc_w": 0.9519259219658842,
+        "contact_corrected_Qc_w": 0.9202071719658842,
+        "current_a": 2.5
+      },
+      {
+        "bulk_Qc_w": 0.9581652076303488,
+        "contact_corrected_Qc_w": 0.9258089107553489,
+        "current_a": 2.5250000000000004
+      },
+      {
+        "bulk_Qc_w": 0.9641460164298934,
+        "contact_corrected_Qc_w": 0.9311458289298934,
+        "current_a": 2.5500000000000003
+      },
+      {
+        "bulk_Qc_w": 0.9698642172430969,
+        "contact_corrected_Qc_w": 0.9362137953680969,
+        "current_a": 2.575
+      },
+      {
+        "bulk_Qc_w": 0.9753155103386179,
+        "contact_corrected_Qc_w": 0.9410085103386179,
+        "current_a": 2.6
+      },
+      {
+        "bulk_Qc_w": 0.9804954210268493,
+        "contact_corrected_Qc_w": 0.9455254991518492,
+        "current_a": 2.625
+      },
+      {
+        "bulk_Qc_w": 0.9853992944340431,
+        "contact_corrected_Qc_w": 0.949760106934043,
+        "current_a": 2.6500000000000004
+      },
+      {
+        "bulk_Qc_w": 0.9900222890118372,
+        "contact_corrected_Qc_w": 0.9537074921368371,
+        "current_a": 2.6750000000000003
+      },
+      {
+        "bulk_Qc_w": 0.9943593669261035,
+        "contact_corrected_Qc_w": 0.9573626169261035,
+        "current_a": 2.7
+      },
+      {
+        "bulk_Qc_w": 0.9984052902655659,
+        "contact_corrected_Qc_w": 0.9607202433905659,
+        "current_a": 2.725
+      },
+      {
+        "bulk_Qc_w": 1.0021546104178214,
+        "contact_corrected_Qc_w": 0.9637749229178214,
+        "current_a": 2.75
+      },
+      {
+        "bulk_Qc_w": 1.0056016630551927,
+        "contact_corrected_Qc_w": 0.9665209911801927,
+        "current_a": 2.7750000000000004
+      },
+      {
+        "bulk_Qc_w": 1.008740560589612,
+        "contact_corrected_Qc_w": 0.968952560589612,
+        "current_a": 2.8000000000000003
+      },
+      {
+        "bulk_Qc_w": 1.011565187762938,
+        "contact_corrected_Qc_w": 0.9710635158879379,
+        "current_a": 2.825
+      },
+      {
+        "bulk_Qc_w": 1.014069191885716,
+        "contact_corrected_Qc_w": 0.9728475043857161,
+        "current_a": 2.85
+      },
+      {
+        "bulk_Qc_w": 1.0162454935703735,
+        "contact_corrected_Qc_w": 0.9742974466953735,
+        "current_a": 2.875
+      },
+      {
+        "bulk_Qc_w": 1.0180859127204327,
+        "contact_corrected_Qc_w": 0.9754051627204327,
+        "current_a": 2.9000000000000004
+      },
+      {
+        "bulk_Qc_w": 1.0195820992312519,
+        "contact_corrected_Qc_w": 0.9761623023562519,
+        "current_a": 2.9250000000000003
+      },
+      {
+        "bulk_Qc_w": 1.020725313964308,
+        "contact_corrected_Qc_w": 0.976560126464308,
+        "current_a": 2.95
+      },
+      {
+        "bulk_Qc_w": 1.0215063278597423,
+        "contact_corrected_Qc_w": 0.9765894059847423,
+        "current_a": 2.975
+      },
+      {
+        "bulk_Qc_w": 1.0219153582857112,
+        "contact_corrected_Qc_w": 0.9762403582857112,
+        "current_a": 3.0
+      },
+      {
+        "bulk_Qc_w": 1.0219420111706423,
+        "contact_corrected_Qc_w": 0.9755025892956423,
+        "current_a": 3.0250000000000004
+      },
+      {
+        "bulk_Qc_w": 1.021575225246981,
+        "contact_corrected_Qc_w": 0.9743650377469809,
+        "current_a": 3.0500000000000003
+      },
+      {
+        "bulk_Qc_w": 1.0208031885256093,
+        "contact_corrected_Qc_w": 0.9728158916506092,
+        "current_a": 3.075
+      },
+      {
+        "bulk_Qc_w": 1.0196132845831392,
+        "contact_corrected_Qc_w": 0.9708425345831392,
+        "current_a": 3.1
+      },
+      {
+        "bulk_Qc_w": 1.0179919844917706,
+        "contact_corrected_Qc_w": 0.9684314376167706,
+        "current_a": 3.125
+      },
+      {
+        "bulk_Qc_w": 1.0159247670916165,
+        "contact_corrected_Qc_w": 0.9655680795916165,
+        "current_a": 3.1500000000000004
+      },
+      {
+        "bulk_Qc_w": 1.0133959975214561,
+        "contact_corrected_Qc_w": 0.9622368256464562,
+        "current_a": 3.1750000000000003
+      },
+      {
+        "bulk_Qc_w": 1.0103888084276282,
+        "contact_corrected_Qc_w": 0.9584208084276282,
+        "current_a": 3.2
+      },
+      {
+        "bulk_Qc_w": 1.0068849389002479,
+        "contact_corrected_Qc_w": 0.9541017670252478,
+        "current_a": 3.225
+      },
+      {
+        "bulk_Qc_w": 1.00286430442612,
+        "contact_corrected_Qc_w": 0.94925961692612,
+        "current_a": 3.25
+      },
+      {
+        "bulk_Qc_w": 0.9983044386115139,
+        "contact_corrected_Qc_w": 0.9438718917365139,
+        "current_a": 3.2750000000000004
+      },
+      {
+        "bulk_Qc_w": 0.9931809790595163,
+        "contact_corrected_Qc_w": 0.9379142290595163,
+        "current_a": 3.3000000000000003
+      },
+      {
+        "bulk_Qc_w": 0.9874672446002534,
+        "contact_corrected_Qc_w": 0.9313599477252533,
+        "current_a": 3.325
+      },
+      {
+        "bulk_Qc_w": 0.9811338684543314,
+        "contact_corrected_Qc_w": 0.9241796809543313,
+        "current_a": 3.35
+      },
+      {
+        "bulk_Qc_w": 0.9741483752865202,
+        "contact_corrected_Qc_w": 0.9163409534115202,
+        "current_a": 3.375
+      },
+      {
+        "bulk_Qc_w": 0.9664746983770754,
+        "contact_corrected_Qc_w": 0.9078076983770754,
+        "current_a": 3.4000000000000004
+      },
+      {
+        "bulk_Qc_w": 0.9580726039419998,
+        "contact_corrected_Qc_w": 0.8985396820669997,
+        "current_a": 3.4250000000000003
+      },
+      {
+        "bulk_Qc_w": 0.9488970189016375,
+        "contact_corrected_Qc_w": 0.8884918314016375,
+        "current_a": 3.45
+      },
+      {
+        "bulk_Qc_w": 0.9388971798424187,
+        "contact_corrected_Qc_w": 0.8776133829674188,
+        "current_a": 3.475
+      },
+      {
+        "bulk_Qc_w": 0.9280156449388101,
+        "contact_corrected_Qc_w": 0.8658468949388101,
+        "current_a": 3.5
+      }
+    ],
+    "nominal": [
+      {
+        "bulk_Qc_w": -0.7672504272399702,
+        "contact_corrected_Qc_w": -0.7672504272399702,
+        "current_a": 0.0
+      },
+      {
+        "bulk_Qc_w": -0.7439463833696207,
+        "contact_corrected_Qc_w": -0.7439495552446207,
+        "current_a": 0.025
+      },
+      {
+        "bulk_Qc_w": -0.7208203127984782,
+        "contact_corrected_Qc_w": -0.7208330002984783,
+        "current_a": 0.05
+      },
+      {
+        "bulk_Qc_w": -0.6978717965642522,
+        "contact_corrected_Qc_w": -0.6979003434392522,
+        "current_a": 0.07500000000000001
+      },
+      {
+        "bulk_Qc_w": -0.675100434297739,
+        "contact_corrected_Qc_w": -0.675151184297739,
+        "current_a": 0.1
+      },
+      {
+        "bulk_Qc_w": -0.6525058440893505,
+        "contact_corrected_Qc_w": -0.6525851409643505,
+        "current_a": 0.125
+      },
+      {
+        "bulk_Qc_w": -0.6300876623655456,
+        "contact_corrected_Qc_w": -0.6302018498655456,
+        "current_a": 0.15000000000000002
+      },
+      {
+        "bulk_Qc_w": -0.6078455437754274,
+        "contact_corrected_Qc_w": -0.6080009656504274,
+        "current_a": 0.17500000000000002
+      },
+      {
+        "bulk_Qc_w": -0.5857791610914352,
+        "contact_corrected_Qc_w": -0.5859821610914352,
+        "current_a": 0.2
+      },
+      {
+        "bulk_Qc_w": -0.5638882051190421,
+        "contact_corrected_Qc_w": -0.5641451269940422,
+        "current_a": 0.225
+      },
+      {
+        "bulk_Qc_w": -0.5421723846171057,
+        "contact_corrected_Qc_w": -0.5424895721171057,
+        "current_a": 0.25
+      },
+      {
+        "bulk_Qc_w": -0.520631426228868,
+        "contact_corrected_Qc_w": -0.521015223103868,
+        "current_a": 0.275
+      },
+      {
+        "bulk_Qc_w": -0.49926507442356227,
+        "contact_corrected_Qc_w": -0.4997218244235623,
+        "current_a": 0.30000000000000004
+      },
+      {
+        "bulk_Qc_w": -0.478073091448039,
+        "contact_corrected_Qc_w": -0.478609138323039,
+        "current_a": 0.325
+      },
+      {
+        "bulk_Qc_w": -0.45705525667352936,
+        "contact_corrected_Qc_w": -0.4576769441735294,
+        "current_a": 0.35000000000000003
+      },
+      {
+        "bulk_Qc_w": -0.43621136899064433,
+        "contact_corrected_Qc_w": -0.4369250408656443,
+        "current_a": 0.375
+      },
+      {
+        "bulk_Qc_w": -0.4155412432232133,
+        "contact_corrected_Qc_w": -0.41635324322321327,
+        "current_a": 0.4
+      },
+      {
+        "bulk_Qc_w": -0.39504471246392864,
+        "contact_corrected_Qc_w": -0.39596138433892863,
+        "current_a": 0.42500000000000004
+      },
+      {
+        "bulk_Qc_w": -0.3747216275031926,
+        "contact_corrected_Qc_w": -0.3757493150031926,
+        "current_a": 0.45
+      },
+      {
+        "bulk_Qc_w": -0.35457185684486087,
+        "contact_corrected_Qc_w": -0.35571690371986087,
+        "current_a": 0.47500000000000003
+      },
+      {
+        "bulk_Qc_w": -0.33459528673268946,
+        "contact_corrected_Qc_w": -0.33586403673268944,
+        "current_a": 0.5
+      },
+      {
+        "bulk_Qc_w": -0.31479182118755217,
+        "contact_corrected_Qc_w": -0.31619061806255216,
+        "current_a": 0.525
+      },
+      {
+        "bulk_Qc_w": -0.29516138205551334,
+        "contact_corrected_Qc_w": -0.2966965695555133,
+        "current_a": 0.55
+      },
+      {
+        "bulk_Qc_w": -0.27570390906684794,
+        "contact_corrected_Qc_w": -0.27738183094184793,
+        "current_a": 0.5750000000000001
+      },
+      {
+        "bulk_Qc_w": -0.2564193599061194,
+        "contact_corrected_Qc_w": -0.25824635990611944,
+        "current_a": 0.6000000000000001
+      },
+      {
+        "bulk_Qc_w": -0.23730771029343645,
+        "contact_corrected_Qc_w": -0.23929013216843645,
+        "current_a": 0.625
+      },
+      {
+        "bulk_Qc_w": -0.2183689540832105,
+        "contact_corrected_Qc_w": -0.2205131415832105,
+        "current_a": 0.65
+      },
+      {
+        "bulk_Qc_w": -0.19960310338424048,
+        "contact_corrected_Qc_w": -0.20191540025924049,
+        "current_a": 0.675
+      },
+      {
+        "bulk_Qc_w": -0.1810101886840814,
+        "contact_corrected_Qc_w": -0.1834969386840814,
+        "current_a": 0.7000000000000001
+      },
+      {
+        "bulk_Qc_w": -0.16259025891490725,
+        "contact_corrected_Qc_w": -0.16525780578990726,
+        "current_a": 0.7250000000000001
+      },
+      {
+        "bulk_Qc_w": -0.14434338152407578,
+        "contact_corrected_Qc_w": -0.14719806902407578,
+        "current_a": 0.75
+      },
+      {
+        "bulk_Qc_w": -0.1262696429918876,
+        "contact_corrected_Qc_w": -0.1293178148668876,
+        "current_a": 0.775
+      },
+      {
+        "bulk_Qc_w": -0.10836914861810985,
+        "contact_corrected_Qc_w": -0.11161714861810985,
+        "current_a": 0.8
+      },
+      {
+        "bulk_Qc_w": -0.09064202282785666,
+        "contact_corrected_Qc_w": -0.09409619470285666,
+        "current_a": 0.8250000000000001
+      },
+      {
+        "bulk_Qc_w": -0.07308840935994314,
+        "contact_corrected_Qc_w": -0.07675509685994314,
+        "current_a": 0.8500000000000001
+      },
+      {
+        "bulk_Qc_w": -0.05570847148060333,
+        "contact_corrected_Qc_w": -0.05959401835560333,
+        "current_a": 0.875
+      },
+      {
+        "bulk_Qc_w": -0.03850239255371618,
+        "contact_corrected_Qc_w": -0.042613142553716184,
+        "current_a": 0.9
+      },
+      {
+        "bulk_Qc_w": -0.02147037548042683,
+        "contact_corrected_Qc_w": -0.025812672355426832,
+        "current_a": 0.925
+      },
+      {
+        "bulk_Qc_w": -0.00461264354779986,
+        "contact_corrected_Qc_w": -0.00919283104779986,
+        "current_a": 0.9500000000000001
+      },
+      {
+        "bulk_Qc_w": 0.012070559777288988,
+        "contact_corrected_Qc_w": 0.007246137902288987,
+        "current_a": 0.9750000000000001
+      },
+      {
+        "bulk_Qc_w": 0.028578968635146973,
+        "contact_corrected_Qc_w": 0.023503968635146973,
+        "current_a": 1.0
+      },
+      {
+        "bulk_Qc_w": 0.04491229765238773,
+        "contact_corrected_Qc_w": 0.03958037577738773,
+        "current_a": 1.0250000000000001
+      },
+      {
+        "bulk_Qc_w": 0.061070239660012286,
+        "contact_corrected_Qc_w": 0.055475052160012285,
+        "current_a": 1.05
+      },
+      {
+        "bulk_Qc_w": 0.07705246638347957,
+        "contact_corrected_Qc_w": 0.07118766950847957,
+        "current_a": 1.075
+      },
+      {
+        "bulk_Qc_w": 0.09285862572800833,
+        "contact_corrected_Qc_w": 0.08671787572800833,
+        "current_a": 1.1
+      },
+      {
+        "bulk_Qc_w": 0.10848834439120066,
+        "contact_corrected_Qc_w": 0.10206529751620065,
+        "current_a": 1.125
+      },
+      {
+        "bulk_Qc_w": 0.12394122589628552,
+        "contact_corrected_Qc_w": 0.11722953839628551,
+        "current_a": 1.1500000000000001
+      },
+      {
+        "bulk_Qc_w": 0.13921684990323818,
+        "contact_corrected_Qc_w": 0.13221017802823817,
+        "current_a": 1.175
+      },
+      {
+        "bulk_Qc_w": 0.15431477291439766,
+        "contact_corrected_Qc_w": 0.14700677291439765,
+        "current_a": 1.2000000000000002
+      },
+      {
+        "bulk_Qc_w": 0.16923452728793653,
+        "contact_corrected_Qc_w": 0.16161885541293652,
+        "current_a": 1.225
+      },
+      {
+        "bulk_Qc_w": 0.18397562027904243,
+        "contact_corrected_Qc_w": 0.17604593277904243,
+        "current_a": 1.25
+      },
+      {
+        "bulk_Qc_w": 0.19853753398802268,
+        "contact_corrected_Qc_w": 0.19028748711302268,
+        "current_a": 1.2750000000000001
+      },
+      {
+        "bulk_Qc_w": 0.21291972512662072,
+        "contact_corrected_Qc_w": 0.20434297512662072,
+        "current_a": 1.3
+      },
+      {
+        "bulk_Qc_w": 0.227121624169071,
+        "contact_corrected_Qc_w": 0.218211827294071,
+        "current_a": 1.3250000000000002
+      },
+      {
+        "bulk_Qc_w": 0.24114263370938033,
+        "contact_corrected_Qc_w": 0.23189344620938032,
+        "current_a": 1.35
+      },
+      {
+        "bulk_Qc_w": 0.25498213025279726,
+        "contact_corrected_Qc_w": 0.24538720837779726,
+        "current_a": 1.375
+      },
+      {
+        "bulk_Qc_w": 0.26863946132530636,
+        "contact_corrected_Qc_w": 0.2586924613253064,
+        "current_a": 1.4000000000000001
+      },
+      {
+        "bulk_Qc_w": 0.28211394654468896,
+        "contact_corrected_Qc_w": 0.27180852466968897,
+        "current_a": 1.425
+      },
+      {
+        "bulk_Qc_w": 0.2954048751133492,
+        "contact_corrected_Qc_w": 0.2847346876133492,
+        "current_a": 1.4500000000000002
+      },
+      {
+        "bulk_Qc_w": 0.3085115060713732,
+        "contact_corrected_Qc_w": 0.2974702091963732,
+        "current_a": 1.475
+      },
+      {
+        "bulk_Qc_w": 0.3214330683670661,
+        "contact_corrected_Qc_w": 0.3100143183670661,
+        "current_a": 1.5
+      },
+      {
+        "bulk_Qc_w": 0.33416875796774625,
+        "contact_corrected_Qc_w": 0.32236621109274627,
+        "current_a": 1.5250000000000001
+      },
+      {
+        "bulk_Qc_w": 0.3467177398789668,
+        "contact_corrected_Qc_w": 0.3345250523789668,
+        "current_a": 1.55
+      },
+      {
+        "bulk_Qc_w": 0.35907914454218476,
+        "contact_corrected_Qc_w": 0.34648997266718473,
+        "current_a": 1.5750000000000002
+      },
+      {
+        "bulk_Qc_w": 0.3712520681221454,
+        "contact_corrected_Qc_w": 0.3582600681221454,
+        "current_a": 1.6
+      },
+      {
+        "bulk_Qc_w": 0.3832355714582178,
+        "contact_corrected_Qc_w": 0.3698343995832178,
+        "current_a": 1.625
+      },
+      {
+        "bulk_Qc_w": 0.39502867910338807,
+        "contact_corrected_Qc_w": 0.3812119916033881,
+        "current_a": 1.6500000000000001
+      },
+      {
+        "bulk_Qc_w": 0.4066303801061337,
+        "contact_corrected_Qc_w": 0.39239183323113375,
+        "current_a": 1.675
+      },
+      {
+        "bulk_Qc_w": 0.41803962197381406,
+        "contact_corrected_Qc_w": 0.40337287197381405,
+        "current_a": 1.7000000000000002
+      },
+      {
+        "bulk_Qc_w": 0.42925531474438516,
+        "contact_corrected_Qc_w": 0.41415401786938516,
+        "current_a": 1.725
+      },
+      {
+        "bulk_Qc_w": 0.4402763260751389,
+        "contact_corrected_Qc_w": 0.42473413857513886,
+        "current_a": 1.75
+      },
+      {
+        "bulk_Qc_w": 0.4511014842161971,
+        "contact_corrected_Qc_w": 0.4351120623411971,
+        "current_a": 1.7750000000000001
+      },
+      {
+        "bulk_Qc_w": 0.461729572003258,
+        "contact_corrected_Qc_w": 0.445286572003258,
+        "current_a": 1.8
+      },
+      {
+        "bulk_Qc_w": 0.47215932893777623,
+        "contact_corrected_Qc_w": 0.45525640706277626,
+        "current_a": 1.8250000000000002
+      },
+      {
+        "bulk_Qc_w": 0.48238944745613666,
+        "contact_corrected_Qc_w": 0.46502025995613666,
+        "current_a": 1.85
+      },
+      {
+        "bulk_Qc_w": 0.49241857248151466,
+        "contact_corrected_Qc_w": 0.4745767756065147,
+        "current_a": 1.875
+      },
+      {
+        "bulk_Qc_w": 0.5022453011421215,
+        "contact_corrected_Qc_w": 0.4839245511421215,
+        "current_a": 1.9000000000000001
+      },
+      {
+        "bulk_Qc_w": 0.5118681793991909,
+        "contact_corrected_Qc_w": 0.49306213252419095,
+        "current_a": 1.925
+      },
+      {
+        "bulk_Qc_w": 0.5212857010350977,
+        "contact_corrected_Qc_w": 0.5019880135350977,
+        "current_a": 1.9500000000000002
+      },
+      {
+        "bulk_Qc_w": 0.5304963032654713,
+        "contact_corrected_Qc_w": 0.5107006313904713,
+        "current_a": 1.975
+      },
+      {
+        "bulk_Qc_w": 0.5394983718083489,
+        "contact_corrected_Qc_w": 0.5191983718083489,
+        "current_a": 2.0
+      },
+      {
+        "bulk_Qc_w": 0.5482902307056444,
+        "contact_corrected_Qc_w": 0.5274795588306445,
+        "current_a": 2.025
+      },
+      {
+        "bulk_Qc_w": 0.5568701465750429,
+        "contact_corrected_Qc_w": 0.5355424590750428,
+        "current_a": 2.0500000000000003
+      },
+      {
+        "bulk_Qc_w": 0.5652363221357787,
+        "contact_corrected_Qc_w": 0.5433852752607786,
+        "current_a": 2.075
+      },
+      {
+        "bulk_Qc_w": 0.5733868976761329,
+        "contact_corrected_Qc_w": 0.551006147676133,
+        "current_a": 2.1
+      },
+      {
+        "bulk_Qc_w": 0.5813199444993893,
+        "contact_corrected_Qc_w": 0.5584031476243893,
+        "current_a": 2.125
+      },
+      {
+        "bulk_Qc_w": 0.5890334671525326,
+        "contact_corrected_Qc_w": 0.5655742796525326,
+        "current_a": 2.15
+      },
+      {
+        "bulk_Qc_w": 0.5965254001449966,
+        "contact_corrected_Qc_w": 0.5725174782699965,
+        "current_a": 2.1750000000000003
+      },
+      {
+        "bulk_Qc_w": 0.6037935974374853,
+        "contact_corrected_Qc_w": 0.5792305974374853,
+        "current_a": 2.2
+      },
+      {
+        "bulk_Qc_w": 0.6108358443989927,
+        "contact_corrected_Qc_w": 0.5857114225239928,
+        "current_a": 2.225
+      },
+      {
+        "bulk_Qc_w": 0.6176498396005081,
+        "contact_corrected_Qc_w": 0.5919576521005081,
+        "current_a": 2.25
+      },
+      {
+        "bulk_Qc_w": 0.6242332028005886,
+        "contact_corrected_Qc_w": 0.5979669059255885,
+        "current_a": 2.275
+      },
+      {
+        "bulk_Qc_w": 0.6305834671665408,
+        "contact_corrected_Qc_w": 0.6037367171665408,
+        "current_a": 2.3000000000000003
+      },
+      {
+        "bulk_Qc_w": 0.6366980740789396,
+        "contact_corrected_Qc_w": 0.6092645272039396,
+        "current_a": 2.325
+      },
+      {
+        "bulk_Qc_w": 0.6425743772973277,
+        "contact_corrected_Qc_w": 0.6145476897973277,
+        "current_a": 2.35
+      },
+      {
+        "bulk_Qc_w": 0.6482096252010194,
+        "contact_corrected_Qc_w": 0.6195834533260194,
+        "current_a": 2.375
+      },
+      {
+        "bulk_Qc_w": 0.6536009751404015,
+        "contact_corrected_Qc_w": 0.6243689751404015,
+        "current_a": 2.4000000000000004
+      },
+      {
+        "bulk_Qc_w": 0.6587454763372178,
+        "contact_corrected_Qc_w": 0.6289013044622178,
+        "current_a": 2.4250000000000003
+      },
+      {
+        "bulk_Qc_w": 0.6636400661275548,
+        "contact_corrected_Qc_w": 0.6331773786275547,
+        "current_a": 2.45
+      },
+      {
+        "bulk_Qc_w": 0.668281579019394,
+        "contact_corrected_Qc_w": 0.637194032144394,
+        "current_a": 2.475
+      },
+      {
+        "bulk_Qc_w": 0.6726667195924102,
+        "contact_corrected_Qc_w": 0.6409479695924102,
+        "current_a": 2.5
+      },
+      {
+        "bulk_Qc_w": 0.6767920783710144,
+        "contact_corrected_Qc_w": 0.6444357814960144,
+        "current_a": 2.5250000000000004
+      },
+      {
+        "bulk_Qc_w": 0.6806541172730136,
+        "contact_corrected_Qc_w": 0.6476539297730136,
+        "current_a": 2.5500000000000003
+      },
+      {
+        "bulk_Qc_w": 0.6842491652270273,
+        "contact_corrected_Qc_w": 0.6505987433520273,
+        "current_a": 2.575
+      },
+      {
+        "bulk_Qc_w": 0.6875734153876767,
+        "contact_corrected_Qc_w": 0.6532664153876767,
+        "current_a": 2.6
+      },
+      {
+        "bulk_Qc_w": 0.6906229170015116,
+        "contact_corrected_Qc_w": 0.6556529951265115,
+        "current_a": 2.625
+      },
+      {
+        "bulk_Qc_w": 0.6933935671696358,
+        "contact_corrected_Qc_w": 0.6577543796696358,
+        "current_a": 2.6500000000000004
+      },
+      {
+        "bulk_Qc_w": 0.6958811151865194,
+        "contact_corrected_Qc_w": 0.6595663183115194,
+        "current_a": 2.6750000000000003
+      },
+      {
+        "bulk_Qc_w": 0.6980811453518108,
+        "contact_corrected_Qc_w": 0.6610843953518107,
+        "current_a": 2.7
+      },
+      {
+        "bulk_Qc_w": 0.6999890757456728,
+        "contact_corrected_Qc_w": 0.6623040288706729,
+        "current_a": 2.725
+      },
+      {
+        "bulk_Qc_w": 0.7016001500918769,
+        "contact_corrected_Qc_w": 0.663220462591877,
+        "current_a": 2.75
+      },
+      {
+        "bulk_Qc_w": 0.7029094332863058,
+        "contact_corrected_Qc_w": 0.6638287614113059,
+        "current_a": 2.7750000000000004
+      },
+      {
+        "bulk_Qc_w": 0.7039118021632385,
+        "contact_corrected_Qc_w": 0.6641238021632384,
+        "current_a": 2.8000000000000003
+      },
+      {
+        "bulk_Qc_w": 0.7046019407273478,
+        "contact_corrected_Qc_w": 0.6641002688523479,
+        "current_a": 2.825
+      },
+      {
+        "bulk_Qc_w": 0.7049743338133864,
+        "contact_corrected_Qc_w": 0.6637526463133864,
+        "current_a": 2.85
+      },
+      {
+        "bulk_Qc_w": 0.70502325560551,
+        "contact_corrected_Qc_w": 0.6630752087305101,
+        "current_a": 2.875
+      },
+      {
+        "bulk_Qc_w": 0.7047427695441085,
+        "contact_corrected_Qc_w": 0.6620620195441085,
+        "current_a": 2.9000000000000004
+      },
+      {
+        "bulk_Qc_w": 0.7041267196846077,
+        "contact_corrected_Qc_w": 0.6607069228096077,
+        "current_a": 2.9250000000000003
+      },
+      {
+        "bulk_Qc_w": 0.7031687160311648,
+        "contact_corrected_Qc_w": 0.6590035285311648,
+        "current_a": 2.95
+      },
+      {
+        "bulk_Qc_w": 0.701862146679025,
+        "contact_corrected_Qc_w": 0.6569452248040251,
+        "current_a": 2.975
+      },
+      {
+        "bulk_Qc_w": 0.7002001127656796,
+        "contact_corrected_Qc_w": 0.6545251127656796,
+        "current_a": 3.0
+      },
+      {
+        "bulk_Qc_w": 0.698174536117831,
+        "contact_corrected_Qc_w": 0.6517351142428309,
+        "current_a": 3.0250000000000004
+      },
+      {
+        "bulk_Qc_w": 0.6957766681074689,
+        "contact_corrected_Qc_w": 0.6485664806074688,
+        "current_a": 3.0500000000000003
+      },
+      {
+        "bulk_Qc_w": 0.6929975630612148,
+        "contact_corrected_Qc_w": 0.6450102661862148,
+        "current_a": 3.075
+      },
+      {
+        "bulk_Qc_w": 0.6898278476071078,
+        "contact_corrected_Qc_w": 0.6410570976071078,
+        "current_a": 3.1
+      },
+      {
+        "bulk_Qc_w": 0.6862576446403281,
+        "contact_corrected_Qc_w": 0.6366970977653281,
+        "current_a": 3.125
+      },
+      {
+        "bulk_Qc_w": 0.6822765157460443,
+        "contact_corrected_Qc_w": 0.6319198282460443,
+        "current_a": 3.1500000000000004
+      },
+      {
+        "bulk_Qc_w": 0.67787340430824,
+        "contact_corrected_Qc_w": 0.62671423243324,
+        "current_a": 3.1750000000000003
+      },
+      {
+        "bulk_Qc_w": 0.6730365722537678,
+        "contact_corrected_Qc_w": 0.6210685722537678,
+        "current_a": 3.2
+      },
+      {
+        "bulk_Qc_w": 0.6677535511619633,
+        "contact_corrected_Qc_w": 0.6149703792869633,
+        "current_a": 3.225
+      },
+      {
+        "bulk_Qc_w": 0.6620110450461949,
+        "contact_corrected_Qc_w": 0.6084063575461949,
+        "current_a": 3.25
+      },
+      {
+        "bulk_Qc_w": 0.6557948720039973,
+        "contact_corrected_Qc_w": 0.6013623251289973,
+        "current_a": 3.2750000000000004
+      },
+      {
+        "bulk_Qc_w": 0.6490898608882733,
+        "contact_corrected_Qc_w": 0.5938231108882732,
+        "current_a": 3.3000000000000003
+      },
+      {
+        "bulk_Qc_w": 0.6418797578516036,
+        "contact_corrected_Qc_w": 0.5857724609766035,
+        "current_a": 3.325
+      },
+      {
+        "bulk_Qc_w": 0.6341470974353867,
+        "contact_corrected_Qc_w": 0.5771929099353866,
+        "current_a": 3.35
+      },
+      {
+        "bulk_Qc_w": 0.6258730730584883,
+        "contact_corrected_Qc_w": 0.5680656511834883,
+        "current_a": 3.375
+      },
+      {
+        "bulk_Qc_w": 0.6170373592018307,
+        "contact_corrected_Qc_w": 0.5583703592018306,
+        "current_a": 3.4000000000000004
+      },
+      {
+        "bulk_Qc_w": 0.6076173426597008,
+        "contact_corrected_Qc_w": 0.5480844207847008,
+        "current_a": 3.4250000000000003
+      },
+      {
+        "bulk_Qc_w": 0.5975882610695535,
+        "contact_corrected_Qc_w": 0.5371830735695535,
+        "current_a": 3.45
+      },
+      {
+        "bulk_Qc_w": 0.5869232859247515,
+        "contact_corrected_Qc_w": 0.5256394890497516,
+        "current_a": 3.475
+      },
+      {
+        "bulk_Qc_w": 0.5755931228829142,
+        "contact_corrected_Qc_w": 0.5134243728829142,
+        "current_a": 3.5
+      }
+    ]
+  },
+  "eta_and_source_direction_equivalent_loss_envelope": {
+    "conservative_direction": [
+      {
+        "Qc_after_contact_w": 0.3965629759243945,
+        "equivalent_missing_conductance_w_per_k": 0.007467679109777141,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.4494456544123698,
+        "eta_to_cold": 0.0,
+        "optimized_current_a": 2.6749999971079608
+      },
+      {
+        "Qc_after_contact_w": 0.3929314962368945,
+        "equivalent_missing_conductance_w_per_k": 0.007399294700121375,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.445329907699432,
+        "eta_to_cold": 0.05,
+        "optimized_current_a": 2.67500000082586
+      },
+      {
+        "Qc_after_contact_w": 0.38930001654939445,
+        "equivalent_missing_conductance_w_per_k": 0.007330910290465607,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.44121416098649413,
+        "eta_to_cold": 0.1,
+        "optimized_current_a": 2.67500000953084
+      },
+      {
+        "Qc_after_contact_w": 0.38566853686189456,
+        "equivalent_missing_conductance_w_per_k": 0.007262525880809842,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.43709841427355645,
+        "eta_to_cold": 0.15000000000000002,
+        "optimized_current_a": 2.6749999906990705
+      },
+      {
+        "Qc_after_contact_w": 0.38210159610457434,
+        "equivalent_missing_conductance_w_per_k": 0.007195356804026609,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.4330558129208028,
+        "eta_to_cold": 0.2,
+        "optimized_current_a": 2.649999997710459
+      },
+      {
+        "Qc_after_contact_w": 0.3785376773545742,
+        "equivalent_missing_conductance_w_per_k": 0.007128244634676254,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.42901663656770905,
+        "eta_to_cold": 0.25,
+        "optimized_current_a": 2.649999985019585
+      },
+      {
+        "Qc_after_contact_w": 0.37497375860457427,
+        "equivalent_missing_conductance_w_per_k": 0.007061132465325901,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.4249774602146154,
+        "eta_to_cold": 0.30000000000000004,
+        "optimized_current_a": 2.650000000693294
+      },
+      {
+        "Qc_after_contact_w": 0.3714098398545744,
+        "equivalent_missing_conductance_w_per_k": 0.006994020295975551,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.42093828386152193,
+        "eta_to_cold": 0.35000000000000003,
+        "optimized_current_a": 2.6499999997369135
+      },
+      {
+        "Qc_after_contact_w": 0.36788490395280765,
+        "equivalent_missing_conductance_w_per_k": 0.006927642212808388,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.4169432888183304,
+        "eta_to_cold": 0.4,
+        "optimized_current_a": 2.6249999971469227
+      },
+      {
+        "Qc_after_contact_w": 0.3643879117653075,
+        "equivalent_missing_conductance_w_per_k": 0.006861790337845085,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.4129799638545658,
+        "eta_to_cold": 0.45,
+        "optimized_current_a": 2.625000026885923
+      },
+      {
+        "Qc_after_contact_w": 0.3608909195778076,
+        "equivalent_missing_conductance_w_per_k": 0.006795938462881786,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.4090166388908015,
+        "eta_to_cold": 0.5,
+        "optimized_current_a": 2.6249999998360747
+      },
+      {
+        "Qc_after_contact_w": 0.3573939273903076,
+        "equivalent_missing_conductance_w_per_k": 0.006730086587918485,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.405053313927037,
+        "eta_to_cold": 0.55,
+        "optimized_current_a": 2.6249999823221493
+      },
+      {
+        "Qc_after_contact_w": 0.35390922954717735,
+        "equivalent_missing_conductance_w_per_k": 0.006664466227807029,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.4011039227896413,
+        "eta_to_cold": 0.6000000000000001,
+        "optimized_current_a": 2.600000006118569
+      },
+      {
+        "Qc_after_contact_w": 0.35047852954717734,
+        "equivalent_missing_conductance_w_per_k": 0.006599862701312421,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.3972157302446911,
+        "eta_to_cold": 0.65,
+        "optimized_current_a": 2.6000000074432865
+      },
+      {
+        "Qc_after_contact_w": 0.34704782954717733,
+        "equivalent_missing_conductance_w_per_k": 0.006535259174817812,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.3933275376997408,
+        "eta_to_cold": 0.7000000000000001,
+        "optimized_current_a": 2.6000000001315766
+      },
+      {
+        "Qc_after_contact_w": 0.34361712954717727,
+        "equivalent_missing_conductance_w_per_k": 0.006470655648323202,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.38943934515479045,
+        "eta_to_cold": 0.75,
+        "optimized_current_a": 2.5999999897233312
+      },
+      {
+        "Qc_after_contact_w": 0.3401864295471773,
+        "equivalent_missing_conductance_w_per_k": 0.006406052121828595,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.3855511526098403,
+        "eta_to_cold": 0.8,
+        "optimized_current_a": 2.600000000545629
+      },
+      {
+        "Qc_after_contact_w": 0.33680572393794905,
+        "equivalent_missing_conductance_w_per_k": 0.006342390039922205,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.3817196213344525,
+        "eta_to_cold": 0.8500000000000001,
+        "optimized_current_a": 2.575000005898942
+      },
+      {
+        "Qc_after_contact_w": 0.33344068175044905,
+        "equivalent_missing_conductance_w_per_k": 0.0062790229159779285,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.37790584223780155,
+        "eta_to_cold": 0.9,
+        "optimized_current_a": 2.5749999964010684
+      },
+      {
+        "Qc_after_contact_w": 0.33007563956294905,
+        "equivalent_missing_conductance_w_per_k": 0.006215655792033651,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.3740920631411505,
+        "eta_to_cold": 0.9500000000000001,
+        "optimized_current_a": 2.5750000045641004
+      },
+      {
+        "Qc_after_contact_w": 0.32671059737544905,
+        "equivalent_missing_conductance_w_per_k": 0.0061522886680893734,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.3702782840444995,
+        "eta_to_cold": 1.0,
+        "optimized_current_a": 2.575000004902121
+      }
+    ],
+    "favorable_direction": [
+      {
+        "Qc_after_contact_w": 1.0219420111706423,
+        "equivalent_missing_conductance_w_per_k": 0.019244194419394338,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 1.5670043004723553,
+        "eta_to_cold": 0.0,
+        "optimized_current_a": 3.024999965831638
+      },
+      {
+        "Qc_after_contact_w": 1.0173478582857112,
+        "equivalent_missing_conductance_w_per_k": 0.019157681906606296,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 1.5599598133595611,
+        "eta_to_cold": 0.05,
+        "optimized_current_a": 3.0000000136129565
+      },
+      {
+        "Qc_after_contact_w": 1.0127803582857113,
+        "equivalent_missing_conductance_w_per_k": 0.019071671294409336,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 1.5529561946961024,
+        "eta_to_cold": 0.1,
+        "optimized_current_a": 3.0000000078829068
+      },
+      {
+        "Qc_after_contact_w": 1.0082128582857113,
+        "equivalent_missing_conductance_w_per_k": 0.01898566068221237,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 1.5459525760326434,
+        "eta_to_cold": 0.15000000000000002,
+        "optimized_current_a": 3.0000000081050153
+      },
+      {
+        "Qc_after_contact_w": 1.0036453582857112,
+        "equivalent_missing_conductance_w_per_k": 0.018899650070015407,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 1.5389489573691844,
+        "eta_to_cold": 0.2,
+        "optimized_current_a": 2.999999990711031
+      },
+      {
+        "Qc_after_contact_w": 0.9990778582857113,
+        "equivalent_missing_conductance_w_per_k": 0.018813639457818443,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 1.5319453387057256,
+        "eta_to_cold": 0.25,
+        "optimized_current_a": 2.999999966180775
+      },
+      {
+        "Qc_after_contact_w": 0.9945561747347422,
+        "equivalent_missing_conductance_w_per_k": 0.01872849161537076,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 1.5250119731210903,
+        "eta_to_cold": 0.30000000000000004,
+        "optimized_current_a": 2.9750000003918453
+      },
+      {
+        "Qc_after_contact_w": 0.9900644825472421,
+        "equivalent_missing_conductance_w_per_k": 0.018643908540417895,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 1.518124595072948,
+        "eta_to_cold": 0.35000000000000003,
+        "optimized_current_a": 2.974999988680997
+      },
+      {
+        "Qc_after_contact_w": 0.9855727903597422,
+        "equivalent_missing_conductance_w_per_k": 0.018559325465465036,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 1.5112372170248065,
+        "eta_to_cold": 0.4,
+        "optimized_current_a": 2.9750000019964604
+      },
+      {
+        "Qc_after_contact_w": 0.9810810981722421,
+        "equivalent_missing_conductance_w_per_k": 0.018474742390512174,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 1.5043498389766645,
+        "eta_to_cold": 0.45,
+        "optimized_current_a": 2.9749999749109355
+      },
+      {
+        "Qc_after_contact_w": 0.9765894059847422,
+        "equivalent_missing_conductance_w_per_k": 0.01839015931555931,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 1.4974624609285225,
+        "eta_to_cold": 0.5,
+        "optimized_current_a": 2.9749999902930013
+      },
+      {
+        "Qc_after_contact_w": 0.972143607714308,
+        "equivalent_missing_conductance_w_per_k": 0.01830644046915663,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 1.4906454547455372,
+        "eta_to_cold": 0.55,
+        "optimized_current_a": 2.9500000115894687
+      },
+      {
+        "Qc_after_contact_w": 0.9677270889643079,
+        "equivalent_missing_conductance_w_per_k": 0.01822327298552951,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 1.4838733445878982,
+        "eta_to_cold": 0.6000000000000001,
+        "optimized_current_a": 2.9500000004439237
+      },
+      {
+        "Qc_after_contact_w": 0.963310570214308,
+        "equivalent_missing_conductance_w_per_k": 0.01814010550190239,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 1.4771012344302592,
+        "eta_to_cold": 0.65,
+        "optimized_current_a": 2.95000000129162
+      },
+      {
+        "Qc_after_contact_w": 0.9588940514643078,
+        "equivalent_missing_conductance_w_per_k": 0.018056938018275268,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 1.4703291242726197,
+        "eta_to_cold": 0.7000000000000001,
+        "optimized_current_a": 2.9500000099225008
+      },
+      {
+        "Qc_after_contact_w": 0.954477532714308,
+        "equivalent_missing_conductance_w_per_k": 0.017973770534648152,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 1.4635570141149812,
+        "eta_to_cold": 0.75,
+        "optimized_current_a": 2.9500000031952194
+      },
+      {
+        "Qc_after_contact_w": 0.9501104242312519,
+        "equivalent_missing_conductance_w_per_k": 0.01789153349597093,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 1.4568606676503326,
+        "eta_to_cold": 0.8,
+        "optimized_current_a": 2.9250000232846705
+      },
+      {
+        "Qc_after_contact_w": 0.9457684445437519,
+        "equivalent_missing_conductance_w_per_k": 0.01780976965775119,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 1.450202852658382,
+        "eta_to_cold": 0.8500000000000001,
+        "optimized_current_a": 2.9250000031074967
+      },
+      {
+        "Qc_after_contact_w": 0.9414264648562518,
+        "equivalent_missing_conductance_w_per_k": 0.01772800581953145,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 1.4435450376664314,
+        "eta_to_cold": 0.9,
+        "optimized_current_a": 2.9250000019050546
+      },
+      {
+        "Qc_after_contact_w": 0.9370844851687519,
+        "equivalent_missing_conductance_w_per_k": 0.017646241981311712,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 1.4368872226744807,
+        "eta_to_cold": 0.9500000000000001,
+        "optimized_current_a": 2.9249999838034
+      },
+      {
+        "Qc_after_contact_w": 0.9327425054812518,
+        "equivalent_missing_conductance_w_per_k": 0.01756447814309197,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 1.4302294076825297,
+        "eta_to_cold": 1.0,
+        "optimized_current_a": 2.9249999580822585
+      }
+    ],
+    "nominal": [
+      {
+        "Qc_after_contact_w": 0.70502325560551,
+        "equivalent_missing_conductance_w_per_k": 0.013276295966661543,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.9188958788093349,
+        "eta_to_cold": 0.0,
+        "optimized_current_a": 2.87500000818476
+      },
+      {
+        "Qc_after_contact_w": 0.7008521650633863,
+        "equivalent_missing_conductance_w_per_k": 0.01319775014267533,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.9134594653593894,
+        "eta_to_cold": 0.05,
+        "optimized_current_a": 2.850000034002244
+      },
+      {
+        "Qc_after_contact_w": 0.6967299963133863,
+        "equivalent_missing_conductance_w_per_k": 0.013120125565167569,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.9080868143921834,
+        "eta_to_cold": 0.1,
+        "optimized_current_a": 2.8500000200545172
+      },
+      {
+        "Qc_after_contact_w": 0.6926078275633863,
+        "equivalent_missing_conductance_w_per_k": 0.01304250098765981,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.9027141634249776,
+        "eta_to_cold": 0.15000000000000002,
+        "optimized_current_a": 2.8500000012819005
+      },
+      {
+        "Qc_after_contact_w": 0.6884856588133863,
+        "equivalent_missing_conductance_w_per_k": 0.01296487641015205,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.8973415124577716,
+        "eta_to_cold": 0.2,
+        "optimized_current_a": 2.8499999894462675
+      },
+      {
+        "Qc_after_contact_w": 0.6843634900633864,
+        "equivalent_missing_conductance_w_per_k": 0.012887251832644291,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.8919688614905658,
+        "eta_to_cold": 0.25,
+        "optimized_current_a": 2.849999957803939
+      },
+      {
+        "Qc_after_contact_w": 0.6803009376023474,
+        "equivalent_missing_conductance_w_per_k": 0.012810749889731047,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.8866739117364768,
+        "eta_to_cold": 0.30000000000000004,
+        "optimized_current_a": 2.825000055312373
+      },
+      {
+        "Qc_after_contact_w": 0.6762507704148478,
+        "equivalent_missing_conductance_w_per_k": 0.012734481173957231,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.8813951043957375,
+        "eta_to_cold": 0.35000000000000003,
+        "optimized_current_a": 2.824999987179491
+      },
+      {
+        "Qc_after_contact_w": 0.6722006032273479,
+        "equivalent_missing_conductance_w_per_k": 0.012658212458183412,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.876116297054998,
+        "eta_to_cold": 0.4,
+        "optimized_current_a": 2.825000002738276
+      },
+      {
+        "Qc_after_contact_w": 0.6681504360398478,
+        "equivalent_missing_conductance_w_per_k": 0.012581943742409589,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.8708374897142583,
+        "eta_to_cold": 0.45,
+        "optimized_current_a": 2.825000000190772
+      },
+      {
+        "Qc_after_contact_w": 0.6641238021632384,
+        "equivalent_missing_conductance_w_per_k": 0.012506118182514632,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.8655893546417313,
+        "eta_to_cold": 0.5,
+        "optimized_current_a": 2.7999999941743416
+      },
+      {
+        "Qc_after_contact_w": 0.6601450021632385,
+        "equivalent_missing_conductance_w_per_k": 0.01243119338255639,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.8604035641113658,
+        "eta_to_cold": 0.55,
+        "optimized_current_a": 2.800000011951235
+      },
+      {
+        "Qc_after_contact_w": 0.6561662021632384,
+        "equivalent_missing_conductance_w_per_k": 0.012356268582598143,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.855217773581,
+        "eta_to_cold": 0.6000000000000001,
+        "optimized_current_a": 2.799999999477112
+      },
+      {
+        "Qc_after_contact_w": 0.6521874021632384,
+        "equivalent_missing_conductance_w_per_k": 0.012281343782639901,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.8500319830506345,
+        "eta_to_cold": 0.65,
+        "optimized_current_a": 2.799999981721037
+      },
+      {
+        "Qc_after_contact_w": 0.6482086021632384,
+        "equivalent_missing_conductance_w_per_k": 0.012206418982681655,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.8448461925202688,
+        "eta_to_cold": 0.7000000000000001,
+        "optimized_current_a": 2.7999999591466476
+      },
+      {
+        "Qc_after_contact_w": 0.6442884254738056,
+        "equivalent_missing_conductance_w_per_k": 0.012132598118537511,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.8397368089992524,
+        "eta_to_cold": 0.75,
+        "optimized_current_a": 2.775000044149994
+      },
+      {
+        "Qc_after_contact_w": 0.6403803582863057,
+        "equivalent_missing_conductance_w_per_k": 0.012059005288476485,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.8346432084631688,
+        "eta_to_cold": 0.8,
+        "optimized_current_a": 2.7749999858535728
+      },
+      {
+        "Qc_after_contact_w": 0.6364722910988058,
+        "equivalent_missing_conductance_w_per_k": 0.01198541245841546,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.8295496079270851,
+        "eta_to_cold": 0.8500000000000001,
+        "optimized_current_a": 2.775000001478921
+      },
+      {
+        "Qc_after_contact_w": 0.6325642239113058,
+        "equivalent_missing_conductance_w_per_k": 0.011911819628354433,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.8244560073910014,
+        "eta_to_cold": 0.9,
+        "optimized_current_a": 2.7750000015269793
+      },
+      {
+        "Qc_after_contact_w": 0.6286787438418769,
+        "equivalent_missing_conductance_w_per_k": 0.011838652136411207,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.8193918458975942,
+        "eta_to_cold": 0.9500000000000001,
+        "optimized_current_a": 2.7500000005385803
+      },
+      {
+        "Qc_after_contact_w": 0.624840775091877,
+        "equivalent_missing_conductance_w_per_k": 0.011766379330329037,
+        "equivalent_missing_to_scenario_bulk_conductance_ratio": 0.8143896085397001,
+        "eta_to_cold": 1.0,
+        "optimized_current_a": 2.7500000130029156
+      }
+    ]
+  },
+  "figure_metadata": {
+    "backend": "Python matplotlib only",
+    "core_conclusion": "The in-range 363-K public-material forward model overpredicts the zero-load endpoint after reported-contact sensitivity, leaving a non-uniquely attributable loss budget.",
+    "evidence_chain": [
+      "pair zeta ceiling and geometry retention",
+      "temperature-dependent Qc(I) source-direction curves",
+      "bulk-to-contact-to-unresolved capacity ledger",
+      "eta-conditioned source-direction equivalent-loss envelope"
+    ],
+    "layout": "quantitative grid with an emphasized forward-response panel",
+    "statistics": "directional method stress envelope, not confidence interval"
+  },
+  "forward_results_by_source_direction": {
+    "conservative_direction": {
+      "bulk_optimum": {
+        "COP_after_contact": 0.11991341181357491,
+        "Qc_after_contact_w": 0.3601183083891106,
+        "Qh_after_contact_w": 3.3632711913124447,
+        "bulk_Qc_w": 0.3965688730333466,
+        "bulk_Qh_w": 3.3268206266682085,
+        "bulk_voltage_v": 1.0933792501274882,
+        "contact_joule_to_cold_w": 0.036450564644236,
+        "contact_joule_to_hot_w": 0.036450564644236,
+        "contact_joule_w": 0.072901129288472,
+        "current_a": 2.6799957592877264,
+        "energy_residual_w": -8.881784197001252e-16,
+        "input_power_w": 3.003152882923335,
+        "n_maximum_relative_conservative_residual": 2.146852673439093e-05,
+        "p_maximum_relative_conservative_residual": 3.465748252838186e-05,
+        "pair_solver_energy_residual_w": -5.551115123125783e-17,
+        "pair_solver_relative_energy_residual": 1.1680162600409374e-16,
+        "terminal_voltage_v": 1.1205812070842587
+      },
+      "contact_corrected_optimum": {
+        "COP_after_contact": 0.12563473170298958,
+        "Qc_after_contact_w": 0.36089204043035655,
+        "Qh_after_contact_w": 3.2334419757741415,
+        "bulk_Qc_w": 0.3958037128891623,
+        "bulk_Qh_w": 3.198530303315336,
+        "bulk_voltage_v": 1.068595718909734,
+        "contact_joule_to_cold_w": 0.034911672458805706,
+        "contact_joule_to_hot_w": 0.034911672458805706,
+        "contact_joule_w": 0.06982334491761141,
+        "current_a": 2.622812856938766,
+        "energy_residual_w": -4.440892098500626e-16,
+        "input_power_w": 2.8725499353437853,
+        "n_maximum_relative_conservative_residual": 2.054078142579546e-05,
+        "p_maximum_relative_conservative_residual": 3.3040651638318896e-05,
+        "pair_solver_energy_residual_w": -5.551115123125783e-17,
+        "pair_solver_relative_energy_residual": 1.2148643963636562e-16,
+        "terminal_voltage_v": 1.0952172694076625
+      },
+      "effective_bulk_conductance_w_per_k": 0.0166153105196685,
+      "equivalent_missing_conductance_w_per_k": 0.006795959569660968,
+      "equivalent_missing_to_bulk_conductance_ratio": 0.4090179092118802,
+      "interpretation": "directionally lower Peltier/electrical leverage and higher conductive backflow",
+      "solver_evaluations_for_direct_optimizations": 17,
+      "source_scales": {
+        "electrical_conductivity_scale": 0.95,
+        "seebeck_magnitude_scale": 0.95,
+        "thermal_conductivity_scale": 1.15
+      },
+      "tight_refinement_Qc_after_contact_w": 0.36089204105155437,
+      "zero_current_bulk_Qc_w": -0.8823379913259656
+    },
+    "favorable_direction": {
+      "bulk_optimum": {
+        "COP_after_contact": 0.2646812764128148,
+        "Qc_after_contact_w": 0.9758682749210101,
+        "Qh_after_contact_w": 4.662824481823156,
+        "bulk_Qc_w": 1.0219781044676544,
+        "bulk_Qh_w": 4.616714652276512,
+        "bulk_voltage_v": 1.1925822250576203,
+        "contact_joule_to_cold_w": 0.04610982954664425,
+        "contact_joule_to_hot_w": 0.04610982954664425,
+        "contact_joule_w": 0.0922196590932885,
+        "current_a": 3.014246290342937,
+        "energy_residual_w": 0.0,
+        "input_power_w": 3.686956206902146,
+        "n_maximum_relative_conservative_residual": 3.7363822751768876e-05,
+        "p_maximum_relative_conservative_residual": 6.37673421372201e-05,
+        "pair_solver_energy_residual_w": 0.0,
+        "pair_solver_relative_energy_residual": 0.0,
+        "terminal_voltage_v": 1.2231768249046011
+      },
+      "contact_corrected_optimum": {
+        "COP_after_contact": 0.2749614948462091,
+        "Qc_after_contact_w": 0.9766226121932771,
+        "Qh_after_contact_w": 4.528474891507949,
+        "bulk_Qc_w": 1.021222607953349,
+        "bulk_Qh_w": 4.483874895747877,
+        "bulk_voltage_v": 1.168044792091986,
+        "contact_joule_to_cold_w": 0.04459999576007201,
+        "contact_joule_to_hot_w": 0.04459999576007201,
+        "contact_joule_w": 0.08919999152014402,
+        "current_a": 2.9644858752316035,
+        "energy_residual_w": 4.440892098500626e-16,
+        "input_power_w": 3.5518522793146716,
+        "n_maximum_relative_conservative_residual": 3.6019077371176376e-05,
+        "p_maximum_relative_conservative_residual": 6.073805379476763e-05,
+        "pair_solver_energy_residual_w": 5.551115123125783e-17,
+        "pair_solver_relative_energy_residual": 8.666121773096277e-17,
+        "terminal_voltage_v": 1.1981343237255868
+      },
+      "effective_bulk_conductance_w_per_k": 0.01228088168845063,
+      "equivalent_missing_conductance_w_per_k": 0.018390784621815433,
+      "equivalent_missing_to_bulk_conductance_ratio": 1.4975133779776388,
+      "interpretation": "directionally higher Peltier/electrical leverage and lower conductive backflow",
+      "solver_evaluations_for_direct_optimizations": 23,
+      "source_scales": {
+        "electrical_conductivity_scale": 1.05,
+        "seebeck_magnitude_scale": 1.05,
+        "thermal_conductivity_scale": 0.85
+      },
+      "tight_refinement_Qc_after_contact_w": 0.9766226117817227,
+      "zero_current_bulk_Qc_w": -0.6521628631539745
+    },
+    "nominal": {
+      "bulk_optimum": {
+        "COP_after_contact": 0.1971680644771362,
+        "Qc_after_contact_w": 0.6633498773586404,
+        "Qh_after_contact_w": 4.027737914121881,
+        "bulk_Qc_w": 0.7050432946413303,
+        "bulk_Qh_w": 3.9860444968391917,
+        "bulk_voltage_v": 1.1446973216396183,
+        "contact_joule_to_cold_w": 0.04169341728268995,
+        "contact_joule_to_hot_w": 0.04169341728268995,
+        "contact_joule_w": 0.0833868345653799,
+        "current_a": 2.8662609234537975,
+        "energy_residual_w": 4.440892098500626e-16,
+        "input_power_w": 3.364388036763241,
+        "n_maximum_relative_conservative_residual": 2.81993817145463e-05,
+        "p_maximum_relative_conservative_residual": 4.6227495241030696e-05,
+        "pair_solver_energy_residual_w": 0.0,
+        "pair_solver_relative_energy_residual": 0.0,
+        "terminal_voltage_v": 1.1737898700126743
+      },
+      "contact_corrected_optimum": {
+        "COP_after_contact": 0.2058335897602885,
+        "Qc_after_contact_w": 0.6641530436722118,
+        "Qh_after_contact_w": 3.89080348709924,
+        "bulk_Qc_w": 0.704245302711317,
+        "bulk_Qh_w": 3.8507112280601348,
+        "bulk_voltage_v": 1.1194657022044394,
+        "contact_joule_to_cold_w": 0.04009225903910519,
+        "contact_joule_to_hot_w": 0.04009225903910519,
+        "contact_joule_w": 0.08018451807821038,
+        "current_a": 2.8106854181890806,
+        "energy_residual_w": 4.440892098500626e-16,
+        "input_power_w": 3.226650443427028,
+        "n_maximum_relative_conservative_residual": 2.7054713100409843e-05,
+        "p_maximum_relative_conservative_residual": 4.418545381721298e-05,
+        "pair_solver_energy_residual_w": 0.0,
+        "pair_solver_relative_energy_residual": 0.0,
+        "terminal_voltage_v": 1.1479941591990586
+      },
+      "effective_bulk_conductance_w_per_k": 0.014448096104059567,
+      "equivalent_missing_conductance_w_per_k": 0.012506668829496213,
+      "equivalent_missing_to_bulk_conductance_ratio": 0.8656274667208326,
+      "interpretation": "unscaled figure-derived candidates",
+      "solver_evaluations_for_direct_optimizations": 19,
+      "source_scales": {
+        "electrical_conductivity_scale": 1.0,
+        "seebeck_magnitude_scale": 1.0,
+        "thermal_conductivity_scale": 1.0
+      },
+      "tight_refinement_Qc_after_contact_w": 0.6641530432885493,
+      "zero_current_bulk_Qc_w": -0.7672504272399702
+    }
+  },
+  "input_bindings": {
+    "device_condition": {
+      "data_role": "measured_as_described_in_main_text",
+      "device_id": "SCI-DTMAX-7P-L6",
+      "identity_status": "main_text_all-PbSe; SI_test_method_says_SnSe/BTS_unresolved",
+      "locator": "data/processed/device_conditions.csv",
+      "sha256": "69c511fed9ccb3e4ecd6d2250f0613896d23de3746dd1bee808b188db1e1c243"
+    },
+    "figure1_105_source_objects": {
+      "data_role": "primary_article_figure_derived_source_object_candidate",
+      "locator": "data/processed/pbse_cr_figure1_transport_all_compositions.csv",
+      "row_count": 105,
+      "rows_used_for_S_and_sigma": 28,
+      "sha256": "8de968addb27b5badc54d775cb0d3be1d6c3bc033cdb487cb18ac520711c8938"
+    },
+    "figure4a_7_vector_points": {
+      "data_role": "figure_derived_measured_as_described_in_main_text",
+      "locator": "data/processed/device_cooling_curves_figure4.csv",
+      "panel_a_row_count": 7,
+      "sha256": "cdd9a4c693208434e10ca6b79cb29ebb606c16d1d24d494c68fdeed15940ba48"
+    },
+    "figure_s9_14_raster_candidates": {
+      "data_role": "figure_derived_candidate_measured_as_described_in_si",
+      "locator": "data/processed/material_thermal_conductivity_figure_s9.csv",
+      "row_count": 14,
+      "sha256": "dbe455f657e164bb4e1a16909ec996feb9765b40badba9095a0079339518d2da"
+    }
+  },
+  "material_and_geometry_model": {
+    "electrical_topology": "seven p-n couples in series",
+    "leg_area_m2": 4e-06,
+    "leg_length_m": 0.006,
+    "pair_count": 7,
+    "property_representation": "independent shape-preserving PCHIP for S, sigma, and kappa; the solver receives analytic rho=1/sigma; no extrapolation",
+    "selected_pair": {
+      "n": "PbSe+0.005Cr",
+      "p": "PbSe+0.001Cr"
+    },
+    "solver": "repository conservative temperature-dependent 1D couple solver",
+    "thermal_topology": "seven p-n couples in parallel"
+  },
+  "nominal_forward_loss_ledger": {
+    "bulk_maximum_cooling_w": 0.7050432946413303,
+    "contact_corrected_maximum_cooling_w": 0.6641530436722118,
+    "contact_effect_includes_optimum_current_shift": true,
+    "model_equivalent_unresolved_loss_to_reach_zero_load_w": -0.6641530436722118,
+    "observed_zero_load_target_w": 0.0,
+    "reported_contact_sensitivity_effect_on_reoptimized_maximum_w": -0.04089025096911847,
+    "unique_physical_attribution_allowed": false
+  },
+  "outputs": {
+    "analysis_script": "scripts/analysis/analyze_pbse_device_forward_constraint.py",
+    "analysis_script_sha256": "4810ddc0104eff1dc7cddf0430a3e6fdc1fcbe999392dddbab75ff31dddb63c0",
+    "figure": "results/scientific_analysis/pbse_device_forward_constraint.png",
+    "figure_sha256": "d9fa90dee05fb2117a2ee29f7fd27c78c65339b0364ce22fa34386c582455d6a"
+  },
+  "pair_coordinates_at_forward_endpoint_and_mean_temperature": [
+    {
+      "optimal_gp_over_gn": 1.0731872702100798,
+      "temperature_k": 309.894134846523,
+      "zeta_equal_geometry": 0.667439667015802,
+      "zeta_geometry_ceiling": 0.6682704594283014
+    },
+    {
+      "optimal_gp_over_gn": 1.1125563660541957,
+      "temperature_k": 336.4460909559647,
+      "zeta_equal_geometry": 0.7016849778907059,
+      "zeta_geometry_ceiling": 0.7036738331631648
+    },
+    {
+      "optimal_gp_over_gn": 1.1431780495343542,
+      "temperature_k": 362.9980470654064,
+      "zeta_equal_geometry": 0.7179259306458929,
+      "zeta_geometry_ceiling": 0.7211263276478953
+    }
+  ],
+  "pair_design_coordinates_300_to_573_k": {
+    "definition": "zeta_pair=alpha^2*T/(R_pair*K_pair); common geometry scale cancels",
+    "geometry_ceiling": "R*K >= [sqrt(rho_p*kappa_p)+sqrt(rho_n*kappa_n)]^2",
+    "points": [
+      {
+        "alpha_v_per_k": 0.0003954024701639837,
+        "equal_geometry_retention_fraction": 0.9992707089397864,
+        "gn_definition": "A_n/L_n",
+        "gp_definition": "A_p/L_p",
+        "nominal_temperature_k": 300.0,
+        "optimal_gp_over_gn": 1.0555566939978152,
+        "point_index": 1,
+        "zeta_equal_geometry": 0.6517817268406634,
+        "zeta_geometry_ceiling": 0.6522574123404413
+      },
+      {
+        "alpha_v_per_k": 0.00041748575054859885,
+        "equal_geometry_retention_fraction": 0.9979439406639548,
+        "gn_definition": "A_n/L_n",
+        "gp_definition": "A_p/L_p",
+        "nominal_temperature_k": 323.0,
+        "optimal_gp_over_gn": 1.0951705028125933,
+        "point_index": 2,
+        "zeta_equal_geometry": 0.6861002288398617,
+        "zeta_geometry_ceiling": 0.6875137980029055
+      },
+      {
+        "alpha_v_per_k": 0.00046494427833670027,
+        "equal_geometry_retention_fraction": 0.9947275419844512,
+        "gn_definition": "A_n/L_n",
+        "gp_definition": "A_p/L_p",
+        "nominal_temperature_k": 373.0,
+        "optimal_gp_over_gn": 1.1571311480288091,
+        "point_index": 3,
+        "zeta_equal_geometry": 0.7246286159628024,
+        "zeta_geometry_ceiling": 0.7284694405034672
+      },
+      {
+        "alpha_v_per_k": 0.0005095119945864126,
+        "equal_geometry_retention_fraction": 0.9877000805828505,
+        "gn_definition": "A_n/L_n",
+        "gp_definition": "A_p/L_p",
+        "nominal_temperature_k": 423.0,
+        "optimal_gp_over_gn": 1.2513715187960066,
+        "point_index": 4,
+        "zeta_equal_geometry": 0.7650629592409405,
+        "zeta_geometry_ceiling": 0.7745903582284513
+      },
+      {
+        "alpha_v_per_k": 0.000553658134153443,
+        "equal_geometry_retention_fraction": 0.9874055025854767,
+        "gn_definition": "A_n/L_n",
+        "gp_definition": "A_p/L_p",
+        "nominal_temperature_k": 473.0,
+        "optimal_gp_over_gn": 1.2551717048039073,
+        "point_index": 5,
+        "zeta_equal_geometry": 0.7667446455939303,
+        "zeta_geometry_ceiling": 0.776524582439782
+      },
+      {
+        "alpha_v_per_k": 0.0005889483944075881,
+        "equal_geometry_retention_fraction": 0.977365227457676,
+        "gn_definition": "A_n/L_n",
+        "gp_definition": "A_p/L_p",
+        "nominal_temperature_k": 523.0,
+        "optimal_gp_over_gn": 1.3597346373824135,
+        "point_index": 6,
+        "zeta_equal_geometry": 0.7425148370415205,
+        "zeta_geometry_ceiling": 0.7597107163030051
+      },
+      {
+        "alpha_v_per_k": 0.0006236170194219158,
+        "equal_geometry_retention_fraction": 0.9719899112956014,
+        "gn_definition": "A_n/L_n",
+        "gp_definition": "A_p/L_p",
+        "nominal_temperature_k": 573.0,
+        "optimal_gp_over_gn": 1.4108725043970154,
+        "point_index": 7,
+        "zeta_equal_geometry": 0.6812609799287379,
+        "zeta_geometry_ceiling": 0.7008930566168736
+      }
+    ],
+    "summary": {
+      "equal_geometry_retention_range": [
+        0.9719899112956014,
+        0.9992707089397864
+      ],
+      "maximum_ceiling_gain_from_geometry_fraction": 0.02881726279140384,
+      "optimal_gp_over_gn_range": [
+        1.0555566939978152,
+        1.4108725043970154
+      ],
+      "zeta_ceiling_range": [
+        0.6522574123404413,
+        0.776524582439782
+      ]
+    }
+  },
+  "reported_contact_sensitivity": {
+    "eta_to_cold": 0.5,
+    "interfaces_per_leg": 2,
+    "n_per_interface_ohm": 7.500000000000001e-05,
+    "n_per_leg_two_interfaces_ohm": 0.00015000000000000001,
+    "p_per_interface_ohm": 0.0006500000000000001,
+    "p_per_leg_two_interfaces_ohm": 0.0013000000000000002,
+    "per_pair_ohm": 0.0014500000000000001,
+    "role": "explicit_sensitivity_not_resolved_device_contact_measurement",
+    "seven_pair_series_ohm": 0.010150000000000001,
+    "specific_contact_resistivity_micro_ohm_cm2": {
+      "n": 3.0,
+      "p": 26.0
+    }
+  },
+  "schema_version": "pbse_device_forward_constraint/v1",
+  "scientific_interpretation": {
+    "answer_to_forward_question": "No.  The public high-temperature material candidates plus nominal geometry and the reported-contact sensitivity retain positive maximum cooling at the source-figure zero-load endpoint, even in the conservative source-method direction.",
+    "equivalent_loss_meaning": "K_missing=Qc,max/DeltaT under the reported-contact sensitivity is the parallel-conductance value that would consume the residual capacity at this one endpoint. It can also stand in for nonparallel boundary, topology, sample mapping, or model discrepancies and is not a uniquely inferred heat leak.",
+    "geometry_result": "Equal p/n geometry retains 97.20-99.93% of the pair zeta ceiling over the seven source temperatures; p/n area-to-length optimization alone is therefore too small to explain the forward gap.",
+    "unresolved_evidence": [
+      "operating current at source Fig. 4a DeltaTmax",
+      "as-built electrical topology and leg dimensions",
+      "sample-level transport tables and uncertainties",
+      "interface-resolved electrical and thermal contacts",
+      "parasitic heat paths and complete reservoir boundary conditions",
+      "source-article device-material identity reconciliation"
+    ]
+  },
+  "scope": {
+    "below_300_k_extrapolation_used": false,
+    "digitization_uncertainty_combined_with_method_envelope": false,
+    "equivalent_missing_conductance_uniquely_attributed": false,
+    "figure_derived_forward_screening": true,
+    "independent_device_validation_eligible": false,
+    "real_pbse_cr_device_validation": false,
+    "source_method_envelope_is_confidence_interval": false
+  },
+  "software_versions": {
+    "matplotlib": "3.9.2",
+    "numpy": "2.1.1",
+    "python": "3.10.5"
+  },
+  "source_method_bounds": {
+    "conservative_direction": "|S|*0.95, sigma*0.95, kappa*1.15",
+    "correlations_or_joint_distribution_assumed": false,
+    "digitization_uncertainty_combined": false,
+    "favorable_direction": "|S|*1.05, sigma*1.05, kappa*0.85",
+    "method_uncertainty_upper_bounds_used_directionally": {
+      "absolute_seebeck": "plus_or_minus_5_percent",
+      "electrical_conductivity": "plus_or_minus_5_percent",
+      "thermal_conductivity": "plus_or_minus_15_percent"
+    },
+    "statistical_confidence_interval": false
+  },
+  "target_condition": {
+    "all_endpoints_inside_candidate_support": true,
+    "below_300_k_extrapolation_used": false,
+    "cold_temperature_k": 309.894134846523,
+    "delta_t_max_k": 53.10391221888338,
+    "device_id": "SCI-DTMAX-7P-L6",
+    "figure4a_point_index": 7,
+    "hot_temperature_k": 362.9980470654064,
+    "observed_heat_load_w": 0.0,
+    "support_by_scenario": {
+      "conservative_direction": {
+        "maximum_common_temperature_k": 572.9963081950611,
+        "minimum_common_temperature_k": 300.177230234
+      },
+      "favorable_direction": {
+        "maximum_common_temperature_k": 572.9963081950611,
+        "minimum_common_temperature_k": 300.177230234
+      },
+      "nominal": {
+        "maximum_common_temperature_k": 572.9963081950611,
+        "minimum_common_temperature_k": 300.177230234
+      }
+    }
+  },
+  "title": "PbSe/Cr high-temperature material-to-device forward constraint",
+  "verification": {
+    "all_current_curve_points_accepted": true,
+    "current_curve_point_count_per_scenario": 141,
+    "current_curve_range_a": [
+      0.0,
+      3.5
+    ],
+    "maximum_absolute_tight_module_energy_residual_w": 4.440892098500626e-16,
+    "maximum_contact_Qc_change_under_tight_solver_refinement_w": 6.211978154091469e-10,
+    "maximum_eta_half_curve_interpolation_vs_direct_Qc_error_w": 3.320620853486389e-05
+  }
+}
