@@ -1,0 +1,758 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-10",
+  "units": "Seebeck perturbations in V/K; responses in W per pair per unit epsilon",
+  "common_formula": "deltaQc=I integral Gamma_m d(mu_p-mu_n)",
+  "differential_formula": "deltaQc=I Tc d(Tc)+(I/2) integral T d'(T) d(mu_p+mu_n)",
+  "fixed_conditions": "Total current and shared material-end temperatures fixed; reference leads unchanged for leg operations.",
+  "constant_property_operations": [
+    {
+      "operation": "common",
+      "shape": "constant",
+      "current_a": 1.0,
+      "cold_temperature_k": 300.0,
+      "hot_temperature_k": 330.0,
+      "direct_endpoint_derivative_w": 0.0,
+      "distributed_derivative_w": 0.0,
+      "predicted_total_derivative_w": 0.0,
+      "gamma_measure_moments_v": [
+        0.0,
+        0.0
+      ],
+      "alpha_identity_max_error_v_per_k": 0.0,
+      "common_identity_max_error_v_per_k": 1.6940658945086007e-21,
+      "checks": [
+        {
+          "epsilon": 0.02,
+          "nonlinear_central_derivative_w": 0.0,
+          "absolute_error_w": 0.0,
+          "max_relative_energy_residual": 2.8912057932946783e-16
+        },
+        {
+          "epsilon": 0.01,
+          "nonlinear_central_derivative_w": 0.0,
+          "absolute_error_w": 0.0,
+          "max_relative_energy_residual": 5.782411586589354e-16
+        },
+        {
+          "epsilon": 0.005,
+          "nonlinear_central_derivative_w": 0.0,
+          "absolute_error_w": 0.0,
+          "max_relative_energy_residual": 1.9274705288631188e-16
+        }
+      ]
+    },
+    {
+      "operation": "common",
+      "shape": "affine",
+      "current_a": 1.0,
+      "cold_temperature_k": 300.0,
+      "hot_temperature_k": 330.0,
+      "direct_endpoint_derivative_w": 0.0,
+      "distributed_derivative_w": -0.00011716049382715261,
+      "predicted_total_derivative_w": -0.00011716049382715261,
+      "gamma_measure_moments_v": [
+        0.0016083950617283944,
+        0.001725555555555547
+      ],
+      "alpha_identity_max_error_v_per_k": 0.0,
+      "common_identity_max_error_v_per_k": 1.3552527156068805e-20,
+      "checks": [
+        {
+          "epsilon": 0.02,
+          "nonlinear_central_derivative_w": -0.0001171604890109687,
+          "absolute_error_w": 4.8161839100169246e-12,
+          "max_relative_energy_residual": 9.637352644315594e-17
+        },
+        {
+          "epsilon": 0.01,
+          "nonlinear_central_derivative_w": -0.00011716049266620454,
+          "absolute_error_w": 1.1609480737861944e-12,
+          "max_relative_energy_residual": 2.891158933151593e-16
+        },
+        {
+          "epsilon": 0.005,
+          "nonlinear_central_derivative_w": -0.00011716049357970992,
+          "absolute_error_w": 2.4744269133680774e-13,
+          "max_relative_energy_residual": 1.9274548777494862e-16
+        }
+      ]
+    },
+    {
+      "operation": "common",
+      "shape": "parabola",
+      "current_a": 1.0,
+      "cold_temperature_k": 300.0,
+      "hot_temperature_k": 330.0,
+      "direct_endpoint_derivative_w": 0.0,
+      "distributed_derivative_w": 4.612972761092464e-05,
+      "predicted_total_derivative_w": 4.612972761092464e-05,
+      "gamma_measure_moments_v": [
+        0.001992584754066164,
+        0.0019464550264552394
+      ],
+      "alpha_identity_max_error_v_per_k": 0.0,
+      "common_identity_max_error_v_per_k": 1.3552527156068805e-20,
+      "checks": [
+        {
+          "epsilon": 0.02,
+          "nonlinear_central_derivative_w": 4.61299628025727e-05,
+          "absolute_error_w": 2.3519164805800574e-10,
+          "max_relative_energy_residual": 1.927495805099308e-16
+        },
+        {
+          "epsilon": 0.01,
+          "nonlinear_central_derivative_w": 4.612978624085606e-05,
+          "absolute_error_w": 5.862993142195794e-11,
+          "max_relative_energy_residual": 9.637415112324926e-17
+        },
+        {
+          "epsilon": 0.005,
+          "nonlinear_central_derivative_w": 4.6129741785791434e-05,
+          "absolute_error_w": 1.4174866792490692e-11,
+          "max_relative_energy_residual": 1.9274767395422665e-16
+        }
+      ]
+    },
+    {
+      "operation": "differential",
+      "shape": "constant",
+      "current_a": 1.0,
+      "cold_temperature_k": 300.0,
+      "hot_temperature_k": 330.0,
+      "direct_endpoint_derivative_w": 0.003,
+      "distributed_derivative_w": 0.0,
+      "predicted_total_derivative_w": 0.003,
+      "gamma_measure_moments_v": [
+        0.0,
+        0.0
+      ],
+      "alpha_identity_max_error_v_per_k": 2.541098841762901e-20,
+      "common_identity_max_error_v_per_k": 0.0,
+      "checks": [
+        {
+          "epsilon": 0.02,
+          "nonlinear_central_derivative_w": 0.003000000000000398,
+          "absolute_error_w": 3.9811903773667723e-16,
+          "max_relative_energy_residual": 5.777115897017088e-16
+        },
+        {
+          "epsilon": 0.01,
+          "nonlinear_central_derivative_w": 0.003000000000000745,
+          "absolute_error_w": 7.450637329320386e-16,
+          "max_relative_energy_residual": 2.8925315369157646e-16
+        },
+        {
+          "epsilon": 0.005,
+          "nonlinear_central_derivative_w": 0.00299999999999849,
+          "absolute_error_w": 1.5100767858378106e-15,
+          "max_relative_energy_residual": 3.854057836138789e-16
+        }
+      ]
+    },
+    {
+      "operation": "differential",
+      "shape": "affine",
+      "current_a": 1.0,
+      "cold_temperature_k": 300.0,
+      "hot_temperature_k": 330.0,
+      "direct_endpoint_derivative_w": 0.003,
+      "distributed_derivative_w": 0.0016669753086419707,
+      "predicted_total_derivative_w": 0.004666975308641971,
+      "gamma_measure_moments_v": [
+        0.0016083950617283944,
+        0.001725555555555547
+      ],
+      "alpha_identity_max_error_v_per_k": 2.710505431213761e-20,
+      "common_identity_max_error_v_per_k": 0.0,
+      "checks": [
+        {
+          "epsilon": 0.02,
+          "nonlinear_central_derivative_w": 0.004666975308818648,
+          "absolute_error_w": 1.7667724921954786e-13,
+          "max_relative_energy_residual": 9.651071123057737e-17
+        },
+        {
+          "epsilon": 0.01,
+          "nonlinear_central_derivative_w": 0.004666975308713003,
+          "absolute_error_w": 7.103258953256031e-14,
+          "max_relative_energy_residual": 2.8891525449163953e-16
+        },
+        {
+          "epsilon": 0.005,
+          "nonlinear_central_derivative_w": 0.004666975308687676,
+          "absolute_error_w": 4.5705626783298925e-14,
+          "max_relative_energy_residual": 3.856311396131921e-16
+        }
+      ]
+    },
+    {
+      "operation": "differential",
+      "shape": "parabola",
+      "current_a": 1.0,
+      "cold_temperature_k": 300.0,
+      "hot_temperature_k": 330.0,
+      "direct_endpoint_derivative_w": 0.0,
+      "distributed_derivative_w": 0.001969519890260702,
+      "predicted_total_derivative_w": 0.001969519890260702,
+      "gamma_measure_moments_v": [
+        0.001992584754066164,
+        0.0019464550264552394
+      ],
+      "alpha_identity_max_error_v_per_k": 2.668153783851046e-20,
+      "common_identity_max_error_v_per_k": 0.0,
+      "checks": [
+        {
+          "epsilon": 0.02,
+          "nonlinear_central_derivative_w": 0.0019695198331341063,
+          "absolute_error_w": 5.712659555470734e-11,
+          "max_relative_energy_residual": 9.643164765883367e-17
+        },
+        {
+          "epsilon": 0.01,
+          "nonlinear_central_derivative_w": 0.0019695198766161645,
+          "absolute_error_w": 1.3644537322915484e-11,
+          "max_relative_energy_residual": 1.9280515297077329e-16
+        },
+        {
+          "epsilon": 0.005,
+          "nonlinear_central_derivative_w": 0.0019695198874861153,
+          "absolute_error_w": 2.7745865500972133e-12,
+          "max_relative_energy_residual": 9.638804882419473e-17
+        }
+      ]
+    }
+  ],
+  "bts_bst_differential_operations": [
+    {
+      "operation": "differential",
+      "shape": "constant",
+      "current_a": 3.0,
+      "cold_temperature_k": 323.0,
+      "hot_temperature_k": 373.0,
+      "direct_endpoint_derivative_w": 0.00969,
+      "distributed_derivative_w": 0.0,
+      "predicted_total_derivative_w": 0.00969,
+      "gamma_measure_moments_v": [
+        0.0,
+        0.0
+      ],
+      "alpha_identity_max_error_v_per_k": 2.541098841762901e-20,
+      "common_identity_max_error_v_per_k": 0.0,
+      "checks": [
+        {
+          "epsilon": 0.01,
+          "nonlinear_central_derivative_w": 0.009689999999998311,
+          "absolute_error_w": 1.6896206656014101e-15,
+          "max_relative_energy_residual": 1.2354898199682245e-16
+        },
+        {
+          "epsilon": 0.005,
+          "nonlinear_central_derivative_w": 0.009689999999995536,
+          "absolute_error_w": 4.4651782271643015e-15,
+          "max_relative_energy_residual": 1.235335988876615e-16
+        }
+      ]
+    },
+    {
+      "operation": "differential",
+      "shape": "affine",
+      "current_a": 3.0,
+      "cold_temperature_k": 323.0,
+      "hot_temperature_k": 373.0,
+      "direct_endpoint_derivative_w": 0.00969,
+      "distributed_derivative_w": 0.006576896080137655,
+      "predicted_total_derivative_w": 0.016266896080137656,
+      "gamma_measure_moments_v": [
+        0.0021789177277132823,
+        0.0022056796590451547
+      ],
+      "alpha_identity_max_error_v_per_k": 2.710505431213761e-20,
+      "common_identity_max_error_v_per_k": 1.3552527156068805e-20,
+      "checks": [
+        {
+          "epsilon": 0.01,
+          "nonlinear_central_derivative_w": 0.01626689606961801,
+          "absolute_error_w": 1.0519647652973418e-11,
+          "max_relative_energy_residual": 2.471366779160101e-16
+        },
+        {
+          "epsilon": 0.005,
+          "nonlinear_central_derivative_w": 0.01626689607717724,
+          "absolute_error_w": 2.960416634056884e-12,
+          "max_relative_energy_residual": 0.0
+        }
+      ]
+    }
+  ],
+  "global_constant_shift": {
+    "method": "analytic reference-circuit relation with numerical line integration; not network FEM",
+    "shift_v_per_k": 2.5e-05,
+    "measurement_reference_temperature_k": 298.0,
+    "segments": [
+      {
+        "segment": "reference_to_cold_lead",
+        "start_temperature_k": 298.0,
+        "end_temperature_k": 310.0,
+        "voltage_before_v": -6.000000000000001e-05,
+        "voltage_after_v": -0.00035999999999999997,
+        "voltage_change_v": -0.0003,
+        "analytic_voltage_change_v": -0.00030000000000000003,
+        "absolute_error_v": 5.421010862427522e-20
+      },
+      {
+        "segment": "nonisothermal_sample",
+        "start_temperature_k": 310.0,
+        "end_temperature_k": 363.0,
+        "voltage_before_v": -0.011021350000000044,
+        "voltage_after_v": -0.012346350000000044,
+        "voltage_change_v": -0.0013249999999999998,
+        "analytic_voltage_change_v": -0.001325,
+        "absolute_error_v": 2.168404344971009e-19
+      },
+      {
+        "segment": "hot_to_reference_lead",
+        "start_temperature_k": 363.0,
+        "end_temperature_k": 298.0,
+        "voltage_before_v": 0.000325,
+        "voltage_after_v": 0.0019500000000000001,
+        "voltage_change_v": 0.0016250000000000001,
+        "analytic_voltage_change_v": 0.0016250000000000001,
+        "absolute_error_v": 0.0
+      }
+    ],
+    "closed_measurement_voltage_change_v": 4.336808689942018e-19,
+    "bare_nonisothermal_sample_voltage_change_v": -0.0013249999999999998,
+    "node_heat_shift_sum_w": 0.0,
+    "interpretation": "The bare nonisothermal voltage changes by -C DeltaT. Including both shifted leads to one reference temperature cancels that change."
+  },
+  "zero_current_counterexample": {
+    "current_a": 0.0,
+    "p_kappa_description": "1.5*(1+0.4*(T-300)/30) W/(m K)",
+    "n_kappa_w_per_m_k": 1.0,
+    "measure_l1_k": 0.8333324762086188,
+    "measure_l1_normalized": 0.054053999959402924,
+    "measure_bins": 256,
+    "maximum_temperature_profile_difference_k": 1.2499994443836044,
+    "common_operation_checks": [
+      {
+        "operation": "common",
+        "shape": "constant",
+        "current_a": 0.0,
+        "cold_temperature_k": 300.0,
+        "hot_temperature_k": 330.0,
+        "direct_endpoint_derivative_w": 0.0,
+        "distributed_derivative_w": 0.0,
+        "predicted_total_derivative_w": 0.0,
+        "gamma_measure_moments_v": [
+          0.0,
+          0.0
+        ],
+        "alpha_identity_max_error_v_per_k": 0.0,
+        "common_identity_max_error_v_per_k": 1.6940658945086007e-21,
+        "checks": [
+          {
+            "epsilon": 0.02,
+            "nonlinear_central_derivative_w": 0.0,
+            "absolute_error_w": 0.0,
+            "max_relative_energy_residual": 0.0
+          }
+        ]
+      },
+      {
+        "operation": "common",
+        "shape": "affine",
+        "current_a": 0.0,
+        "cold_temperature_k": 300.0,
+        "hot_temperature_k": 330.0,
+        "direct_endpoint_derivative_w": 0.0,
+        "distributed_derivative_w": 0.0,
+        "predicted_total_derivative_w": 0.0,
+        "gamma_measure_moments_v": [
+          0.0016374999999996893,
+          0.0015500000000000004
+        ],
+        "alpha_identity_max_error_v_per_k": 0.0,
+        "common_identity_max_error_v_per_k": 1.3552527156068805e-20,
+        "checks": [
+          {
+            "epsilon": 0.02,
+            "nonlinear_central_derivative_w": 0.0,
+            "absolute_error_w": 0.0,
+            "max_relative_energy_residual": 0.0
+          }
+        ]
+      },
+      {
+        "operation": "common",
+        "shape": "parabola",
+        "current_a": 0.0,
+        "cold_temperature_k": 300.0,
+        "hot_temperature_k": 330.0,
+        "direct_endpoint_derivative_w": 0.0,
+        "distributed_derivative_w": -0.0,
+        "predicted_total_derivative_w": 0.0,
+        "gamma_measure_moments_v": [
+          0.001996666666661288,
+          0.0020000000000000005
+        ],
+        "alpha_identity_max_error_v_per_k": 0.0,
+        "common_identity_max_error_v_per_k": 1.3552527156068805e-20,
+        "checks": [
+          {
+            "epsilon": 0.02,
+            "nonlinear_central_derivative_w": 0.0,
+            "absolute_error_w": 0.0,
+            "max_relative_energy_residual": 0.0
+          }
+        ]
+      }
+    ],
+    "interpretation": "Unequal measures have zero common-mode heat response at I=0; nonzero current is required for the necessity statement."
+  },
+  "constant_property_measure_matching": {
+    "area_ratio_n_over_p": 1.7320508075688772,
+    "alpha_v_per_k": 0.0004,
+    "seebeck_values_v_per_k": [
+      0.00022,
+      -0.00018
+    ],
+    "records": [
+      {
+        "current_a": 1.0,
+        "measure_l1_k": 1.1102230246251565e-16,
+        "measure_l1_normalized": 6.9230229848292584e-18,
+        "measure_bins": 256,
+        "max_temperature_profile_difference_k": 5.684341886080802e-14,
+        "max_adjoint_difference": 0.0,
+        "max_adjoint_error_against_1_minus_u": 1.1102230246251565e-16,
+        "internal_temperature_maximum": false,
+        "checks": [
+          {
+            "operation": "common",
+            "shape": "affine",
+            "current_a": 1.0,
+            "cold_temperature_k": 300.0,
+            "hot_temperature_k": 330.0,
+            "direct_endpoint_derivative_w": 0.0,
+            "distributed_derivative_w": 0.0,
+            "predicted_total_derivative_w": 0.0,
+            "gamma_measure_moments_v": [
+              0.001659066423295297,
+              0.001659066423295297
+            ],
+            "alpha_identity_max_error_v_per_k": 0.0,
+            "common_identity_max_error_v_per_k": 1.3552527156068805e-20,
+            "checks": [
+              {
+                "epsilon": 0.01,
+                "nonlinear_central_derivative_w": 1.5577816814271728e-13,
+                "absolute_error_w": 1.5577816814271728e-13,
+                "max_relative_energy_residual": 3.664774085261979e-16
+              },
+              {
+                "epsilon": 0.005,
+                "nonlinear_central_derivative_w": 4.0245584642661925e-14,
+                "absolute_error_w": 4.0245584642661925e-14,
+                "max_relative_energy_residual": 3.664774085261979e-16
+              },
+              {
+                "epsilon": 0.002,
+                "nonlinear_central_derivative_w": 3.469446951953614e-15,
+                "absolute_error_w": 3.469446951953614e-15,
+                "max_relative_energy_residual": 3.664774085261979e-16
+              }
+            ]
+          },
+          {
+            "operation": "common",
+            "shape": "parabola",
+            "current_a": 1.0,
+            "cold_temperature_k": 300.0,
+            "hot_temperature_k": 330.0,
+            "direct_endpoint_derivative_w": 0.0,
+            "distributed_derivative_w": 0.0,
+            "predicted_total_derivative_w": 0.0,
+            "gamma_measure_moments_v": [
+              0.0019777472670472612,
+              0.0019777472670472612
+            ],
+            "alpha_identity_max_error_v_per_k": 0.0,
+            "common_identity_max_error_v_per_k": 1.3552527156068805e-20,
+            "checks": [
+              {
+                "epsilon": 0.01,
+                "nonlinear_central_derivative_w": -1.4994602781648325e-11,
+                "absolute_error_w": 1.4994602781648325e-11,
+                "max_relative_energy_residual": 3.664774085261979e-16
+              },
+              {
+                "epsilon": 0.005,
+                "nonlinear_central_derivative_w": -3.7490843762810755e-12,
+                "absolute_error_w": 3.7490843762810755e-12,
+                "max_relative_energy_residual": 3.664774085261979e-16
+              },
+              {
+                "epsilon": 0.002,
+                "nonlinear_central_derivative_w": -5.776629175002768e-13,
+                "absolute_error_w": 5.776629175002768e-13,
+                "max_relative_energy_residual": 3.664774085261979e-16
+              }
+            ]
+          },
+          {
+            "operation": "common",
+            "shape": "cold_skew",
+            "current_a": 1.0,
+            "cold_temperature_k": 300.0,
+            "hot_temperature_k": 330.0,
+            "direct_endpoint_derivative_w": 0.0,
+            "distributed_derivative_w": -2.168404344971009e-19,
+            "predicted_total_derivative_w": -2.168404344971009e-19,
+            "gamma_measure_moments_v": [
+              0.0015629612594297833,
+              0.0015629612594297835
+            ],
+            "alpha_identity_max_error_v_per_k": 0.0,
+            "common_identity_max_error_v_per_k": 1.3552527156068805e-20,
+            "checks": [
+              {
+                "epsilon": 0.01,
+                "nonlinear_central_derivative_w": -6.625602844145817e-12,
+                "absolute_error_w": 6.6256026273053825e-12,
+                "max_relative_energy_residual": 3.664774085261979e-16
+              },
+              {
+                "epsilon": 0.005,
+                "nonlinear_central_derivative_w": -1.7638668303732175e-12,
+                "absolute_error_w": 1.763866613532783e-12,
+                "max_relative_energy_residual": 3.664774085261979e-16
+              },
+              {
+                "epsilon": 0.002,
+                "nonlinear_central_derivative_w": -2.8796409701215e-13,
+                "absolute_error_w": 2.879638801717155e-13,
+                "max_relative_energy_residual": 3.664774085261979e-16
+              }
+            ]
+          },
+          {
+            "operation": "common",
+            "shape": "hot_skew",
+            "current_a": 1.0,
+            "cold_temperature_k": 300.0,
+            "hot_temperature_k": 330.0,
+            "direct_endpoint_derivative_w": 0.0,
+            "distributed_derivative_w": 0.0,
+            "predicted_total_derivative_w": 0.0,
+            "gamma_measure_moments_v": [
+              0.0017744872537124702,
+              0.0017744872537124702
+            ],
+            "alpha_identity_max_error_v_per_k": 0.0,
+            "common_identity_max_error_v_per_k": 1.3552527156068805e-20,
+            "checks": [
+              {
+                "epsilon": 0.01,
+                "nonlinear_central_derivative_w": -8.672229601103254e-12,
+                "absolute_error_w": 8.672229601103254e-12,
+                "max_relative_energy_residual": 3.664774085261979e-16
+              },
+              {
+                "epsilon": 0.005,
+                "nonlinear_central_derivative_w": -2.0636270470220097e-12,
+                "absolute_error_w": 2.0636270470220097e-12,
+                "max_relative_energy_residual": 3.664774085261979e-16
+              },
+              {
+                "epsilon": 0.002,
+                "nonlinear_central_derivative_w": -3.712308238590367e-13,
+                "absolute_error_w": 3.712308238590367e-13,
+                "max_relative_energy_residual": 3.664774085261979e-16
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "current_a": 3.0,
+        "measure_l1_k": 1.1796119636642288e-16,
+        "measure_l1_normalized": 4.8483611084523416e-18,
+        "measure_bins": 256,
+        "max_temperature_profile_difference_k": 5.684341886080802e-14,
+        "max_adjoint_difference": 0.0,
+        "max_adjoint_error_against_1_minus_u": 1.1102230246251565e-16,
+        "internal_temperature_maximum": true,
+        "checks": [
+          {
+            "operation": "common",
+            "shape": "affine",
+            "current_a": 3.0,
+            "cold_temperature_k": 300.0,
+            "hot_temperature_k": 330.0,
+            "direct_endpoint_derivative_w": 0.0,
+            "distributed_derivative_w": -1.3010426069826053e-18,
+            "predicted_total_derivative_w": -1.3010426069826053e-18,
+            "gamma_measure_moments_v": [
+              0.0025470735910243965,
+              0.002547073591024397
+            ],
+            "alpha_identity_max_error_v_per_k": 0.0,
+            "common_identity_max_error_v_per_k": 1.3552527156068805e-20,
+            "checks": [
+              {
+                "epsilon": 0.01,
+                "nonlinear_central_derivative_w": -9.345302309782255e-11,
+                "absolute_error_w": 9.345302179677994e-11,
+                "max_relative_energy_residual": 2.4268703030209857e-16
+              },
+              {
+                "epsilon": 0.005,
+                "nonlinear_central_derivative_w": -2.335631688055173e-11,
+                "absolute_error_w": 2.3356315579509124e-11,
+                "max_relative_energy_residual": 2.426870068637009e-16
+              },
+              {
+                "epsilon": 0.002,
+                "nonlinear_central_derivative_w": -3.740063814205996e-12,
+                "absolute_error_w": 3.740062513163389e-12,
+                "max_relative_energy_residual": 2.426870068637009e-16
+              }
+            ]
+          },
+          {
+            "operation": "common",
+            "shape": "parabola",
+            "current_a": 3.0,
+            "cold_temperature_k": 300.0,
+            "hot_temperature_k": 330.0,
+            "direct_endpoint_derivative_w": 0.0,
+            "distributed_derivative_w": 1.951563910473908e-18,
+            "predicted_total_derivative_w": 1.951563910473908e-18,
+            "gamma_measure_moments_v": [
+              0.0004630890369651101,
+              0.00046308903696510944
+            ],
+            "alpha_identity_max_error_v_per_k": 0.0,
+            "common_identity_max_error_v_per_k": 1.3552527156068805e-20,
+            "checks": [
+              {
+                "epsilon": 0.01,
+                "nonlinear_central_derivative_w": -2.702155166289799e-09,
+                "absolute_error_w": 2.702155168241363e-09,
+                "max_relative_energy_residual": 2.426870068637009e-16
+              },
+              {
+                "epsilon": 0.005,
+                "nonlinear_central_derivative_w": -6.755457304663537e-10,
+                "absolute_error_w": 6.755457324179176e-10,
+                "max_relative_energy_residual": 2.4268703612753417e-16
+              },
+              {
+                "epsilon": 0.002,
+                "nonlinear_central_derivative_w": -1.2688461392684758e-10,
+                "absolute_error_w": 1.268846158784115e-10,
+                "max_relative_energy_residual": 2.426870068637009e-16
+              }
+            ]
+          },
+          {
+            "operation": "common",
+            "shape": "cold_skew",
+            "current_a": 3.0,
+            "cold_temperature_k": 300.0,
+            "hot_temperature_k": 330.0,
+            "direct_endpoint_derivative_w": 0.0,
+            "distributed_derivative_w": 0.0,
+            "predicted_total_derivative_w": 0.0,
+            "gamma_measure_moments_v": [
+              0.000720154267071115,
+              0.000720154267071115
+            ],
+            "alpha_identity_max_error_v_per_k": 0.0,
+            "common_identity_max_error_v_per_k": 1.3552527156068805e-20,
+            "checks": [
+              {
+                "epsilon": 0.01,
+                "nonlinear_central_derivative_w": 5.660721891231901e-10,
+                "absolute_error_w": 5.660721891231901e-10,
+                "max_relative_energy_residual": 2.4268701990175817e-16
+              },
+              {
+                "epsilon": 0.005,
+                "nonlinear_central_derivative_w": 1.470851218599023e-10,
+                "absolute_error_w": 1.470851218599023e-10,
+                "max_relative_energy_residual": 2.426870068637009e-16
+              },
+              {
+                "epsilon": 0.002,
+                "nonlinear_central_derivative_w": 2.5278390491934033e-11,
+                "absolute_error_w": 2.5278390491934033e-11,
+                "max_relative_energy_residual": 2.426870068637009e-16
+              }
+            ]
+          },
+          {
+            "operation": "common",
+            "shape": "hot_skew",
+            "current_a": 3.0,
+            "cold_temperature_k": 300.0,
+            "hot_temperature_k": 330.0,
+            "direct_endpoint_derivative_w": 0.0,
+            "distributed_derivative_w": 0.0,
+            "predicted_total_derivative_w": 0.0,
+            "gamma_measure_moments_v": [
+              6.130848280750788e-05,
+              6.130848280750788e-05
+            ],
+            "alpha_identity_max_error_v_per_k": 0.0,
+            "common_identity_max_error_v_per_k": 1.3552527156068805e-20,
+            "checks": [
+              {
+                "epsilon": 0.01,
+                "nonlinear_central_derivative_w": -1.1696904556046661e-08,
+                "absolute_error_w": 1.1696904556046661e-08,
+                "max_relative_energy_residual": 2.426872322384371e-16
+              },
+              {
+                "epsilon": 0.005,
+                "nonlinear_central_derivative_w": -2.9354629837996526e-09,
+                "absolute_error_w": 2.9354629837996526e-09,
+                "max_relative_energy_residual": 2.426870068637009e-16
+              },
+              {
+                "epsilon": 0.002,
+                "nonlinear_central_derivative_w": -4.788044960513105e-10,
+                "absolute_error_w": 4.788044960513105e-10,
+                "max_relative_energy_residual": 2.426870068637009e-16
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "analytic_reason": "Constant S, rho, k and matched R/K give equal g, T_p(u)=T_n(u), and psi_p=psi_n=1-u; the complete oriented measures agree. This proves first-order cancellation for every continuous Gamma, including nonmonotonic baselines.",
+    "scope": "First-order response at fixed nonzero current and fixed shared endpoints; finite-amplitude cancellation is not inferred."
+  },
+  "validation": {
+    "maximum_leg_operation_central_difference_error_w": 2.3519164805800574e-10,
+    "maximum_matched_case_finest_step_error_w": 4.788044960513105e-10,
+    "maximum_relative_energy_residual": 5.782411586589354e-16,
+    "global_reference_voltage_change_v": 4.336808689942018e-19,
+    "zero_current_measure_difference_normalized": 0.054053999959402924,
+    "note": "Near cancellation, absolute errors are used. Finite centered steps show O(epsilon^2) corrections and do not establish exact finite-amplitude cancellation."
+  },
+  "runtime": {
+    "python": "3.10.5",
+    "numpy": "2.1.1",
+    "scipy": "1.14.1"
+  },
+  "source_sha256": {
+    "scripts/analysis/seebeck_operations.py": "551e6340ba7549fc46f96fb02f00660bf358a8437e4a4ad187fa95a1a863ed0e",
+    "scripts/analysis/geometry_matching.py": "391dc22cb6c2da4eb3d997ab54aff275fe5a512cbba1e76e3dcb987f1abff519",
+    "scripts/analysis/analyze_common_mode_transfer_kernel.py": "719eca052833b453f8037b5caba28a728b6bfd6cf4b599e834b2ce1c0b55ffbc",
+    "scripts/analysis/analyze_bts_bst_endpoint_zero_common_mode.py": "cac971318e85490d4e43bbb36470b578c7f55ad2ab07257a86d4ddb9164b9e32",
+    "scripts/tec_1d_solver/temperature_dependent.py": "e74c50ad2b397caf6b34fcaa825fcabe98211b7d8a2e03c6b63a41ef47f08137",
+    "data/raw/nwae448_bts_bst/nwae448_digitized_transport.csv": "aa4fb3e56849690c734d684f32b8a6441ce6fce73ebfc8711316c3d55047604b"
+  }
+}

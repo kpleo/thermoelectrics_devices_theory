@@ -1,0 +1,186 @@
+{
+  "method": "central perturbation of complete nonlinear finite-element solves",
+  "mode_amplitude_v_per_k": 1e-05,
+  "cases": [
+    {
+      "area_ratio_n_over_p": 1.0,
+      "mode": "linear",
+      "inputs": {
+        "current_a": 3.0,
+        "length_m": 0.0048,
+        "p_area_m2": 3.8024999999999996e-06,
+        "n_area_m2": 3.8024999999999996e-06,
+        "cold_k": 323.0,
+        "hot_k": 373.0,
+        "axial_cells": 24,
+        "transverse_cells": 2
+      },
+      "values": [
+        {
+          "epsilon": 0.1,
+          "derivative_w": -7.990477749506009e-05,
+          "plus_cold_heat_w": 0.19118280993591943,
+          "minus_cold_heat_w": 0.19119879089141845,
+          "maximum_energy_residual_w": 5.25135490647699e-13
+        },
+        {
+          "epsilon": 0.03,
+          "derivative_w": -7.990447854396474e-05,
+          "plus_cold_heat_w": 0.1911915541126264,
+          "minus_cold_heat_w": 0.19119634838133903,
+          "maximum_energy_residual_w": 4.914402218503255e-13
+        },
+        {
+          "epsilon": 0.01,
+          "derivative_w": -7.990445227562537e-05,
+          "plus_cold_heat_w": 0.19119342920061055,
+          "minus_cold_heat_w": 0.19119502728965607,
+          "maximum_energy_residual_w": 4.82502926502093e-13
+        },
+        {
+          "epsilon": 0.003,
+          "derivative_w": -7.990444890008479e-05,
+          "plus_cold_heat_w": 0.19119402004034503,
+          "minus_cold_heat_w": 0.19119449946703843,
+          "maximum_energy_residual_w": 4.768407890765047e-13
+        }
+      ],
+      "last_two_derivative_change_w": 3.375540583269894e-12
+    },
+    {
+      "area_ratio_n_over_p": 1.0,
+      "mode": "endpoint_zero",
+      "inputs": {
+        "current_a": 3.0,
+        "length_m": 0.0048,
+        "p_area_m2": 3.8024999999999996e-06,
+        "n_area_m2": 3.8024999999999996e-06,
+        "cold_k": 323.0,
+        "hot_k": 373.0,
+        "axial_cells": 24,
+        "transverse_cells": 2
+      },
+      "values": [
+        {
+          "epsilon": 0.1,
+          "derivative_w": 0.00018690540214305607,
+          "plus_cold_heat_w": 0.19120655338429773,
+          "minus_cold_heat_w": 0.19116917230386912,
+          "maximum_energy_residual_w": 7.688294445529209e-13
+        },
+        {
+          "epsilon": 0.03,
+          "derivative_w": 0.0001868605135055268,
+          "plus_cold_heat_w": 0.19119929270331515,
+          "minus_cold_heat_w": 0.19118808107250482,
+          "maximum_energy_residual_w": 5.488942633746774e-13
+        },
+        {
+          "epsilon": 0.01,
+          "derivative_w": 0.00018685656723860244,
+          "plus_cold_heat_w": 0.191196067437792,
+          "minus_cold_heat_w": 0.19119233030644722,
+          "maximum_energy_residual_w": 4.989897384177766e-13
+        },
+        {
+          "epsilon": 0.003,
+          "derivative_w": 0.00018685611842539362,
+          "plus_cold_heat_w": 0.1911948176784782,
+          "minus_cold_heat_w": 0.19119369654176765,
+          "maximum_energy_residual_w": 4.835021272242557e-13
+        }
+      ],
+      "last_two_derivative_change_w": 4.4881320881984266e-10
+    },
+    {
+      "area_ratio_n_over_p": 1.04240001,
+      "mode": "linear",
+      "inputs": {
+        "current_a": 3.0,
+        "length_m": 0.0048,
+        "p_area_m2": 3.723560498807479e-06,
+        "n_area_m2": 3.88143950119252e-06,
+        "cold_k": 323.0,
+        "hot_k": 373.0,
+        "axial_cells": 24,
+        "transverse_cells": 2
+      },
+      "values": [
+        {
+          "epsilon": 0.1,
+          "derivative_w": 5.878547422233371e-05,
+          "plus_cold_heat_w": 0.19126978772309453,
+          "minus_cold_heat_w": 0.19125803062825006,
+          "maximum_energy_residual_w": 4.536926390130702e-13
+        },
+        {
+          "epsilon": 0.03,
+          "derivative_w": 5.878687566000333e-05,
+          "plus_cold_heat_w": 0.19126882051410227,
+          "minus_cold_heat_w": 0.19126529330156267,
+          "maximum_energy_residual_w": 4.2932324362254803e-13
+        },
+        {
+          "epsilon": 0.01,
+          "derivative_w": 5.8786998768933785e-05,
+          "plus_cold_heat_w": 0.19126792150332977,
+          "minus_cold_heat_w": 0.1912667457633544,
+          "maximum_energy_residual_w": 4.2549297418759124e-13
+        },
+        {
+          "epsilon": 0.003,
+          "derivative_w": 5.878701277624761e-05,
+          "plus_cold_heat_w": 0.19126754147192576,
+          "minus_cold_heat_w": 0.1912671887498491,
+          "maximum_energy_residual_w": 4.226619054747971e-13
+        }
+      ],
+      "last_two_derivative_change_w": 1.400731382283655e-11
+    },
+    {
+      "area_ratio_n_over_p": 1.04240001,
+      "mode": "endpoint_zero",
+      "inputs": {
+        "current_a": 3.0,
+        "length_m": 0.0048,
+        "p_area_m2": 3.723560498807479e-06,
+        "n_area_m2": 3.88143950119252e-06,
+        "cold_k": 323.0,
+        "hot_k": 373.0,
+        "axial_cells": 24,
+        "transverse_cells": 2
+      },
+      "values": [
+        {
+          "epsilon": 0.1,
+          "derivative_w": -2.5454947205627576e-07,
+          "plus_cold_heat_w": 0.19126096487884492,
+          "minus_cold_heat_w": 0.19126101578873933,
+          "maximum_energy_residual_w": 6.336597913048081e-13
+        },
+        {
+          "epsilon": 0.03,
+          "derivative_w": -2.594128462966398e-07,
+          "plus_cold_heat_w": 0.19126678645161282,
+          "minus_cold_heat_w": 0.1912668020163836,
+          "maximum_energy_residual_w": 4.741762538174044e-13
+        },
+        {
+          "epsilon": 0.01,
+          "derivative_w": -2.598402243370046e-07,
+          "plus_cold_heat_w": 0.1912673018491734,
+          "minus_cold_heat_w": 0.19126730704597789,
+          "maximum_energy_residual_w": 4.378164497609305e-13
+        },
+        {
+          "epsilon": 0.003,
+          "derivative_w": -2.598893554065877e-07,
+          "plus_cold_heat_w": 0.1912673617045022,
+          "minus_cold_heat_w": 0.19126736326383834,
+          "maximum_energy_residual_w": 4.2643666375852263e-13
+        }
+      ],
+      "last_two_derivative_change_w": 4.913106958309624e-11
+    }
+  ]
+}

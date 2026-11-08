@@ -1,0 +1,126 @@
+{
+  "cases": [
+    {
+      "file": "ratio1.00000000_refine1.json",
+      "ratio": 1.0,
+      "refinement": 1,
+      "cold_heat_w": 0.18476369898148406,
+      "response_w": 0.00023228477739195563,
+      "adjoint_difference_w": 5.808517292366436e-10,
+      "raw_max_depth_temperature_difference_k": 0.054434923591998086,
+      "conducting_y_current_rms_fraction": 0.20818132126293773
+    },
+    {
+      "file": "ratio1.00000000_refine2.json",
+      "ratio": 1.0,
+      "refinement": 2,
+      "cold_heat_w": 0.18467344043827966,
+      "response_w": 0.000238912115758938,
+      "adjoint_difference_w": 6.086936688194655e-10,
+      "raw_max_depth_temperature_difference_k": 0.035229798760553876,
+      "conducting_y_current_rms_fraction": 0.25537040344865103
+    },
+    {
+      "file": "ratio1.00000000_refine4.json",
+      "ratio": 1.0,
+      "refinement": 4,
+      "cold_heat_w": 0.18460102627295139,
+      "response_w": 0.0002406035038871046,
+      "adjoint_difference_w": 6.1237889509725e-10,
+      "raw_max_depth_temperature_difference_k": 0.018917914689382087,
+      "conducting_y_current_rms_fraction": 0.270903455843068
+    },
+    {
+      "file": "ratio1.04240001_refine1.json",
+      "ratio": 1.04240001,
+      "refinement": 1,
+      "cold_heat_w": 0.18483752654893004,
+      "response_w": 3.3649446860850585e-05,
+      "adjoint_difference_w": 7.446558975454827e-11,
+      "raw_max_depth_temperature_difference_k": 0.05455396238608046,
+      "conducting_y_current_rms_fraction": 0.2082102968030838
+    },
+    {
+      "file": "ratio1.04240001_refine2.json",
+      "ratio": 1.04240001,
+      "refinement": 2,
+      "cold_heat_w": 0.18474732426014961,
+      "response_w": 3.5537228143533994e-05,
+      "adjoint_difference_w": 8.671883536644697e-11,
+      "raw_max_depth_temperature_difference_k": 0.03519920209691918,
+      "conducting_y_current_rms_fraction": 0.25537543497457055
+    },
+    {
+      "file": "ratio1.04240001_refine4.json",
+      "ratio": 1.04240001,
+      "refinement": 4,
+      "cold_heat_w": 0.18467498066620863,
+      "response_w": 3.605370246795303e-05,
+      "adjoint_difference_w": 9.420248746507117e-11,
+      "raw_max_depth_temperature_difference_k": 0.018603996694253055,
+      "conducting_y_current_rms_fraction": 0.2709069503474552
+    }
+  ],
+  "successive_mesh_differences": [
+    {
+      "ratio": 1.0,
+      "coarse_refinement": 1,
+      "fine_refinement": 2,
+      "absolute_response_difference_w": 6.6273383669823716e-06
+    },
+    {
+      "ratio": 1.0,
+      "coarse_refinement": 2,
+      "fine_refinement": 4,
+      "absolute_response_difference_w": 1.6913881281666043e-06
+    },
+    {
+      "ratio": 1.04240001,
+      "coarse_refinement": 1,
+      "fine_refinement": 2,
+      "absolute_response_difference_w": 1.8877812826834095e-06
+    },
+    {
+      "ratio": 1.04240001,
+      "coarse_refinement": 2,
+      "fine_refinement": 4,
+      "absolute_response_difference_w": 5.164743244190362e-07
+    }
+  ],
+  "full_depth_controls": [
+    {
+      "refinement": 1,
+      "full_depth_source": "results/transport_validation/fem_packaged/ratio1_refine1_adjoint.npz",
+      "full_depth_y_current_rms_fraction": 0.03547171372845067,
+      "full_depth_raw_max_depth_temperature_difference_k": 0.054653672775259565,
+      "localized_minus_full_depth_temperature_span_k": 0.009709869374887603,
+      "full_depth_potential_span_v": 2.6574753860929973e-05,
+      "localized_potential_span_v": 7.852923092445396e-05
+    },
+    {
+      "refinement": 2,
+      "full_depth_source": "results/transport_validation/fem_packaged/ratio1_refine2.npz",
+      "full_depth_y_current_rms_fraction": 0.010304637455068998,
+      "full_depth_raw_max_depth_temperature_difference_k": 0.03539013079733877,
+      "localized_minus_full_depth_temperature_span_k": 0.012653600358135009,
+      "full_depth_potential_span_v": 8.768363521333838e-06,
+      "localized_potential_span_v": 0.00011100401716301889
+    },
+    {
+      "refinement": 4,
+      "full_depth_source": "results/transport_validation/fem_packaged/ratio1_refine4.npz",
+      "full_depth_y_current_rms_fraction": 0.0029185384459188865,
+      "full_depth_raw_max_depth_temperature_difference_k": 0.018906929426975694,
+      "localized_minus_full_depth_temperature_span_k": 0.014487932126087344,
+      "full_depth_potential_span_v": 4.225497495111141e-06,
+      "localized_potential_span_v": 0.0001289524240467299
+    }
+  ],
+  "interpretation": [
+    "Finite-depth electrodes create genuine three-dimensional current spreading.",
+    "Uncorrected maximum cross-depth temperature variation also contains tetrahedral discretization error; compare with the full-depth control on the same mesh.",
+    "The localized-minus-full-depth temperature field isolates the response to electrode localization on each mesh.",
+    "Current spreading is strongest in copper. The semiconductor legs remain much closer to axial transport.",
+    "Global heat-response convergence is assessed through absolute mesh differences; local electrode-edge peaks are not treated as converged physical maxima."
+  ]
+}

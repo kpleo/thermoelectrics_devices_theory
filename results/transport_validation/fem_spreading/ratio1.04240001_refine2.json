@@ -1,0 +1,269 @@
+{
+  "scope": "representative true-three-dimensional localized-lead case, not experimental reconstruction",
+  "material_source_doi": "10.1093/nsr/nwae448",
+  "properties": "published scalar BTS/BST curves; copper/contact/ceramic laws and dimensions are explicit assumptions",
+  "geometry_and_discretization": {
+    "geometry": {
+      "total_leg_area_m2": 7.604999999999999e-06,
+      "depth_m": 0.00195,
+      "leg_length_m": 0.0048,
+      "gap_m": 0.001,
+      "copper_thickness_m": 0.0002,
+      "contact_thickness_m": 2e-05,
+      "ceramic_thickness_m": 0.0005,
+      "ceramic_kappa_w_mk": 25.0,
+      "copper_kappa_w_mk": 400.0,
+      "copper_resistivity_ohm_m": 1.72e-08,
+      "copper_seebeck_v_k": 1.5e-06,
+      "contact_electrical_resistance_ohm_m2": 3.5e-10,
+      "contact_thermal_resistance_m2_k_w": 1e-06
+    },
+    "area_ratio_n_over_p": 1.04240001,
+    "refinement": 2,
+    "layer_z_m": [
+      0.0,
+      0.0005,
+      0.0007,
+      0.00072,
+      0.00552,
+      0.00554,
+      0.0057399999999999994,
+      0.006239999999999999
+    ],
+    "width_x_m": 0.0049,
+    "material_volumes_m3": [
+      1.7873090394275493e-08,
+      1.863090960572436e-08,
+      3.431999999999974e-09,
+      9.555000000000043e-09,
+      3.0420000000000113e-10
+    ],
+    "material_names": [
+      "p",
+      "n",
+      "copper",
+      "ceramic",
+      "contact"
+    ],
+    "electrode_localization": {
+      "p_y_interval_m": [
+        0.0,
+        0.000975
+      ],
+      "n_y_interval_m": [
+        0.000975,
+        0.00195
+      ],
+      "p_nodes": 9,
+      "n_nodes": 9,
+      "full_depth_p_nodes": 15,
+      "full_depth_n_nodes": 15
+    }
+  },
+  "baseline": {
+    "nodes": 1570,
+    "tetrahedra": 5952,
+    "electrical_unknowns": 1278,
+    "thermal_unknowns": 1440,
+    "iterations": 4,
+    "residual_history": [
+      1.0,
+      0.0023613399032411577,
+      9.55005395673097e-05,
+      6.05104193411146e-08,
+      8.640645029990221e-13
+    ],
+    "inward_heat_w": {
+      "cold": 0.18474732426014961,
+      "hot": -0.4498888207667682
+    },
+    "inward_current_a": {
+      "p": 3.0000000000001963,
+      "n": -3.0000000000000013
+    },
+    "electrode_potential_v": {
+      "p": 0.08838049883565505,
+      "n": 0.0
+    },
+    "electrical_power_w": 0.2651414965069825,
+    "volume_electrical_power_w": 0.2651414965068931,
+    "energy_residual_w": 3.6387559632089506e-13,
+    "electrical_power_identity_residual_w": 8.93729534823251e-14,
+    "current_balance_a": 1.949551631241775e-13,
+    "temperature_range_k": [
+      322.4416011208103,
+      374.19526587852175
+    ],
+    "electrode_potential_spread_v": {
+      "p": 0.0,
+      "n": 0.0
+    }
+  },
+  "mode": "reservoir-anchored parabola, S perturbation only in p/n semiconductor",
+  "mode_amplitude_v_per_k": 1e-05,
+  "epsilon": 0.01,
+  "cold_heat_derivative_w": 3.5537228143533994e-05,
+  "discrete_adjoint": {
+    "derivative_w": 3.553714142469863e-05,
+    "fixed_state_direct_w": 0.0,
+    "coupled_state_feedback_w": 3.553714142469863e-05,
+    "epsilon": 0.01,
+    "boundary": "cold",
+    "adjoint_equation_residual": 2.0014290589312826e-11,
+    "base_residual": 8.640645029990221e-13,
+    "method": "full coupled discrete adjoint of the reservoir heat reaction"
+  },
+  "adjoint_difference_w": 8.671883536644697e-11,
+  "plus": {
+    "nodes": 1570,
+    "tetrahedra": 5952,
+    "electrical_unknowns": 1278,
+    "thermal_unknowns": 1440,
+    "iterations": 2,
+    "residual_history": [
+      5.900908450929243e-06,
+      1.7184570395706853e-10,
+      1.397384522909088e-12
+    ],
+    "inward_heat_w": {
+      "cold": 0.1847476082677239,
+      "hot": -0.44988883678300257
+    },
+    "inward_current_a": {
+      "p": 2.9999999999998708,
+      "n": -2.999999999999999
+    },
+    "electrode_potential_v": {
+      "p": 0.08838040950509063,
+      "n": 0.0
+    },
+    "electrical_power_w": 0.26514122851526045,
+    "volume_electrical_power_w": 0.26514122851527183,
+    "energy_residual_w": -1.8207657603852567e-14,
+    "electrical_power_identity_residual_w": -1.1379786002407855e-14,
+    "current_balance_a": -1.283417816466681e-13,
+    "temperature_range_k": [
+      322.441850534026,
+      374.1950233068698
+    ],
+    "electrode_potential_spread_v": {
+      "p": 0.0,
+      "n": 0.0
+    }
+  },
+  "minus": {
+    "nodes": 1570,
+    "tetrahedra": 5952,
+    "electrical_unknowns": 1278,
+    "thermal_unknowns": 1440,
+    "iterations": 2,
+    "residual_history": [
+      5.90090845373113e-06,
+      1.7231978807064193e-10,
+      1.2451243739756517e-12
+    ],
+    "inward_heat_w": {
+      "cold": 0.18474689752316104,
+      "hot": -0.449888669300987
+    },
+    "inward_current_a": {
+      "p": 2.9999999999999707,
+      "n": -3.000000000000001
+    },
+    "electrode_potential_v": {
+      "p": 0.0883805905926083,
+      "n": 0.0
+    },
+    "electrical_power_w": 0.26514177177782233,
+    "volume_electrical_power_w": 0.26514177177782494,
+    "energy_residual_w": -3.608224830031759e-15,
+    "electrical_power_identity_residual_w": -2.609024107869118e-15,
+    "current_balance_a": -3.019806626980426e-14,
+    "temperature_range_k": [
+      322.441352075613,
+      374.1955081042231
+    ],
+    "electrode_potential_spread_v": {
+      "p": 0.0,
+      "n": 0.0
+    }
+  },
+  "depth_nonuniformity": {
+    "max_same_xz_depth_temperature_difference_k": 0.03519920209691918,
+    "depth_temperature_extreme_coordinates_m": {
+      "minimum_T": [
+        0.002409518204516656,
+        0.00195,
+        0.0005
+      ],
+      "maximum_T": [
+        0.002409518204516656,
+        0.0,
+        0.0005
+      ]
+    },
+    "conducting_y_current_rms_fraction": 0.25537543497457055,
+    "per_material": {
+      "published p-BTS/BST": {
+        "current_rms_a_per_m2": 805699.3860335574,
+        "y_current_rms_a_per_m2": 1137.769384091042,
+        "y_current_rms_fraction": 0.001412151236321848,
+        "volume_m3": 1.7873090394275887e-08
+      },
+      "published n-BTS/BST": {
+        "current_rms_a_per_m2": 772932.9390599944,
+        "y_current_rms_a_per_m2": 984.1887912449729,
+        "y_current_rms_fraction": 0.0012733171812316579,
+        "volume_m3": 1.863090960572409e-08
+      },
+      "nominal copper": {
+        "current_rms_a_per_m2": 5240943.692792436,
+        "y_current_rms_a_per_m2": 1492282.6536713124,
+        "y_current_rms_fraction": 0.2847354868024172,
+        "volume_m3": 3.431999999999995e-09
+      },
+      "nominal thermal plate": {
+        "current_rms_a_per_m2": 0.0,
+        "y_current_rms_a_per_m2": 0.0,
+        "y_current_rms_fraction": 0.0,
+        "volume_m3": 9.554999999999992e-09
+      },
+      "nominal effective contact layer": {
+        "current_rms_a_per_m2": 789212.1415432855,
+        "y_current_rms_a_per_m2": 1478.9611600895123,
+        "y_current_rms_fraction": 0.0018739716259273953,
+        "volume_m3": 3.042000000000006e-10
+      }
+    },
+    "thermal_only_node_count": 275,
+    "thermal_only_nodes_have_no_electrical_unknowns": true,
+    "ceramic_max_abs_current_a_per_m2": 0.0,
+    "internal_temperature_minimum_k": 322.4416011208103,
+    "internal_temperature_maximum_k": 374.19526587852175
+  },
+  "leg_face_temperature_ranges_k": {
+    "p_cold_leg": [
+      322.5847225047921,
+      322.6418040669142
+    ],
+    "n_cold_leg": [
+      322.4416011208103,
+      322.50922895179315
+    ],
+    "p_hot_leg": [
+      373.8952199830856,
+      374.04146102376905
+    ],
+    "n_hot_leg": [
+      373.95501718793577,
+      374.19526587852175
+    ]
+  },
+  "checks": {
+    "maximum_absolute_energy_residual_w": 3.6387559632089506e-13,
+    "maximum_absolute_current_balance_a": 1.949551631241775e-13,
+    "maximum_electrode_potential_spread_v": 0.0
+  },
+  "convergence_interpretation": "finite electrode edges cause local field concentration; compare absolute response differences across meshes without forcing a relative cancellation tolerance",
+  "elapsed_seconds": 1.210854624863714
+}

@@ -1,0 +1,1205 @@
+{
+  "method": "independent nonlinear tetrahedral P1 finite elements, complete coupled T/phi weak form",
+  "material_role": "source-CSV-driven scalar property model, not as-built experimental module reconstruction",
+  "source": {
+    "system": "pbse",
+    "current_a": 2.8106854181890806,
+    "data_role": "published_figure_derived_candidate_properties",
+    "sources": [
+      {
+        "path": "data/processed/pbse_cr_figure1_transport_all_compositions.csv",
+        "sha256": "8de968addb27b5badc54d775cb0d3be1d6c3bc033cdb487cb18ac520711c8938"
+      },
+      {
+        "path": "data/processed/material_thermal_conductivity_figure_s9.csv",
+        "sha256": "dbe455f657e164bb4e1a16909ec996feb9765b40badba9095a0079339518d2da"
+      },
+      {
+        "path": "data/processed/device_cooling_curves_figure4.csv",
+        "sha256": "cdd9a4c693208434e10ca6b79cb29ebb606c16d1d24d494c68fdeed15940ba48"
+      },
+      {
+        "path": "data/processed/device_conditions.csv",
+        "sha256": "69c511fed9ccb3e4ecd6d2250f0613896d23de3746dd1bee808b188db1e1c243"
+      },
+      {
+        "path": "results/scientific_analysis/pbse_common_mode_contribution_results.json",
+        "sha256": "507a00fdaaa2dc66f8d107f558431f5abb5554fbdfb3fa6846ca9b8a30c54e53"
+      }
+    ],
+    "pair_count_for_scaling": 7,
+    "source_limitation": "Published material and module labels do not uniquely bind these curves to an as-built module."
+  },
+  "property_domains_k": {
+    "p": {
+      "S": [
+        300.001198382739,
+        573.0197736745833
+      ],
+      "rho": [
+        299.9980211329515,
+        573.0214171797712
+      ],
+      "kappa": [
+        300.177230234,
+        573.236038259
+      ]
+    },
+    "n": {
+      "S": [
+        299.9769083850582,
+        572.9963081950611
+      ],
+      "rho": [
+        299.97455537510507,
+        572.9979002090093
+      ],
+      "kappa": [
+        300.177230234,
+        573.236038259
+      ]
+    }
+  },
+  "mesh_level": "coarse",
+  "root_table_sha256": "8da49f8c74e7e538bb6a32069a89a1393d931f7282d7c51db080f5638ab53bbd",
+  "perturbation": "S_p,n -> S_p,n + epsilon*m(T), mode amplitude 10 microV/K on [Tc,Th]",
+  "mode_extension": "polynomial evaluated at actual internal temperature, including any maximum above Th",
+  "fixed_constraints": [
+    "total semiconductor area",
+    "each leg length",
+    "current",
+    "cold/hot leg-end temperature",
+    "material curves"
+  ],
+  "cases": [
+    {
+      "geometry": "original",
+      "area_ratio_n_over_p": 1.0,
+      "inputs": {
+        "current_a": 2.8106854181890806,
+        "length_m": 0.006,
+        "cold_k": 309.894134846523,
+        "hot_k": 362.9980470654064,
+        "p_area_m2": 4e-06,
+        "n_area_m2": 4e-06,
+        "transverse_cells": 1,
+        "axial_cells": 12
+      },
+      "baseline": {
+        "cold_heat_w": 0.10045285228831913,
+        "hot_heat_w": 0.5494082932996471,
+        "electrical_power_w": 0.4489554410113288,
+        "voltage_v": 0.1597316576611373,
+        "energy_residual_w": -7.771561172376096e-16,
+        "legs": {
+          "p": {
+            "nodes": 52,
+            "tetrahedra": 72,
+            "electrical_unknowns": 45,
+            "thermal_unknowns": 44,
+            "iterations": 5,
+            "residual_history": [
+              1.147254728227557,
+              0.021693165807246388,
+              0.0061152007736346905,
+              5.2315161823082986e-05,
+              1.4629295487338922e-08,
+              2.765005689389209e-15
+            ],
+            "inward_heat_w": {
+              "cold": 0.04308747362813495,
+              "hot": -0.29645672638618437
+            },
+            "inward_current_a": {
+              "cold": 2.81068541818908,
+              "hot": -2.8106854181890824
+            },
+            "electrode_potential_v": {
+              "cold": 0.0,
+              "hot": -0.09014500559841923
+            },
+            "electrical_power_w": 0.2533692527580501,
+            "volume_electrical_power_w": 0.25336925275804967,
+            "energy_residual_w": 6.661338147750939e-16,
+            "electrical_power_identity_residual_w": 4.440892098500626e-16,
+            "current_balance_a": -2.220446049250313e-15,
+            "temperature_range_k": [
+              309.894134846523,
+              369.238218965973
+            ],
+            "electrode_potential_spread_v": {
+              "cold": 0.0,
+              "hot": 0.0
+            }
+          },
+          "n": {
+            "nodes": 52,
+            "tetrahedra": 72,
+            "electrical_unknowns": 45,
+            "thermal_unknowns": 44,
+            "iterations": 5,
+            "residual_history": [
+              1.1844480900418015,
+              0.016567066743787776,
+              0.004305676695799782,
+              3.366259945040297e-05,
+              6.591808828204366e-09,
+              2.309235891715283e-15
+            ],
+            "inward_heat_w": {
+              "cold": 0.05736537866018419,
+              "hot": -0.2529515669134628
+            },
+            "inward_current_a": {
+              "cold": -2.8106854181890824,
+              "hot": 2.810685418189082
+            },
+            "electrode_potential_v": {
+              "cold": 0.0,
+              "hot": 0.06958665206271801
+            },
+            "electrical_power_w": 0.1955861882532787,
+            "volume_electrical_power_w": 0.1955861882532786,
+            "energy_residual_w": 5.551115123125783e-17,
+            "electrical_power_identity_residual_w": 1.1102230246251565e-16,
+            "current_balance_a": -4.440892098500626e-16,
+            "temperature_range_k": [
+              309.894134846523,
+              364.98022908174346
+            ],
+            "electrode_potential_spread_v": {
+              "cold": 0.0,
+              "hot": 0.0
+            }
+          }
+        }
+      },
+      "one_dimensional_baseline_cold_heat_w": 0.10060647176167882,
+      "baseline_cold_heat_absolute_error_w": 0.0001536194733596924,
+      "modes": {
+        "linear": [
+          {
+            "epsilon": 0.01,
+            "derivative_w": 0.0010322755097054437,
+            "one_dimensional_reference_w": 0.001053591406283711,
+            "absolute_error_to_1d_w": 2.1315896578267407e-05,
+            "plus": {
+              "cold_heat_w": 0.10046313526356276,
+              "hot_heat_w": 0.5494081917291157,
+              "electrical_power_w": 0.44894505646555327,
+              "voltage_v": 0.1597279629944527,
+              "energy_residual_w": -3.3306690738754696e-16,
+              "legs": {
+                "p": {
+                  "nodes": 52,
+                  "tetrahedra": 72,
+                  "electrical_unknowns": 45,
+                  "thermal_unknowns": 44,
+                  "iterations": 5,
+                  "residual_history": [
+                    1.1473152736843135,
+                    0.021721012201882,
+                    0.006137896968663935,
+                    5.2313233212299094e-05,
+                    1.4605274302911948e-08,
+                    2.233316851223805e-15
+                  ],
+                  "inward_heat_w": {
+                    "cold": 0.04316639045154649,
+                    "hot": -0.2965216365938906
+                  },
+                  "inward_current_a": {
+                    "cold": 2.8106854181890792,
+                    "hot": -2.81068541818908
+                  },
+                  "electrode_potential_v": {
+                    "cold": 0.0,
+                    "hot": -0.09014002225321292
+                  },
+                  "electrical_power_w": 0.2533552461423448,
+                  "volume_electrical_power_w": 0.2533552461423445,
+                  "energy_residual_w": 6.661338147750939e-16,
+                  "electrical_power_identity_residual_w": 2.7755575615628914e-16,
+                  "current_balance_a": -8.881784197001252e-16,
+                  "temperature_range_k": [
+                    309.894134846523,
+                    369.22786311851104
+                  ],
+                  "electrode_potential_spread_v": {
+                    "cold": 0.0,
+                    "hot": 0.0
+                  }
+                },
+                "n": {
+                  "nodes": 52,
+                  "tetrahedra": 72,
+                  "electrical_unknowns": 45,
+                  "thermal_unknowns": 44,
+                  "iterations": 5,
+                  "residual_history": [
+                    1.1843679581705056,
+                    0.016542677033617968,
+                    0.004287455064010555,
+                    3.3620665213233855e-05,
+                    6.574922405613199e-09,
+                    2.212004551511367e-15
+                  ],
+                  "inward_heat_w": {
+                    "cold": 0.05729674481201627,
+                    "hot": -0.2528865551352251
+                  },
+                  "inward_current_a": {
+                    "cold": -2.8106854181890766,
+                    "hot": 2.8106854181890757
+                  },
+                  "electrode_potential_v": {
+                    "cold": 0.0,
+                    "hot": 0.06958794074123989
+                  },
+                  "electrical_power_w": 0.19558981032320846,
+                  "volume_electrical_power_w": 0.1955898103232087,
+                  "energy_residual_w": -3.885780586188048e-16,
+                  "electrical_power_identity_residual_w": -2.498001805406602e-16,
+                  "current_balance_a": -8.881784197001252e-16,
+                  "temperature_range_k": [
+                    309.894134846523,
+                    364.98657754494235
+                  ],
+                  "electrode_potential_spread_v": {
+                    "cold": 0.0,
+                    "hot": 0.0
+                  }
+                }
+              }
+            },
+            "minus": {
+              "cold_heat_w": 0.10044248975336866,
+              "hot_heat_w": 0.5494083178021922,
+              "electrical_power_w": 0.44896582804882446,
+              "voltage_v": 0.15973535321433885,
+              "energy_residual_w": -8.881784197001252e-16,
+              "legs": {
+                "p": {
+                  "nodes": 52,
+                  "tetrahedra": 72,
+                  "electrical_unknowns": 45,
+                  "thermal_unknowns": 44,
+                  "iterations": 5,
+                  "residual_history": [
+                    1.1471941827708003,
+                    0.021665332012465524,
+                    0.006092514704337205,
+                    5.231706659872783e-05,
+                    1.4653488773620022e-08,
+                    2.9230060144971636e-15
+                  ],
+                  "inward_heat_w": {
+                    "cold": 0.04300851363720147,
+                    "hot": -0.29639177499786634
+                  },
+                  "inward_current_a": {
+                    "cold": 2.810685418189082,
+                    "hot": -2.8106854181890784
+                  },
+                  "electrode_potential_v": {
+                    "cold": 0.0,
+                    "hot": -0.09014998965053866
+                  },
+                  "electrical_power_w": 0.25338326136066536,
+                  "volume_electrical_power_w": 0.2533832613606652,
+                  "energy_residual_w": 4.996003610813204e-16,
+                  "electrical_power_identity_residual_w": 1.6653345369377348e-16,
+                  "current_balance_a": 3.552713678800501e-15,
+                  "temperature_range_k": [
+                    309.894134846523,
+                    369.2485700997084
+                  ],
+                  "electrode_potential_spread_v": {
+                    "cold": 0.0,
+                    "hot": 0.0
+                  }
+                },
+                "n": {
+                  "nodes": 52,
+                  "tetrahedra": 72,
+                  "electrical_unknowns": 45,
+                  "thermal_unknowns": 44,
+                  "iterations": 5,
+                  "residual_history": [
+                    1.1845282219130975,
+                    0.016591471367791866,
+                    0.004323906809243487,
+                    3.370459791897024e-05,
+                    6.608773253465311e-09,
+                    2.8503223932606734e-15
+                  ],
+                  "inward_heat_w": {
+                    "cold": 0.057433976116167185,
+                    "hot": -0.25301654280432584
+                  },
+                  "inward_current_a": {
+                    "cold": -2.8106854181890815,
+                    "hot": 2.810685418189077
+                  },
+                  "electrode_potential_v": {
+                    "cold": 0.0,
+                    "hot": 0.06958536356380034
+                  },
+                  "electrical_power_w": 0.19558256668815913,
+                  "volume_electrical_power_w": 0.19558256668815932,
+                  "energy_residual_w": 4.718447854656915e-16,
+                  "electrical_power_identity_residual_w": -1.942890293094024e-16,
+                  "current_balance_a": -4.440892098500626e-15,
+                  "temperature_range_k": [
+                    309.894134846523,
+                    364.9738767382033
+                  ],
+                  "electrode_potential_spread_v": {
+                    "cold": 0.0,
+                    "hot": 0.0
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "endpoint_zero": [
+          {
+            "epsilon": 0.01,
+            "derivative_w": -0.0025434779729834045,
+            "one_dimensional_reference_w": -0.00261948361637259,
+            "absolute_error_to_1d_w": 7.600564338918533e-05,
+            "plus": {
+              "cold_heat_w": 0.100427246335075,
+              "hot_heat_w": 0.5494028763088028,
+              "electrical_power_w": 0.448975629973728,
+              "voltage_v": 0.1597388405931967,
+              "energy_residual_w": -1.6653345369377348e-16,
+              "legs": {
+                "p": {
+                  "nodes": 52,
+                  "tetrahedra": 72,
+                  "electrical_unknowns": 45,
+                  "thermal_unknowns": 44,
+                  "iterations": 5,
+                  "residual_history": [
+                    1.1472647393266684,
+                    0.021665726878804848,
+                    0.0060554317886580295,
+                    5.250433221536725e-05,
+                    1.4699458889210018e-08,
+                    2.1348366681181877e-15
+                  ],
+                  "inward_heat_w": {
+                    "cold": 0.043092318965317705,
+                    "hot": -0.2965046404272096
+                  },
+                  "inward_current_a": {
+                    "cold": 2.8106854181890757,
+                    "hot": -2.8106854181890792
+                  },
+                  "electrode_potential_v": {
+                    "cold": 0.0,
+                    "hot": -0.09016032880163631
+                  },
+                  "electrical_power_w": 0.253412321461892,
+                  "volume_electrical_power_w": 0.25341232146189185,
+                  "energy_residual_w": 1.6653345369377348e-16,
+                  "electrical_power_identity_residual_w": 1.6653345369377348e-16,
+                  "current_balance_a": -3.552713678800501e-15,
+                  "temperature_range_k": [
+                    309.894134846523,
+                    369.25728608654674
+                  ],
+                  "electrode_potential_spread_v": {
+                    "cold": 0.0,
+                    "hot": 0.0
+                  }
+                },
+                "n": {
+                  "nodes": 52,
+                  "tetrahedra": 72,
+                  "electrical_unknowns": 45,
+                  "thermal_unknowns": 44,
+                  "iterations": 5,
+                  "residual_history": [
+                    1.1844348579199495,
+                    0.016592155373833753,
+                    0.004354793860099783,
+                    3.364936872378638e-05,
+                    6.562308459899681e-09,
+                    3.673507558759949e-15
+                  ],
+                  "inward_heat_w": {
+                    "cold": 0.057334927369757295,
+                    "hot": -0.2528982358815932
+                  },
+                  "inward_current_a": {
+                    "cold": -2.8106854181890832,
+                    "hot": 2.8106854181890797
+                  },
+                  "electrode_potential_v": {
+                    "cold": 0.0,
+                    "hot": 0.06957851179156048
+                  },
+                  "electrical_power_w": 0.19556330851183598,
+                  "volume_electrical_power_w": 0.19556330851183606,
+                  "energy_residual_w": 5.551115123125783e-17,
+                  "electrical_power_identity_residual_w": -8.326672684688674e-17,
+                  "current_balance_a": -3.552713678800501e-15,
+                  "temperature_range_k": [
+                    309.894134846523,
+                    364.97016835991286
+                  ],
+                  "electrode_potential_spread_v": {
+                    "cold": 0.0,
+                    "hot": 0.0
+                  }
+                }
+              }
+            },
+            "minus": {
+              "cold_heat_w": 0.10047811589453466,
+              "hot_heat_w": 0.549413466390796,
+              "electrical_power_w": 0.448935350496263,
+              "voltage_v": 0.15972450975517252,
+              "energy_residual_w": -1.609823385706477e-15,
+              "legs": {
+                "p": {
+                  "nodes": 52,
+                  "tetrahedra": 72,
+                  "electrical_unknowns": 45,
+                  "thermal_unknowns": 44,
+                  "iterations": 5,
+                  "residual_history": [
+                    1.1472447171284457,
+                    0.021720630045097358,
+                    0.006174766990328609,
+                    5.2121848231526005e-05,
+                    1.4556897723870311e-08,
+                    2.0083322574268943e-15
+                  ],
+                  "inward_heat_w": {
+                    "cold": 0.0430824037269522,
+                    "hot": -0.2964086612979915
+                  },
+                  "inward_current_a": {
+                    "cold": 2.8106854181890797,
+                    "hot": -2.810685418189085
+                  },
+                  "electrode_potential_v": {
+                    "cold": 0.0,
+                    "hot": -0.0901297085513959
+                  },
+                  "electrical_power_w": 0.25332625757104055,
+                  "volume_electrical_power_w": 0.2533262575710399,
+                  "energy_residual_w": 1.27675647831893e-15,
+                  "electrical_power_identity_residual_w": 6.661338147750939e-16,
+                  "current_balance_a": -5.329070518200751e-15,
+                  "temperature_range_k": [
+                    309.894134846523,
+                    369.219155308171
+                  ],
+                  "electrode_potential_spread_v": {
+                    "cold": 0.0,
+                    "hot": 0.0
+                  }
+                },
+                "n": {
+                  "nodes": 52,
+                  "tetrahedra": 72,
+                  "electrical_unknowns": 45,
+                  "thermal_unknowns": 44,
+                  "iterations": 5,
+                  "residual_history": [
+                    1.1844613221636533,
+                    0.016542009097794522,
+                    0.004256410230798657,
+                    3.367358986374729e-05,
+                    6.620353669561473e-09,
+                    1.98464763837995e-15
+                  ],
+                  "inward_heat_w": {
+                    "cold": 0.05739571216758246,
+                    "hot": -0.25300480509280454
+                  },
+                  "inward_current_a": {
+                    "cold": -2.8106854181890775,
+                    "hot": 2.8106854181890766
+                  },
+                  "electrode_potential_v": {
+                    "cold": 0.0,
+                    "hot": 0.06959480120377658
+                  },
+                  "electrical_power_w": 0.1956090929252224,
+                  "volume_electrical_power_w": 0.1956090929252226,
+                  "energy_residual_w": 3.3306690738754696e-16,
+                  "electrical_power_identity_residual_w": -1.942890293094024e-16,
+                  "current_balance_a": -8.881784197001252e-16,
+                  "temperature_range_k": [
+                    309.894134846523,
+                    364.99028700039327
+                  ],
+                  "electrode_potential_spread_v": {
+                    "cold": 0.0,
+                    "hot": 0.0
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "field_domain_checks": [
+        {
+          "p": {
+            "minimum_k": 309.894134846523,
+            "maximum_k": 369.238218965973,
+            "property_minimum_k": 300.177230234,
+            "property_maximum_k": 573.0197736745833,
+            "no_extrapolation": true
+          },
+          "n": {
+            "minimum_k": 309.894134846523,
+            "maximum_k": 364.98022908174346,
+            "property_minimum_k": 300.177230234,
+            "property_maximum_k": 572.9963081950611,
+            "no_extrapolation": true
+          }
+        },
+        {
+          "p": {
+            "minimum_k": 309.894134846523,
+            "maximum_k": 369.22786311851104,
+            "property_minimum_k": 300.177230234,
+            "property_maximum_k": 573.0197736745833,
+            "no_extrapolation": true
+          },
+          "n": {
+            "minimum_k": 309.894134846523,
+            "maximum_k": 364.98657754494235,
+            "property_minimum_k": 300.177230234,
+            "property_maximum_k": 572.9963081950611,
+            "no_extrapolation": true
+          }
+        },
+        {
+          "p": {
+            "minimum_k": 309.894134846523,
+            "maximum_k": 369.2485700997084,
+            "property_minimum_k": 300.177230234,
+            "property_maximum_k": 573.0197736745833,
+            "no_extrapolation": true
+          },
+          "n": {
+            "minimum_k": 309.894134846523,
+            "maximum_k": 364.9738767382033,
+            "property_minimum_k": 300.177230234,
+            "property_maximum_k": 572.9963081950611,
+            "no_extrapolation": true
+          }
+        },
+        {
+          "p": {
+            "minimum_k": 309.894134846523,
+            "maximum_k": 369.25728608654674,
+            "property_minimum_k": 300.177230234,
+            "property_maximum_k": 573.0197736745833,
+            "no_extrapolation": true
+          },
+          "n": {
+            "minimum_k": 309.894134846523,
+            "maximum_k": 364.97016835991286,
+            "property_minimum_k": 300.177230234,
+            "property_maximum_k": 572.9963081950611,
+            "no_extrapolation": true
+          }
+        },
+        {
+          "p": {
+            "minimum_k": 309.894134846523,
+            "maximum_k": 369.219155308171,
+            "property_minimum_k": 300.177230234,
+            "property_maximum_k": 573.0197736745833,
+            "no_extrapolation": true
+          },
+          "n": {
+            "minimum_k": 309.894134846523,
+            "maximum_k": 364.99028700039327,
+            "property_minimum_k": 300.177230234,
+            "property_maximum_k": 572.9963081950611,
+            "no_extrapolation": true
+          }
+        }
+      ],
+      "maximum_energy_residual_w": 1.609823385706477e-15,
+      "maximum_current_balance_a": 5.329070518200751e-15,
+      "maximum_temperature_k": 369.25728608654674
+    },
+    {
+      "geometry": "adjusted",
+      "area_ratio_n_over_p": 0.8860984814480872,
+      "inputs": {
+        "current_a": 2.8106854181890806,
+        "length_m": 0.006,
+        "cold_k": 309.894134846523,
+        "hot_k": 362.9980470654064,
+        "p_area_m2": 4.241560066289778e-06,
+        "n_area_m2": 3.758439933710221e-06,
+        "transverse_cells": 1,
+        "axial_cells": 12
+      },
+      "baseline": {
+        "cold_heat_w": 0.10156256048123533,
+        "hot_heat_w": 0.5467091925449061,
+        "electrical_power_w": 0.44514663206367144,
+        "voltage_v": 0.15837654017875774,
+        "energy_residual_w": -6.661338147750939e-16,
+        "legs": {
+          "p": {
+            "nodes": 52,
+            "tetrahedra": 72,
+            "electrical_unknowns": 45,
+            "thermal_unknowns": 44,
+            "iterations": 5,
+            "residual_history": [
+              1.15614744370559,
+              0.02073225615162938,
+              0.005163331632521234,
+              3.146456056362543e-05,
+              4.263648016057179e-09,
+              1.7384278934668454e-15
+            ],
+            "inward_heat_w": {
+              "cold": 0.04623017729936144,
+              "hot": -0.2827652768557271
+            },
+            "inward_current_a": {
+              "cold": 2.8106854181890775,
+              "hot": -2.8106854181890824
+            },
+            "electrode_potential_v": {
+              "cold": 0.0,
+              "hot": -0.08415566467369529
+            },
+            "electrical_power_w": 0.23653509955636542,
+            "volume_electrical_power_w": 0.23653509955636526,
+            "energy_residual_w": -2.498001805406602e-16,
+            "electrical_power_identity_residual_w": 1.6653345369377348e-16,
+            "current_balance_a": -4.884981308350689e-15,
+            "temperature_range_k": [
+              309.894134846523,
+              366.7863389820909
+            ],
+            "electrode_potential_spread_v": {
+              "cold": 0.0,
+              "hot": 0.0
+            }
+          },
+          "n": {
+            "nodes": 52,
+            "tetrahedra": 72,
+            "electrical_unknowns": 45,
+            "thermal_unknowns": 44,
+            "iterations": 5,
+            "residual_history": [
+              1.1733092668274212,
+              0.017358269558982592,
+              0.005127551346962664,
+              5.376009927787793e-05,
+              1.993982234560782e-08,
+              2.765005689389209e-15
+            ],
+            "inward_heat_w": {
+              "cold": 0.05533238318187388,
+              "hot": -0.26394391568917897
+            },
+            "inward_current_a": {
+              "cold": -2.810685418189081,
+              "hot": 2.810685418189078
+            },
+            "electrode_potential_v": {
+              "cold": 0.0,
+              "hot": 0.07422087550506248
+            },
+            "electrical_power_w": 0.20861153250730605,
+            "volume_electrical_power_w": 0.20861153250730602,
+            "energy_residual_w": 9.71445146547012e-16,
+            "electrical_power_identity_residual_w": 2.7755575615628914e-17,
+            "current_balance_a": -3.1086244689504383e-15,
+            "temperature_range_k": [
+              309.894134846523,
+              366.8492438858012
+            ],
+            "electrode_potential_spread_v": {
+              "cold": 0.0,
+              "hot": 0.0
+            }
+          }
+        }
+      },
+      "one_dimensional_baseline_cold_heat_w": 0.10172649529442282,
+      "baseline_cold_heat_absolute_error_w": 0.00016393481318749403,
+      "modes": {
+        "linear": [
+          {
+            "epsilon": 0.01,
+            "derivative_w": 3.560970009627851e-05,
+            "one_dimensional_reference_w": 4.0512077913076525e-05,
+            "absolute_error_to_1d_w": 4.9023778167980175e-06,
+            "plus": {
+              "cold_heat_w": 0.10156287737749085,
+              "hot_heat_w": 0.5467050519568473,
+              "electrical_power_w": 0.4451421745793569,
+              "voltage_v": 0.15837495427224338,
+              "energy_residual_w": -4.996003610813204e-16,
+              "legs": {
+                "p": {
+                  "nodes": 52,
+                  "tetrahedra": 72,
+                  "electrical_unknowns": 45,
+                  "thermal_unknowns": 44,
+                  "iterations": 5,
+                  "residual_history": [
+                    1.1562116455034834,
+                    0.02075878664662217,
+                    0.005182328416898599,
+                    3.14674353962098e-05,
+                    4.2577085863359645e-09,
+                    2.6860055268352317e-15
+                  ],
+                  "inward_heat_w": {
+                    "cold": 0.0463035001899988,
+                    "hot": -0.282828416682
+                  },
+                  "inward_current_a": {
+                    "cold": 2.81068541818908,
+                    "hot": -2.810685418189088
+                  },
+                  "electrode_potential_v": {
+                    "cold": 0.0,
+                    "hot": -0.0841520416910951
+                  },
+                  "electrical_power_w": 0.2365249164920012,
+                  "volume_electrical_power_w": 0.23652491649200058,
+                  "energy_residual_w": 0.0,
+                  "electrical_power_identity_residual_w": 6.106226635438361e-16,
+                  "current_balance_a": -7.993605777301127e-15,
+                  "temperature_range_k": [
+                    309.894134846523,
+                    366.77996819902927
+                  ],
+                  "electrode_potential_spread_v": {
+                    "cold": 0.0,
+                    "hot": 0.0
+                  }
+                },
+                "n": {
+                  "nodes": 52,
+                  "tetrahedra": 72,
+                  "electrical_unknowns": 45,
+                  "thermal_unknowns": 44,
+                  "iterations": 5,
+                  "residual_history": [
+                    1.1732339741211608,
+                    0.01733263058829669,
+                    0.005105987108185193,
+                    5.3691351825772784e-05,
+                    1.98937369822238e-08,
+                    2.511881145112256e-15
+                  ],
+                  "inward_heat_w": {
+                    "cold": 0.055259377187492055,
+                    "hot": -0.2638766352748472
+                  },
+                  "inward_current_a": {
+                    "cold": -2.810685418189076,
+                    "hot": 2.8106854181890757
+                  },
+                  "electrode_potential_v": {
+                    "cold": 0.0,
+                    "hot": 0.0742229125811482
+                  },
+                  "electrical_power_w": 0.20861725808735573,
+                  "volume_electrical_power_w": 0.20861725808735587,
+                  "energy_residual_w": 5.551115123125783e-16,
+                  "electrical_power_identity_residual_w": -1.3877787807814457e-16,
+                  "current_balance_a": -4.440892098500626e-16,
+                  "temperature_range_k": [
+                    309.894134846523,
+                    366.8559161637539
+                  ],
+                  "electrode_potential_spread_v": {
+                    "cold": 0.0,
+                    "hot": 0.0
+                  }
+                }
+              }
+            },
+            "minus": {
+              "cold_heat_w": 0.10156216518348893,
+              "hot_heat_w": 0.5467132566591186,
+              "electrical_power_w": 0.4451510914756305,
+              "voltage_v": 0.1583781267710993,
+              "energy_residual_w": -7.771561172376096e-16,
+              "legs": {
+                "p": {
+                  "nodes": 52,
+                  "tetrahedra": 72,
+                  "electrical_unknowns": 45,
+                  "thermal_unknowns": 44,
+                  "iterations": 5,
+                  "residual_history": [
+                    1.1560832419076965,
+                    0.020705737695062613,
+                    0.0051443430742102265,
+                    3.146166639428976e-05,
+                    4.269645945398765e-09,
+                    2.093504307680401e-15
+                  ],
+                  "inward_heat_w": {
+                    "cold": 0.04615681662416316,
+                    "hot": -0.28270210096892434
+                  },
+                  "inward_current_a": {
+                    "cold": 2.810685418189083,
+                    "hot": -2.810685418189083
+                  },
+                  "electrode_potential_v": {
+                    "cold": 0.0,
+                    "hot": -0.08415928826968007
+                  },
+                  "electrical_power_w": 0.2365452843447613,
+                  "volume_electrical_power_w": 0.23654528434476113,
+                  "energy_residual_w": 1.1102230246251565e-16,
+                  "electrical_power_identity_residual_w": 1.6653345369377348e-16,
+                  "current_balance_a": 0.0,
+                  "temperature_range_k": [
+                    309.894134846523,
+                    366.79270617944513
+                  ],
+                  "electrode_potential_spread_v": {
+                    "cold": 0.0,
+                    "hot": 0.0
+                  }
+                },
+                "n": {
+                  "nodes": 52,
+                  "tetrahedra": 72,
+                  "electrical_unknowns": 45,
+                  "thermal_unknowns": 44,
+                  "iterations": 5,
+                  "residual_history": [
+                    1.1733845595336816,
+                    0.017383924179617125,
+                    0.0051491257394589655,
+                    5.382897256230415e-05,
+                    1.9986083221623978e-08,
+                    3.160006502159096e-15
+                  ],
+                  "inward_heat_w": {
+                    "cold": 0.05540534855932576,
+                    "hot": -0.2640111556901943
+                  },
+                  "inward_current_a": {
+                    "cold": -2.8106854181890775,
+                    "hot": 2.8106854181890797
+                  },
+                  "electrode_potential_v": {
+                    "cold": 0.0,
+                    "hot": 0.0742188385014192
+                  },
+                  "electrical_power_w": 0.20860580713086918,
+                  "volume_electrical_power_w": 0.20860580713086893,
+                  "energy_residual_w": 6.661338147750939e-16,
+                  "electrical_power_identity_residual_w": 2.498001805406602e-16,
+                  "current_balance_a": 2.220446049250313e-15,
+                  "temperature_range_k": [
+                    309.894134846523,
+                    366.8425667963406
+                  ],
+                  "electrode_potential_spread_v": {
+                    "cold": 0.0,
+                    "hot": 0.0
+                  }
+                }
+              }
+            }
+          }
+        ],
+        "endpoint_zero": [
+          {
+            "epsilon": 0.01,
+            "derivative_w": 9.585263727185378e-06,
+            "one_dimensional_reference_w": -1.3465355566677495e-11,
+            "absolute_error_to_1d_w": 9.585277192540945e-06,
+            "plus": {
+              "cold_heat_w": 0.10156249773485315,
+              "hot_heat_w": 0.5467145909432177,
+              "electrical_power_w": 0.44515209320836524,
+              "voltage_v": 0.15837848317268316,
+              "energy_residual_w": -6.661338147750939e-16,
+              "legs": {
+                "p": {
+                  "nodes": 52,
+                  "tetrahedra": 72,
+                  "electrical_unknowns": 45,
+                  "thermal_unknowns": 44,
+                  "iterations": 5,
+                  "residual_history": [
+                    1.1561580593751426,
+                    0.020706199346229772,
+                    0.0051132875980344945,
+                    3.152211841397382e-05,
+                    4.271750865229934e-09,
+                    2.152754429595884e-15
+                  ],
+                  "inward_heat_w": {
+                    "cold": 0.046250163979611666,
+                    "hot": -0.282818481792989
+                  },
+                  "inward_current_a": {
+                    "cold": 2.810685418189078,
+                    "hot": -2.8106854181890797
+                  },
+                  "electrode_potential_v": {
+                    "cold": 0.0,
+                    "hot": -0.08416748323467582
+                  },
+                  "electrical_power_w": 0.23656831781337717,
+                  "volume_electrical_power_w": 0.2365683178133772,
+                  "energy_residual_w": -1.6653345369377348e-16,
+                  "electrical_power_identity_residual_w": -2.7755575615628914e-17,
+                  "current_balance_a": -1.7763568394002505e-15,
+                  "temperature_range_k": [
+                    309.894134846523,
+                    366.79666452276956
+                  ],
+                  "electrode_potential_spread_v": {
+                    "cold": 0.0,
+                    "hot": 0.0
+                  }
+                },
+                "n": {
+                  "nodes": 52,
+                  "tetrahedra": 72,
+                  "electrical_unknowns": 45,
+                  "thermal_unknowns": 44,
+                  "iterations": 5,
+                  "residual_history": [
+                    1.1732968337936274,
+                    0.017384738090289523,
+                    0.005185449732671249,
+                    5.369594713559252e-05,
+                    1.98496347975496e-08,
+                    1.7380035761875027e-15
+                  ],
+                  "inward_heat_w": {
+                    "cold": 0.055312333755241486,
+                    "hot": -0.2638961091502287
+                  },
+                  "inward_current_a": {
+                    "cold": -2.810685418189083,
+                    "hot": 2.8106854181890815
+                  },
+                  "electrode_potential_v": {
+                    "cold": 0.0,
+                    "hot": 0.07421099993800735
+                  },
+                  "electrical_power_w": 0.2085837753949881,
+                  "volume_electrical_power_w": 0.20858377539498785,
+                  "energy_residual_w": 8.604228440844963e-16,
+                  "electrical_power_identity_residual_w": 2.498001805406602e-16,
+                  "current_balance_a": -1.3322676295501878e-15,
+                  "temperature_range_k": [
+                    309.894134846523,
+                    366.83819558597276
+                  ],
+                  "electrode_potential_spread_v": {
+                    "cold": 0.0,
+                    "hot": 0.0
+                  }
+                }
+              }
+            },
+            "minus": {
+              "cold_heat_w": 0.10156230602957861,
+              "hot_heat_w": 0.5467035605373114,
+              "electrical_power_w": 0.4451412545077339,
+              "voltage_v": 0.15837462692446655,
+              "energy_residual_w": -1.1102230246251565e-15,
+              "legs": {
+                "p": {
+                  "nodes": 52,
+                  "tetrahedra": 72,
+                  "electrical_unknowns": 45,
+                  "thermal_unknowns": 44,
+                  "iterations": 5,
+                  "residual_history": [
+                    1.1561368280360373,
+                    0.020758336956009628,
+                    0.005213224842061914,
+                    3.140432247608531e-05,
+                    4.2548955090476615e-09,
+                    3.210249525463078e-15
+                  ],
+                  "inward_heat_w": {
+                    "cold": 0.046210039471359855,
+                    "hot": -0.28271196806190724
+                  },
+                  "inward_current_a": {
+                    "cold": 2.8106854181890837,
+                    "hot": -2.810685418189083
+                  },
+                  "electrode_potential_v": {
+                    "cold": 0.0,
+                    "hot": -0.08414386293821724
+                  },
+                  "electrical_power_w": 0.236501928590548,
+                  "volume_electrical_power_w": 0.2365019285905478,
+                  "energy_residual_w": 6.106226635438361e-16,
+                  "electrical_power_identity_residual_w": 1.942890293094024e-16,
+                  "current_balance_a": 8.881784197001252e-16,
+                  "temperature_range_k": [
+                    309.894134846523,
+                    366.7760099236004
+                  ],
+                  "electrode_potential_spread_v": {
+                    "cold": 0.0,
+                    "hot": 0.0
+                  }
+                },
+                "n": {
+                  "nodes": 52,
+                  "tetrahedra": 72,
+                  "electrical_unknowns": 45,
+                  "thermal_unknowns": 44,
+                  "iterations": 5,
+                  "residual_history": [
+                    1.1733216998612153,
+                    0.017331833788725173,
+                    0.005069455591753175,
+                    5.410937407097197e-05,
+                    2.0026567348695068e-08,
+                    2.330504795342333e-15
+                  ],
+                  "inward_heat_w": {
+                    "cold": 0.05535226655821876,
+                    "hot": -0.26399159247540416
+                  },
+                  "inward_current_a": {
+                    "cold": -2.81068541818908,
+                    "hot": 2.8106854181890784
+                  },
+                  "electrode_potential_v": {
+                    "cold": 0.0,
+                    "hot": 0.07423076398624931
+                  },
+                  "electrical_power_w": 0.20863932591718592,
+                  "volume_electrical_power_w": 0.20863932591718587,
+                  "energy_residual_w": 5.273559366969494e-16,
+                  "electrical_power_identity_residual_w": 5.551115123125783e-17,
+                  "current_balance_a": -1.7763568394002505e-15,
+                  "temperature_range_k": [
+                    309.894134846523,
+                    366.8602846656402
+                  ],
+                  "electrode_potential_spread_v": {
+                    "cold": 0.0,
+                    "hot": 0.0
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "field_domain_checks": [
+        {
+          "p": {
+            "minimum_k": 309.894134846523,
+            "maximum_k": 366.7863389820909,
+            "property_minimum_k": 300.177230234,
+            "property_maximum_k": 573.0197736745833,
+            "no_extrapolation": true
+          },
+          "n": {
+            "minimum_k": 309.894134846523,
+            "maximum_k": 366.8492438858012,
+            "property_minimum_k": 300.177230234,
+            "property_maximum_k": 572.9963081950611,
+            "no_extrapolation": true
+          }
+        },
+        {
+          "p": {
+            "minimum_k": 309.894134846523,
+            "maximum_k": 366.77996819902927,
+            "property_minimum_k": 300.177230234,
+            "property_maximum_k": 573.0197736745833,
+            "no_extrapolation": true
+          },
+          "n": {
+            "minimum_k": 309.894134846523,
+            "maximum_k": 366.8559161637539,
+            "property_minimum_k": 300.177230234,
+            "property_maximum_k": 572.9963081950611,
+            "no_extrapolation": true
+          }
+        },
+        {
+          "p": {
+            "minimum_k": 309.894134846523,
+            "maximum_k": 366.79270617944513,
+            "property_minimum_k": 300.177230234,
+            "property_maximum_k": 573.0197736745833,
+            "no_extrapolation": true
+          },
+          "n": {
+            "minimum_k": 309.894134846523,
+            "maximum_k": 366.8425667963406,
+            "property_minimum_k": 300.177230234,
+            "property_maximum_k": 572.9963081950611,
+            "no_extrapolation": true
+          }
+        },
+        {
+          "p": {
+            "minimum_k": 309.894134846523,
+            "maximum_k": 366.79666452276956,
+            "property_minimum_k": 300.177230234,
+            "property_maximum_k": 573.0197736745833,
+            "no_extrapolation": true
+          },
+          "n": {
+            "minimum_k": 309.894134846523,
+            "maximum_k": 366.83819558597276,
+            "property_minimum_k": 300.177230234,
+            "property_maximum_k": 572.9963081950611,
+            "no_extrapolation": true
+          }
+        },
+        {
+          "p": {
+            "minimum_k": 309.894134846523,
+            "maximum_k": 366.7760099236004,
+            "property_minimum_k": 300.177230234,
+            "property_maximum_k": 573.0197736745833,
+            "no_extrapolation": true
+          },
+          "n": {
+            "minimum_k": 309.894134846523,
+            "maximum_k": 366.8602846656402,
+            "property_minimum_k": 300.177230234,
+            "property_maximum_k": 572.9963081950611,
+            "no_extrapolation": true
+          }
+        }
+      ],
+      "maximum_energy_residual_w": 1.1102230246251565e-15,
+      "maximum_current_balance_a": 7.993605777301127e-15,
+      "maximum_temperature_k": 366.8602846656402
+    }
+  ],
+  "elapsed_seconds": 0.4633598339278251
+}

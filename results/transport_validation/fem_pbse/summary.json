@@ -1,0 +1,151 @@
+{
+  "comparison": [
+    {
+      "mesh": "coarse",
+      "geometry": "original",
+      "mode": "linear",
+      "ratio_n_over_p": 1.0,
+      "cold_heat_w": 0.10045285228831913,
+      "cold_heat_absolute_error_w": 0.0001536194733596924,
+      "derivative_w": 0.0010322755097054437,
+      "reference_1d_w": 0.001053591406283711,
+      "derivative_absolute_error_w": 2.1315896578267407e-05,
+      "maximum_temperature_k": 369.25728608654674
+    },
+    {
+      "mesh": "coarse",
+      "geometry": "original",
+      "mode": "endpoint_zero",
+      "ratio_n_over_p": 1.0,
+      "cold_heat_w": 0.10045285228831913,
+      "cold_heat_absolute_error_w": 0.0001536194733596924,
+      "derivative_w": -0.0025434779729834045,
+      "reference_1d_w": -0.00261948361637259,
+      "derivative_absolute_error_w": 7.600564338918533e-05,
+      "maximum_temperature_k": 369.25728608654674
+    },
+    {
+      "mesh": "coarse",
+      "geometry": "adjusted",
+      "mode": "linear",
+      "ratio_n_over_p": 0.8860984814480872,
+      "cold_heat_w": 0.10156256048123533,
+      "cold_heat_absolute_error_w": 0.00016393481318749403,
+      "derivative_w": 3.560970009627851e-05,
+      "reference_1d_w": 4.0512077913076525e-05,
+      "derivative_absolute_error_w": 4.9023778167980175e-06,
+      "maximum_temperature_k": 366.8602846656402
+    },
+    {
+      "mesh": "coarse",
+      "geometry": "adjusted",
+      "mode": "endpoint_zero",
+      "ratio_n_over_p": 0.8860984814480872,
+      "cold_heat_w": 0.10156256048123533,
+      "cold_heat_absolute_error_w": 0.00016393481318749403,
+      "derivative_w": 9.585263727185378e-06,
+      "reference_1d_w": -1.3465355566677495e-11,
+      "derivative_absolute_error_w": 9.585277192540945e-06,
+      "maximum_temperature_k": 366.8602846656402
+    },
+    {
+      "mesh": "medium",
+      "geometry": "original",
+      "mode": "linear",
+      "ratio_n_over_p": 1.0,
+      "cold_heat_w": 0.10056690310652577,
+      "cold_heat_absolute_error_w": 3.956865515304664e-05,
+      "derivative_w": 0.001047881782129112,
+      "reference_1d_w": 0.001053591406283711,
+      "derivative_absolute_error_w": 5.709624154599108e-06,
+      "maximum_temperature_k": 369.38833803443947
+    },
+    {
+      "mesh": "medium",
+      "geometry": "original",
+      "mode": "endpoint_zero",
+      "ratio_n_over_p": 1.0,
+      "cold_heat_w": 0.10056690310652577,
+      "cold_heat_absolute_error_w": 3.956865515304664e-05,
+      "derivative_w": -0.0025991397375739467,
+      "reference_1d_w": -0.00261948361637259,
+      "derivative_absolute_error_w": 2.0343878798643154e-05,
+      "maximum_temperature_k": 369.38833803443947
+    },
+    {
+      "mesh": "medium",
+      "geometry": "adjusted",
+      "mode": "linear",
+      "ratio_n_over_p": 0.8860984814480872,
+      "cold_heat_w": 0.1016843156264059,
+      "cold_heat_absolute_error_w": 4.2179668016922856e-05,
+      "derivative_w": 3.9144918903555315e-05,
+      "reference_1d_w": 4.0512077913076525e-05,
+      "derivative_absolute_error_w": 1.36715900952121e-06,
+      "maximum_temperature_k": 366.8769931109357
+    },
+    {
+      "mesh": "medium",
+      "geometry": "adjusted",
+      "mode": "endpoint_zero",
+      "ratio_n_over_p": 0.8860984814480872,
+      "cold_heat_w": 0.1016843156264059,
+      "cold_heat_absolute_error_w": 4.2179668016922856e-05,
+      "derivative_w": 2.7178790135140574e-06,
+      "reference_1d_w": -1.3465355566677495e-11,
+      "derivative_absolute_error_w": 2.717892478869624e-06,
+      "maximum_temperature_k": 366.8769931109357
+    },
+    {
+      "mesh": "fine",
+      "geometry": "original",
+      "mode": "linear",
+      "ratio_n_over_p": 1.0,
+      "cold_heat_w": 0.10059651054977582,
+      "cold_heat_absolute_error_w": 9.961211902997924e-06,
+      "derivative_w": 0.0010521443827071764,
+      "reference_1d_w": 0.001053591406283711,
+      "derivative_absolute_error_w": 1.4470235765347284e-06,
+      "maximum_temperature_k": 369.35615425988135
+    },
+    {
+      "mesh": "fine",
+      "geometry": "original",
+      "mode": "endpoint_zero",
+      "ratio_n_over_p": 1.0,
+      "cold_heat_w": 0.10059651054977582,
+      "cold_heat_absolute_error_w": 9.961211902997924e-06,
+      "derivative_w": -0.002614319551223071,
+      "reference_1d_w": -0.00261948361637259,
+      "derivative_absolute_error_w": 5.1640651495188025e-06,
+      "maximum_temperature_k": 369.35615425988135
+    },
+    {
+      "mesh": "fine",
+      "geometry": "adjusted",
+      "mode": "linear",
+      "ratio_n_over_p": 0.8860984814480872,
+      "cold_heat_w": 0.10171587559909383,
+      "cold_heat_absolute_error_w": 1.0619695328992207e-05,
+      "derivative_w": 4.0168496889120275e-05,
+      "reference_1d_w": 4.0512077913076525e-05,
+      "derivative_absolute_error_w": 3.4358102395624923e-07,
+      "maximum_temperature_k": 366.8933435442342
+    },
+    {
+      "mesh": "fine",
+      "geometry": "adjusted",
+      "mode": "endpoint_zero",
+      "ratio_n_over_p": 0.8860984814480872,
+      "cold_heat_w": 0.10171587559909383,
+      "cold_heat_absolute_error_w": 1.0619695328992207e-05,
+      "derivative_w": 6.99044620799949e-07,
+      "reference_1d_w": -1.3465355566677495e-11,
+      "derivative_absolute_error_w": 6.990580861555157e-07,
+      "maximum_temperature_k": 366.8933435442342
+    }
+  ],
+  "all_property_domains_respected": true,
+  "maximum_energy_residual_w": 2.7200464103316335e-15,
+  "maximum_current_balance_a": 2.398081733190338e-14
+}

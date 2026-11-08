@@ -1,0 +1,279 @@
+{
+  "scope": "representative_3d_device_not_experimental_module_reconstruction",
+  "material_source_doi": "10.1093/nsr/nwae448",
+  "property_direction": "published_curves_assigned_to_leg_axis_and_used_as_scalar_laws",
+  "external_reservoir_temperatures_k": [
+    323.0,
+    373.0
+  ],
+  "boundary_conditions": "fixed external plate temperatures; insulated remaining thermal surfaces; equipotential cold copper side electrodes with fixed total current",
+  "cold_heat_definition": "inward total heat through external cold ceramic face",
+  "geometry_and_discretization": {
+    "geometry": {
+      "total_leg_area_m2": 7.604999999999999e-06,
+      "depth_m": 0.00195,
+      "leg_length_m": 0.0048,
+      "gap_m": 0.001,
+      "copper_thickness_m": 0.0002,
+      "contact_thickness_m": 2e-05,
+      "ceramic_thickness_m": 0.0005,
+      "ceramic_kappa_w_mk": 25.0,
+      "copper_kappa_w_mk": 400.0,
+      "copper_resistivity_ohm_m": 1.72e-08,
+      "copper_seebeck_v_k": 1.5e-06,
+      "contact_electrical_resistance_ohm_m2": 3.5e-10,
+      "contact_thermal_resistance_m2_k_w": 1e-06
+    },
+    "area_ratio_n_over_p": 1.0,
+    "refinement": 4,
+    "layer_z_m": [
+      0.0,
+      0.0005,
+      0.0007,
+      0.00072,
+      0.00552,
+      0.00554,
+      0.0057399999999999994,
+      0.006239999999999999
+    ],
+    "width_x_m": 0.0049,
+    "material_volumes_m3": [
+      1.8252000000004368e-08,
+      1.8252000000004368e-08,
+      3.431999999999496e-09,
+      9.554999999999878e-09,
+      3.042000000000088e-10
+    ],
+    "material_names": [
+      "p",
+      "n",
+      "copper",
+      "ceramic",
+      "contact"
+    ]
+  },
+  "current_a": 3.0,
+  "mode": "endpoint_zero",
+  "mode_amplitude_v_k": 1e-05,
+  "baseline": {
+    "nodes": 10116,
+    "tetrahedra": 47616,
+    "electrical_unknowns": 8164,
+    "thermal_unknowns": 9666,
+    "iterations": 4,
+    "residual_history": [
+      1.0,
+      0.0005764811666578711,
+      1.2978775048909144e-05,
+      8.8274648588504e-09,
+      8.89724356472818e-13
+    ],
+    "inward_heat_w": {
+      "cold": 0.18487320441055288,
+      "hot": -0.4499465518008884
+    },
+    "inward_current_a": {
+      "p": 3.000000000000549,
+      "n": -3.0
+    },
+    "electrode_potential_v": {
+      "p": 0.08835778246357995,
+      "n": 0.0
+    },
+    "electrical_power_w": 0.26507334739078836,
+    "volume_electrical_power_w": 0.2650733473906462,
+    "energy_residual_w": 4.5285997174460135e-13,
+    "electrical_power_identity_residual_w": 1.421640583032513e-13,
+    "current_balance_a": 5.488942633746774e-13,
+    "temperature_range_k": [
+      322.4266180835299,
+      374.21719965588426
+    ],
+    "electrode_potential_spread_v": {
+      "p": 0.0,
+      "n": 0.0
+    }
+  },
+  "centered_responses": [
+    {
+      "epsilon": 0.02,
+      "cold_heat_derivative_w": 0.00024058869080370582,
+      "plus": {
+        "nodes": 10116,
+        "tetrahedra": 47616,
+        "electrical_unknowns": 8164,
+        "thermal_unknowns": 9666,
+        "iterations": 2,
+        "residual_history": [
+          1.8306891935808217e-06,
+          9.450677614806079e-11,
+          9.058945960360403e-13
+        ],
+        "inward_heat_w": {
+          "cold": 0.1848777265713574,
+          "hot": -0.4499498094479316
+        },
+        "inward_current_a": {
+          "p": 3.000000000000789,
+          "n": -2.9999999999999996
+        },
+        "electrode_potential_v": {
+          "p": 0.08835736095885866,
+          "n": 0.0
+        },
+        "electrical_power_w": 0.2650720828766457,
+        "volume_electrical_power_w": 0.2650720828765761,
+        "energy_residual_w": 7.144285163462882e-14,
+        "electrical_power_identity_residual_w": 6.961098364399732e-14,
+        "current_balance_a": 7.895906151134113e-13,
+        "temperature_range_k": [
+          322.42712313486777,
+          374.2167204514413
+        ],
+        "electrode_potential_spread_v": {
+          "p": 0.0,
+          "n": 0.0
+        }
+      },
+      "minus": {
+        "nodes": 10116,
+        "tetrahedra": 47616,
+        "electrical_unknowns": 8164,
+        "thermal_unknowns": 9666,
+        "iterations": 2,
+        "residual_history": [
+          1.8306891925686417e-06,
+          9.485485456311589e-11,
+          8.700215284512778e-13
+        ],
+        "inward_heat_w": {
+          "cold": 0.18486810302372525,
+          "hot": -0.4499427445726857
+        },
+        "inward_current_a": {
+          "p": 2.9999999999993676,
+          "n": -3.0
+        },
+        "electrode_potential_v": {
+          "p": 0.0883582138496533,
+          "n": 0.0
+        },
+        "electrical_power_w": 0.26507464154890403,
+        "volume_electrical_power_w": 0.26507464154895977,
+        "energy_residual_w": -5.639932965095795e-14,
+        "electrical_power_identity_residual_w": -5.573319583618286e-14,
+        "current_balance_a": -6.323830348264892e-13,
+        "temperature_range_k": [
+          322.4261146588774,
+          374.217677405754
+        ],
+        "electrode_potential_spread_v": {
+          "p": 0.0,
+          "n": 0.0
+        }
+      }
+    },
+    {
+      "epsilon": 0.01,
+      "cold_heat_derivative_w": 0.00024058684508776462,
+      "plus": {
+        "nodes": 10116,
+        "tetrahedra": 47616,
+        "electrical_unknowns": 8164,
+        "thermal_unknowns": 9666,
+        "iterations": 2,
+        "residual_history": [
+          9.153445970421524e-07,
+          2.3648999622212525e-11,
+          8.885811228801724e-13
+        ],
+        "inward_heat_w": {
+          "cold": 0.18487553787574945,
+          "hot": -0.44994824930537214
+        },
+        "inward_current_a": {
+          "p": 3.0000000000000315,
+          "n": -3.0000000000000018
+        },
+        "electrode_potential_v": {
+          "p": 0.08835757047654116,
+          "n": 0.0
+        },
+        "electrical_power_w": 0.2650727114296263,
+        "volume_electrical_power_w": 0.2650727114296236,
+        "energy_residual_w": 3.608224830031759e-15,
+        "electrical_power_identity_residual_w": 2.7200464103316335e-15,
+        "current_balance_a": 2.9753977059954195e-14,
+        "temperature_range_k": [
+          322.4268704063166,
+          374.2169602351475
+        ],
+        "electrode_potential_spread_v": {
+          "p": 0.0,
+          "n": 0.0
+        }
+      },
+      "minus": {
+        "nodes": 10116,
+        "tetrahedra": 47616,
+        "electrical_unknowns": 8164,
+        "thermal_unknowns": 9666,
+        "iterations": 2,
+        "residual_history": [
+          9.153445960311335e-07,
+          2.3692678279177185e-11,
+          8.431529942547894e-13
+        ],
+        "inward_heat_w": {
+          "cold": 0.1848707261388477,
+          "hot": -0.4499447169018537
+        },
+        "inward_current_a": {
+          "p": 3.0000000000005222,
+          "n": -2.9999999999999982
+        },
+        "electrode_potential_v": {
+          "p": 0.08835799692100096,
+          "n": 0.0
+        },
+        "electrical_power_w": 0.26507399076304905,
+        "volume_electrical_power_w": 0.26507399076300286,
+        "energy_residual_w": 4.3021142204224816e-14,
+        "electrical_power_identity_residual_w": 4.618527782440651e-14,
+        "current_balance_a": 5.240252676230739e-13,
+        "temperature_range_k": [
+          322.42636616741476,
+          374.21743871298037
+        ],
+        "electrode_potential_spread_v": {
+          "p": 0.0,
+          "n": 0.0
+        }
+      }
+    }
+  ],
+  "leg_face_temperature_ranges_k": {
+    "p_cold_leg": [
+      322.5915900031464,
+      322.6388894544168
+    ],
+    "n_cold_leg": [
+      322.4266180835299,
+      322.4805553859401
+    ],
+    "p_hot_leg": [
+      373.88703813073977,
+      374.0199357374093
+    ],
+    "n_hot_leg": [
+      373.9698257089678,
+      374.21719965588426
+    ]
+  },
+  "status": "computed_pending_convergence_comparison",
+  "checks": {
+    "max_abs_energy_residual_w": 4.5285997174460135e-13,
+    "max_abs_current_balance_a": 7.895906151134113e-13,
+    "max_electrode_spread_v": 0.0
+  }
+}
